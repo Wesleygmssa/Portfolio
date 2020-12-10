@@ -19,10 +19,10 @@ const Projects: React.FC = () => {
                         <h3>GoBarber</h3>
                         <p>Projeto criado do zero onde é feito o front-end e back-end, Utilizando as tecnologias</p>
                         <ul>
-                          <a>
+                          <a href="/">
                             <FaReact size={40} style={{ color: "#7AE3F8" }} />
                          </a>
-                          <a>
+                          <a href="/">
                             <FaNodeJs size={40} style={{ color: "#7CB701" }} />
                           </a>
                 
