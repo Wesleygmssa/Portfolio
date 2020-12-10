@@ -27,7 +27,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 padding: 8px;
-border-radius: 40px;
+border-radius: 5px;
 
 -webkit-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
@@ -52,7 +52,7 @@ a{
 
 img{
     max-width:100%;
-    border-radius: 40px;
+    border-radius: 5px;
 }
 `;
 
