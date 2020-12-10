@@ -71,6 +71,7 @@ export const CardContent = styled.div`
 
     }
     P{
+        width: 100%;
         padding: 16px 0px;
     }
   
@@ -88,7 +89,8 @@ export const CardContent = styled.div`
     display: flex;
 
     a{
-        width: 150px;
+        max-width: 150px;
+        width: 100%;
     }
 }
    

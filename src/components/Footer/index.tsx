@@ -14,27 +14,27 @@ const Footer: React.FC = (props) => {
   return (
     <>
       <FooterBase>
-        <a href="/">
+        <div >
           <FaHtml5 size={40} style={{ color: "#EB3C32" }} />
-        </a>
-        <a href="/">
+        </div>
+        <div >
           <FaCss3 size={40} style={{ color: "#016EB6" }} />
-        </a>
-        <a href="/"> 
+        </div>
+        <div > 
           <FaReact size={40} style={{ color: "#7AE3F8" }} />
-        </a>
-        <a href="/">
+        </div>
+        <div>
           <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-        </a>
-        <a href="/">
+        </div>
+        <div >
           <FaNpm size={40} style={{ color: "#EB3C32" }} />
-        </a>
-        <a href="/">
+        </div>
+        <div>
           <FaYarn size={40} style={{ color: "#00F67E" }} />
-        </a>
-        <a href="/">
+        </div>
+        <div >
           <FaDatabase size={40} style={{ color: "#F6B524" }} />
-        </a>
+        </div>
       </FooterBase>
     </>
   );
