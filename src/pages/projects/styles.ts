@@ -15,7 +15,9 @@ export const Cards = styled.section`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0px 40px;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
 `;
 
 export const Card = styled.div`
@@ -26,20 +28,33 @@ width:100%;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-padding: 8px;
+padding: 8px 16px;
 border-radius: 5px;
+margin: 8px 8px;
 
 -webkit-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 
+
+ .card-img{
+     max-width: 500px;
+     width: 100%;
+ }
+
+
+ img{
+    width:100%;
+    height: 200px;
+}
+
 a{
     color: #fff;
 }
 
-& + div{
+/* & + div{
     margin-left: 16px;
-}
+} */
 
 
 @media (max-width: 850px) {
@@ -50,10 +65,7 @@ a{
   }
   }
 
-img{
-    max-width:100%;
-    border-radius: 5px;
-}
+
 `;
 
 export const CardContent = styled.div`
