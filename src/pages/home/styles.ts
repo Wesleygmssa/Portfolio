@@ -5,7 +5,7 @@ height: 100%;
 position: relative;
 
 @media (min-width: 700px) {
-    height: 100vh;
+    height: 100%;
   }
 
 `;
@@ -47,10 +47,31 @@ export const Content = styled.div`
         padding: 0px 40px;
         text-align: justify;
         position: relative;
+
     }
     span{
         text-align: center;
         padding: 0px 16px;
+
+    }
+
+    strong{
+        padding: 44px 40px;
+        font-size: 24px;
+        color: #FFF;
+        text-align: center;
+    }
+
+    ul{
+        max-width:700px;
+        width: 100%;
+        padding: 8px 40px;
+
+        li{
+            list-style: none;
+            padding: 8px;
+            color: #fff;
+        }
     }
 
 `;

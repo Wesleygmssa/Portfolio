@@ -24,6 +24,17 @@ const Home: React.FC = () => {
             conhecimento e interesses com ReactNative.
             </p>
            
+           <strong>Resumo Profissional: </strong>
+           <ul>
+              <li>✔ Back-end com Node.js</li>
+              <li>✔ Back-end com PHP</li>
+              <li>✔ Front-end com ReactJS</li>
+              <li>✔ Mobile com React Native</li>
+              <li>✔ TypeScript</li>
+              <li>✔ Banco de dados (Mysql, MongoDB)</li>
+              <li>✔ Ferramentas para utilização do banco de dados (Docker e TypeORM)</li>
+              <li>✔ Arquitetura e testes no Node.js</li>
+          </ul>
       </Content>
     </Container>
     <Footer/>
