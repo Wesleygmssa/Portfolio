@@ -9,7 +9,6 @@ export default createGlobalStyle`
   }
 
   :root{
-    border: 1px solid blue;
     position: relative;
   }
 

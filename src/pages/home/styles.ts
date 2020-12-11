@@ -1,8 +1,13 @@
 import styled from "styled-components"
 
 export const Container = styled.section`
-height: 100vh;
+height: 100%;
 position: relative;
+
+@media (min-width: 700px) {
+    height: 100vh;
+  }
+
 `;
 
 export const Content = styled.div`

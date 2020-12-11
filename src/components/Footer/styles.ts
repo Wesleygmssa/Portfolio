@@ -7,6 +7,7 @@ export const FooterBase = styled.footer`
   align-items: center;
   height: 100px;
   background: #293647;
+  margin-top: 10px;
 
   > div{
     display: flex;
