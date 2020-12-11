@@ -40,6 +40,10 @@ export const Content = styled.div`
         padding: 0px 16px;
         text-align: justify;
     }
+    span{
+        text-align: center;
+        padding: 0px 16px;
+    }
 
 `;
 
