@@ -5,8 +5,8 @@ export const IconZap = styled.div`
   flex-direction: column;
   position: fixed;
   bottom: 40%;
-  z-index: 4;
   right: 2px;
+  z-index: 4;
   border-radius: 50%;
 
   a {
@@ -32,13 +32,13 @@ export const IconZap = styled.div`
   }
 
   @media (max-width: 700px) {
-    display: none;
-    /* display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 70%;
-    z-index: 4;
-    right: 2px;
-    border-radius: 50%; */
+    bottom: 40%;
+  right: 2px;
+
+    a{
+      padding: 2px;
+      font-size: 5px;
+    }
   }
 `;

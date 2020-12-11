@@ -37,7 +37,7 @@ export const Content = styled.div`
         max-width:700px;
         width: 100%;
         line-height:25px;
-        padding: 0px 16px;
+        padding: 0px 40px;
         text-align: justify;
     }
     span{
