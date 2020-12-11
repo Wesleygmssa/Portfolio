@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.section`
 height: 100vh;
+position: relative;
 `;
 
 export const Content = styled.div`
@@ -9,6 +10,7 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 
     img{
         width: 200px;
@@ -39,6 +41,7 @@ export const Content = styled.div`
         line-height:25px;
         padding: 0px 40px;
         text-align: justify;
+        position: relative;
     }
     span{
         text-align: center;

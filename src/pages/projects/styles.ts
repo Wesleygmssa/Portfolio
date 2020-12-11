@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Content = styled.section`
- height: 100vh;
+ height: 100%;
 
  h1{
      color: #fff;

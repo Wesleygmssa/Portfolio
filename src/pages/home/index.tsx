@@ -23,12 +23,10 @@ const Home: React.FC = () => {
             meio a isso fiz o GoStack Bootcamp da Rocketseat e expandi um pouco mais a minha stack de
             conhecimento e interesses com ReactNative.
             </p>
-            <span>
-              Ferramentas utilizadas para criação desse Portfolio
-            </span>
+           
       </Content>
-      <Footer/>
     </Container>
+    <Footer/>
     <Contact/>
     </>
   )

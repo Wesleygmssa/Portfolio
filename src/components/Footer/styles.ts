@@ -1,12 +1,26 @@
 import styled from "styled-components";
 
 export const FooterBase = styled.footer`
-  margin-top: 20px;
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding: 5px;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  background: #293647;
+
+  > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span{
+      text-align: center;
+      font-weight: bold;
+      color: #0b0b0d;
+  }
+
+  
 
   a {
     display: flex;
@@ -27,9 +41,6 @@ export const FooterBase = styled.footer`
     &:hover {
       transition: 0.5s;
       opacity: 0.7;
-    }
-
-    svg {
     }
   }
 `;

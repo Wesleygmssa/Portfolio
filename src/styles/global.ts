@@ -8,9 +8,15 @@ export default createGlobalStyle`
     box-sizing:border-box;
   }
 
+  :root{
+    border: 1px solid blue;
+    position: relative;
+  }
+
   body{
      background: #1B232E;
     -webkit-font-smoothing: antialiased;
+     position: relative;
   }
   body , input , button{
     font: 16px 'Roboto', serif;

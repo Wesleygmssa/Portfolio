@@ -8,6 +8,7 @@ import aluraflix from '../../assets/aluraflix.png';
 import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
+import Footer from '../../components/Footer';
 
 const Projects: React.FC = () => {
   return (
@@ -110,7 +111,9 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>   
       </Cards>
+ 
     </Content>
+    <Footer/>
         <Contact/>
     </>
   )
