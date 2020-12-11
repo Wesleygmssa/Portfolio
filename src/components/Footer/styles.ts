@@ -16,6 +16,7 @@ export const FooterBase = styled.footer`
   }
 
   span{
+      margin-top:8px;
       text-align: center;
       font-weight: bold;
       color: #0b0b0d;
