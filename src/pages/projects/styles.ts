@@ -87,10 +87,11 @@ export const CardContent = styled.div`
 
 .button-group{
     display: flex;
+    width: 100%;
 
     a{
-        max-width: 150px;
         width: 100%;
+        font-size: 16px;
     }
 }
    
