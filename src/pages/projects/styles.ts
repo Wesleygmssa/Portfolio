@@ -15,7 +15,7 @@ export const Cards = styled.section`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0px 60px;
+    margin: 0px 24px;
 `;
 
 export const Card = styled.div`
