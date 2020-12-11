@@ -5,8 +5,8 @@ export const Content = styled.section`
 
  h1{
      color: #fff;
-     margin-left: 32px;
-     margin-bottom: 32px;
+     padding: 32px;
+     text-align: center;
  }
 `;
 
