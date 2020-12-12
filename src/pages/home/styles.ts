@@ -59,12 +59,15 @@ export const Content = styled.div`
         margin: 40px 40px;
         font-size: 24px;
         text-align: center;
+        background-color: transparent;
+        color: #fff;
     }
 
     ul{
         max-width:700px;
         width: 100%;
         padding: 8px 40px;
+        transition: 0.2s;
 
         li{
             list-style: none;

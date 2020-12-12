@@ -29,15 +29,11 @@ const ConteudoDois = () => {
 
 
 const Home: React.FC = () => {
-  
-
   const [togleConteudos, setTogleConteudos] = useState(false);
 
   const handleTogle = () => {
-		setTogleConteudos(prev => !prev);
-		//ou
-      	//setTogleConteudos(!togleConteudos);
-		//mas a primeira forma é preferível
+		// setTogleConteudos(prev => !prev);
+      	setTogleConteudos(!togleConteudos);
 	}
 
   return (
