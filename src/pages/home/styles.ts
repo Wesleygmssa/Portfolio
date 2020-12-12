@@ -55,10 +55,9 @@ export const Content = styled.div`
 
     }
 
-    strong{
-        padding: 44px 40px;
+    button{
+        margin: 40px 40px;
         font-size: 24px;
-        color: #FFF;
         text-align: center;
     }
 

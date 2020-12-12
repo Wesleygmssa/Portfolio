@@ -1,10 +1,45 @@
-import React from 'react';
+import React,{useState} from 'react';
+import Button from '../../components/Button';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { Container , Content} from './styles';
 
+
+
+const ConteudoUm = () => {
+	return <div></div>
+  
+}
+
+const ConteudoDois = () => {
+	return <div>
+    <ul>
+              <li>✔ Back-end com Node.js</li>
+              <li>✔ Back-end com PHP</li>
+              <li>✔ Front-end com ReactJS</li>
+              <li>✔ Mobile com React Native</li>
+              <li>✔ TypeScript</li>
+              <li>✔ Banco de dados (Mysql, MongoDB)</li>
+              <li>✔ Ferramentas para utilização do banco de dados (Docker e TypeORM)</li>
+              <li>✔ Arquitetura e testes no Node.js</li>
+          </ul>
+  </div>
+}
+
+
 const Home: React.FC = () => {
+  
+
+  const [togleConteudos, setTogleConteudos] = useState(false);
+
+  const handleTogle = () => {
+		setTogleConteudos(prev => !prev);
+		//ou
+      	//setTogleConteudos(!togleConteudos);
+		//mas a primeira forma é preferível
+	}
+
   return (
     <>
     <Container>
@@ -24,17 +59,10 @@ const Home: React.FC = () => {
             conhecimento e interesses com ReactNative.
             </p>
            
-           <strong>Resumo Profissional: </strong>
-           <ul>
-              <li>✔ Back-end com Node.js</li>
-              <li>✔ Back-end com PHP</li>
-              <li>✔ Front-end com ReactJS</li>
-              <li>✔ Mobile com React Native</li>
-              <li>✔ TypeScript</li>
-              <li>✔ Banco de dados (Mysql, MongoDB)</li>
-              <li>✔ Ferramentas para utilização do banco de dados (Docker e TypeORM)</li>
-              <li>✔ Arquitetura e testes no Node.js</li>
-          </ul>
+           <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>
+           
+           {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}
+           
       </Content>
     </Container>
     <Footer/>

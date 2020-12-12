@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
     <>
     <Content>
     <Header/>
-        <h1>Em Construção</h1>
+        <h1>Algumas experiência</h1>
       <Cards>
                <Card>
                     <div className="card-img"> 
