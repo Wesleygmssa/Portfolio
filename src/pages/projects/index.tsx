@@ -9,12 +9,31 @@ import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
 import Footer from '../../components/Footer';
+import styled, { keyframes } from 'styled-components';
+
+
+
+const apperFromCenter = keyframes`
+ from{
+   opacity: 0;
+   transform: translateX(0px);
+ }
+ to{
+   opacity: 1;
+   transform: translateX(0px);
+ }
+`;
+
+const AnimationContainer = styled.div`
+  animation: ${apperFromCenter} 1s;
+`;
 
 const Projects: React.FC = () => {
   return (
     <>
     <Content>
     <Header/>
+    <AnimationContainer>
         <h1>Algumas experiência</h1>
       <Cards>
                <Card>
@@ -111,7 +130,7 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>   
       </Cards>
- 
+      </AnimationContainer>
     </Content>
     <Footer/>
         <Contact/>
