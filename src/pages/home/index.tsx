@@ -19,6 +19,7 @@ const apperFromCenter = keyframes`
 export const AnimationContainer = styled.div`
   display: flex;  
   justify-content: center;
+  flex-wrap: wrap;
   animation: ${apperFromCenter} 1s;
   background-color: #121212;
   border: 6px double #293647;
