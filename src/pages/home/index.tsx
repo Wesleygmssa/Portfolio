@@ -8,7 +8,7 @@ import { Container , Content} from './styles';
 const apperFromCenter = keyframes`
  from{
    opacity: 0;
-   transform: translateX(0px);
+   transform: translateX(50px);
  }
  to{
    opacity: 1;
