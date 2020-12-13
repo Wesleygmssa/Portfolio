@@ -1,6 +1,4 @@
 import React from 'react'
-import Contact from '../../components/Contact';
-import Header from '../../components/Header';
 import GobarberWeb from '../../assets/GobarberWeb.png';
 import Ecoleta from '../../assets/ecoleta.png';
 import proffy from '../../assets/proffy.png';
@@ -8,35 +6,17 @@ import aluraflix from '../../assets/aluraflix.png';
 import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
-import Footer from '../../components/Footer';
-import styled, { keyframes } from 'styled-components';
+import PageDefault from '../../components/PageDefault';
 
-
-
-const apperFromCenter = keyframes`
- from{
-   opacity: 0;
-   transform: translateX(0px);
- }
- to{
-   opacity: 1;
-   transform: translateX(0px);
- }
-`;
-
-const AnimationContainer = styled.div`
-  animation: ${apperFromCenter} 1s;
-`;
 
 const Projects: React.FC = () => {
   return (
-    <>
+    <PageDefault>
     <Content>
-    <Header/>
-    <AnimationContainer>
-        <h1>Algumas experiência</h1>
+        <h4>Desenvolvendo aplicações em JavaScript, React, React-native e nodeJS </h4>
       <Cards>
-               <Card>
+             
+                <Card>
                     <div className="card-img"> 
                          <img src={GobarberWeb} alt="GoBarber"/>
                     </div>
@@ -82,8 +62,7 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>    
 
-
-              <Card>
+                <Card>
                       <div className="card-img"> 
                          <img src={proffy} alt="GoBarber"/>
                     </div>
@@ -106,8 +85,7 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>   
 
-
-              <Card>
+                <Card>
                       <div className="card-img"> 
                          <img src={aluraflix} alt="GoBarber"/>
                     </div>
@@ -129,12 +107,10 @@ const Projects: React.FC = () => {
                         </div>
                    </CardContent>
               </Card>   
+     
       </Cards>
-      </AnimationContainer>
     </Content>
-    <Footer/>
-        <Contact/>
-    </>
+    </PageDefault>
   )
 }
 export default Projects;

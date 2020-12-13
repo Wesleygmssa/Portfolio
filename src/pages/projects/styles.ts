@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Content = styled.section`
  height: 100%;
 
- h1{
+ h4{
      color: #fff;
      padding: 32px;
      text-align: center;
+     border: 1px solid ;
  }
 `;
 

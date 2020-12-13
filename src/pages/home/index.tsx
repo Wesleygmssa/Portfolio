@@ -1,11 +1,8 @@
 import React,{useState} from 'react';
 import styled, { keyframes } from 'styled-components';
 import Button from '../../components/Button';
-import Contact from '../../components/Contact';
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import PageDefault from '../../components/PageDefault';
 import { Container , Content} from './styles';
-
 
 
 const apperFromCenter = keyframes`
@@ -19,9 +16,15 @@ const apperFromCenter = keyframes`
  }
 `;
 
-const AnimationContainer = styled.div`
+export const AnimationContainer = styled.div`
+  display: flex;  
+  justify-content: center;
   animation: ${apperFromCenter} 1s;
+  background-color: #121212;
+  border: 6px double #293647;
+;
 `;
+
 
 const ConteudoUm = () => {
 	return <div></div>
@@ -29,18 +32,38 @@ const ConteudoUm = () => {
 }
 
 const ConteudoDois = () => {
-	return <div>
+	return <AnimationContainer>
+          
     <ul>
-              <li>✔ Back-end com Node.js</li>
-              <li>✔ Back-end com PHP</li>
-              <li>✔ Front-end com ReactJS</li>
-              <li>✔ Mobile com React Native</li>
-              <li>✔ TypeScript</li>
-              <li>✔ Banco de dados (Mysql, MongoDB)</li>
-              <li>✔ Ferramentas para utilização do banco de dados (Docker e TypeORM)</li>
-              <li>✔ Arquitetura e testes no Node.js</li>
-          </ul>
-  </div>
+             <h3>Front-end</h3> 
+
+             <li> Criação de interfaces com React e React-native</li>
+             <li> Criação de componentes </li>
+             <li> Consumo de api de back-end </li>
+             <li> Estilização utilizando styled-components </li>
+             <li> Utilização react-router-dom para controlar as rotas autenticadas </li>
+             <li> Utilização de contexto para validação de usuário salvando LocalStorage. </li>
+             <li> Passando propriedades para components </li>
+             <li> Formulários reutilizáveis </li>
+             <li> Usabilidade do input</li>
+             <li> Deploy na Vercel/netlify. </li>
+             
+    </ul>
+
+     <ul>
+             <h3>Back-end</h3>
+             <li>Criação do server com framework express </li>
+             <li> Organização de pasta projetos menores (Repositório, Services, Modelos, Routes, Middlewares, config e etc.…) </li>
+             <li> Autenticação de usuário JTW </li>
+             <li>Upload de imagens </li>
+             <li> Banco de dados utilizando TypeORM </li>
+             <li>Utilização do cors para retorna os dados em JSON para front-end </li>
+             <li> Configuração do docker para criação de banco de dados </li>
+             <li>Arquitetura SOLID e DDD </li>
+             <li>Teste unitários com a biblioteca Jest </li>
+             <li> Classes de erros centralizada </li>
+     </ul>
+  </AnimationContainer>
 }
 
 
@@ -53,10 +76,8 @@ const Home: React.FC = () => {
 	}
 
   return (
-    <>
-    <Container>
-      <Header/>
-      <AnimationContainer>
+    <PageDefault>
+        <Container>
           <Content>
                  <img src="https://avatars1.githubusercontent.com/u/41512408?s=460&u=48175e5af2e5f24e725eb9354200350a242d0354&v=4" alt="Wesley Guerra"/>
                  <h1>Olá, Sou Wesley</h1>
@@ -70,18 +91,12 @@ const Home: React.FC = () => {
                      gosto de fazer interfaces com React, então decidi que me tornaria um desenvolvedor fullstack, em
                      meio a isso fiz o GoStack Bootcamp da Rocketseat e expandi um pouco mais a minha stack de
                     conhecimento e interesses com ReactNative.
-                 </p>
-           
-           <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>
-           
-           {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}
-           
+                 </p>          
+           <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>       
+           {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}        
            </Content>
-      </AnimationContainer>
-    </Container>
-    <Footer/>
-    <Contact/>
-    </>
+       </Container>
+    </PageDefault>
   )
 }
 

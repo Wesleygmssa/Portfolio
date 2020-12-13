@@ -15,6 +15,13 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  h3{
+      text-align: center;
+      font-size: 24px;
+      padding: 16px;
+      color: #fff;
+  }
   
 
     img{
