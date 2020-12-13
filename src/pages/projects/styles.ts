@@ -20,7 +20,6 @@ export const Cards = styled.section`
     max-width: 1024px;
     width: 100%;
     padding: 60px 30px;
-    
 `;
 
 export const Card = styled.div`

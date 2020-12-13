@@ -32,6 +32,7 @@ export const Content = styled.div`
         border-radius: 40px;
         margin-top: 24px;
         border: 3px solid #5c00b9;
+        cursor: pointer;
 
         -webkit-box-shadow: 1px 4px 57px 6px rgba(0,0,0,0.75);
         -moz-box-shadow: 1px 4px 57px 6px rgba(0,0,0,0.75);
@@ -75,7 +76,7 @@ export const Content = styled.div`
     ul{
         max-width:500px;
         width: 100%;
-        padding: 8px 40px;
+        padding: 30px 40px;
         transition: 0.2s;
 
         li{

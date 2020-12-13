@@ -8,6 +8,7 @@ export const FooterBase = styled.footer`
   height: 100px;
   background: #293647;
   margin-top: 10px;
+  padding-top: 16px 24px;
 
   > div{
     display: flex;
