@@ -21,7 +21,7 @@ export const AnimationContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   animation: ${apperFromCenter} 1s;
-  background-color: #121212;
+  background-color: #000000;
   border: 6px double #293647;
 ;
 `;
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
                      meio a isso fiz o GoStack Bootcamp da Rocketseat e expandi um pouco mais a minha stack de
                     conhecimento e interesses com ReactNative.
                  </p>          
-           <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>       
+                  <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>       
            {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}        
            </Content>
        </Container>

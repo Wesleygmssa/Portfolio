@@ -48,7 +48,7 @@ export const Content = styled.div`
 
     p{
         text-align: center;
-        max-width:700px;
+        max-width:600px;
         width: 100%;
         line-height:25px;
         padding: 0px 40px;
@@ -71,10 +71,11 @@ export const Content = styled.div`
     }
 
     ul{
-        max-width:700px;
+        max-width:500px;
         width: 100%;
         padding: 8px 40px;
         transition: 0.2s;
+        border: 1px solid #fff;
 
         li{
             list-style: none;
