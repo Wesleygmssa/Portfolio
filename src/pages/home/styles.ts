@@ -3,12 +3,14 @@ import styled from "styled-components"
 export const Container = styled.section`
 height: 100%;
 position: relative;
+padding: 60px 30px;
 
 @media (min-width: 700px) {
     height: 100%;
   }
 
 `;
+
 
 export const Content = styled.div`
   display: flex;
@@ -48,7 +50,7 @@ export const Content = styled.div`
 
     p{
         text-align: center;
-        max-width:600px;
+        max-width:800px;
         width: 100%;
         line-height:25px;
         padding: 0px 40px;
