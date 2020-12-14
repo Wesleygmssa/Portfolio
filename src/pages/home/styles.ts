@@ -78,6 +78,7 @@ export const Content = styled.div`
         width: 100%;
         padding: 30px 40px;
         transition: 0.2s;
+        border: 1px dashed #fff;;
 
         li{
             list-style: none;
@@ -86,9 +87,9 @@ export const Content = styled.div`
         }
     }
 
-    ul + ul{
+    /* ul + ul{
         border-left: 2px solid #fff;
-    }
+    } */
 
 `;
 

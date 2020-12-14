@@ -89,6 +89,7 @@ export const CardContent = styled.div`
         height: 100px;
         width: 100%;
         padding: 16px 0px;
+        line-height: 25px;
     }
   
 

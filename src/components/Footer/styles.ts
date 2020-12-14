@@ -25,7 +25,7 @@ export const FooterBase = styled.footer`
 
   
 
-  a {
+  div {
     display: flex;
     padding: 2px;
     border-radius: 8px;
@@ -37,7 +37,7 @@ export const FooterBase = styled.footer`
     background-color: #29292e;
     letter-spacing: 2px;
 
-    & + a {
+    & + div{
       margin-left: 8px;
     }
 
