@@ -110,8 +110,7 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>   
 
-
-              <Card>
+                <Card>
                       <div className="card-img"> 
                          <img src={explorer} alt="GoBarber"/>
                     </div>
@@ -128,16 +127,13 @@ const Projects: React.FC = () => {
                 
                         </ul>
                         <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Front-End</ButtonLink>
+                          <ButtonLink href="https://github.com/Wesleygmssa/explore-repositrios-github">Front-End</ButtonLink>
                           {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
                         </div>
                    </CardContent>
               </Card>   
 
-
-
-
-              <Card>
+                <Card>
                       <div className="card-img"> 
                          <img src={happy} alt="GoBarber"/>
                     </div>
@@ -154,7 +150,8 @@ const Projects: React.FC = () => {
                 
                         </ul>
                         <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Front-End</ButtonLink>
+                          <ButtonLink href="https://github.com/Wesleygmssa/nlw3-happy-web-react">Front-End</ButtonLink>
+                          {/* <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Back-End</ButtonLink> */}
                           {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
                         </div>
                    </CardContent>
