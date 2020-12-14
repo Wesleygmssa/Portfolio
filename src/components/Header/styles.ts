@@ -12,8 +12,8 @@ export const HeaderContainer = styled.div`
 }
 
   .menuActive{
-    transition: 0.5s;
-      opacity: 0.7;
+    transition:  2s;
+      opacity: 0.4;
   }
 
  
@@ -26,14 +26,10 @@ export const HeaderContainer = styled.div`
       font-size: 20px;
       text-decoration: none;
 
-      &:hover {
-      transition: 0.5s;
-      opacity: 0.7;
-    }
     }
 
     a + a{
-      margin-left: 16px;
+      margin-left: 24px;
     }
   }
 `;

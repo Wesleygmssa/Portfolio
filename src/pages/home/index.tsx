@@ -99,7 +99,7 @@ const Home: React.FC = () => {
                     conhecimento e interesses com ReactNative.
                  </p>          
                   <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>       
-           {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}        
+                    {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}        
            </Content>
        </Container>
     </PageDefault>
