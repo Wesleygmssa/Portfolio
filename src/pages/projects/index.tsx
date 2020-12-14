@@ -14,7 +14,7 @@ import PageDefault from '../../components/PageDefault';
 const Projects: React.FC = () => {
   return (
     <PageDefault>
-    <Content>
+        <Content>
         <h4>Desenvolvendo aplicações em JavaScript, React, React-native, nodeJS e PHP </h4>
       <Cards>
              
