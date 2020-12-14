@@ -8,6 +8,7 @@ import {
   FaYarn,
   FaDatabase,
   FaCss3,
+  FaPhp
 } from "react-icons/fa";
 
 const Footer: React.FC = (props) => {
@@ -35,6 +36,9 @@ const Footer: React.FC = (props) => {
              </div>
              <div >
                  <FaDatabase size={40} style={{ color: "#F6B524" }} />
+              </div>
+              <div >
+                 <FaPhp size={50} style={{ color: "#F6B524" }} />
               </div>
        </div>
     
