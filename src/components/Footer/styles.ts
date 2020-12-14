@@ -10,6 +10,7 @@ export const FooterBase = styled.footer`
   margin-top: 10px;
   padding-top: 16px 24px;
 
+
   > div{
     display: flex;
     justify-content: center;
@@ -45,5 +46,37 @@ export const FooterBase = styled.footer`
       transition: 0.5s;
       opacity: 0.7;
     }
+  }
+
+
+
+  @media (max-width: 700px) {
+    div {
+    display: flex;
+    padding: 2px;
+    border-radius: 8px;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #9466ff;
+    background-color: #29292e;
+    letter-spacing: 2px;
+
+  
+
+    &:hover {
+      transition: 0.5s;
+      opacity: 0.7;
+    }
+
+    & + div{
+      margin-left: 0px;
+    }
+
+
+    svg{
+      font-size: 10px !important;
+    }
+  }
   }
 `;
