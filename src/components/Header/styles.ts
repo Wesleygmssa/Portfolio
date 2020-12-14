@@ -5,11 +5,8 @@ export const HeaderContainer = styled.div`
   justify-content:center;
   padding: 24px;
   background: #293647;
+  position: relative;
 
-
-  .menuInactive{
-  
-}
 
   .menuActive{
     transition:  2s;
@@ -32,6 +29,29 @@ export const HeaderContainer = styled.div`
     a + a{
       margin-left: 24px;
     }
+  }
+
+  div + div{
+      padding: 5px;
+      position: absolute;
+      right: 50px;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0.6;
+      
+
+      svg{
+        color:  #fff;
+      }
+
+&:hover{
+    padding: 5px;
+    opacity: 1;
+}
+     
+
   }
 `;
 
