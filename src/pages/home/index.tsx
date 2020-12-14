@@ -33,7 +33,7 @@ box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 
 
 const ConteudoUm = () => {
-	return    <h3>Conhecimento obtido através do curso.</h3>
+	return    <h3>Experiência obtido através do curso.</h3>
   
 }
 
