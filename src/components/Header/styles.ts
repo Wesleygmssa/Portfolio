@@ -6,6 +6,18 @@ export const HeaderContainer = styled.div`
   padding: 24px;
   background: #293647;
 
+
+  .menuInactive{
+  
+}
+
+  .menuActive{
+    transition: 0.5s;
+      opacity: 0.7;
+  }
+
+ 
+
   div{
 
     a{
