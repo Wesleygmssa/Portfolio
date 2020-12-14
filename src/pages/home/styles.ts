@@ -82,8 +82,13 @@ export const Content = styled.div`
 
         li{
             list-style: none;
-            padding: 8px;
+            padding: 16px 0px;
             color: #fff;
+        }
+
+        li + li{
+            border-top: 1px solid #575757;
+
         }
     }
 
