@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
 
   .menuActive{
     transition:  2s;
-      opacity: 0.4;
+      opacity: 1;
   }
 
  
@@ -25,6 +25,7 @@ export const HeaderContainer = styled.div`
       color: #FFF;
       font-size: 20px;
       text-decoration: none;
+      opacity: 0.6;
 
     }
 
