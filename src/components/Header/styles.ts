@@ -31,8 +31,10 @@ export const HeaderContainer = styled.div`
     }
   }
 
-  div + div{
-      padding: 5px;
+`;
+
+export const Bell = styled.div`
+     padding: 5px;
       position: absolute;
       right: 50px;
       display: flex;
@@ -44,15 +46,15 @@ export const HeaderContainer = styled.div`
 
       svg{
         color:  #fff;
+       font-size: 22px;
       }
 
-&:hover{
-    padding: 5px;
-    opacity: 1;
-}
-     
 
-  }
-`;
+      &:hover{
+      padding: 5px;
+      opacity: 1;
+}
+
+`
 
 // export const Link = styled.a<ContainerProps>``

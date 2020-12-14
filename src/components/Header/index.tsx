@@ -1,5 +1,5 @@
 import { NavLink} from 'react-router-dom';
-import {HeaderContainer} from './styles';
+import {HeaderContainer, Bell} from './styles';
 import {FiBell} from 'react-icons/fi';
 const Header: React.FC = () =>{
 
@@ -15,9 +15,9 @@ return(
             Projetos
          </NavLink>
     </div>
-    <div>
-        <FiBell size={25}/>
-    </div>
+    <Bell>
+        <FiBell />
+    </Bell>
       </HeaderContainer>
 )
 }
