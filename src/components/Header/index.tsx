@@ -1,20 +1,28 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import {HeaderContainer} from './styles';
 
 const Header: React.FC = () =>{
 
+
 const [MenuSelect, setMenuSelect] = useState('sobre');
+
+useEffect(()=>{},[]);
 
 const clickMenu = useCallback((nameMenu: string) => {
 setMenuSelect(nameMenu);
 
-}, [setMenuSelect]);
+}, []);
+
+
+
 
 
 return(
+     
     <HeaderContainer>
     <div>
+        
         <Link to="/" 
              onClick={() => clickMenu('sobre')} 
              className={MenuSelect === 'sobre' ? 'menuActive' : 'menuInactive'}>

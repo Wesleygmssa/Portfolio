@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
 
                 <Card>
                       <div className="card-img"> 
-                         <img src={Ecoleta} alt="GoBarber"/>
+                         <img src={Ecoleta} alt="ecoleta"/>
                     </div>
                     <CardContent>
                         <h3>Ecoleta</h3>
@@ -98,10 +98,6 @@ const Projects: React.FC = () => {
                           <a href="/">
                             <FaReact size={40} style={{ color: "#7AE3F8" }} />
                          </a>
-                          <a href="/">
-                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-                          </a>
-                
                         </ul>
                         <div className="button-group">
                           <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Front-End</ButtonLink>
@@ -112,7 +108,7 @@ const Projects: React.FC = () => {
 
                 <Card>
                       <div className="card-img"> 
-                         <img src={explorer} alt="GoBarber"/>
+                         <img src={explorer} alt="explorer"/>
                     </div>
                     <CardContent>
                         <h3>Explore repositórios</h3>
@@ -121,10 +117,6 @@ const Projects: React.FC = () => {
                           <a href="/">
                             <FaReact size={40} style={{ color: "#7AE3F8" }} />
                          </a>
-                          <a href="/">
-                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-                          </a>
-                
                         </ul>
                         <div className="button-group">
                           <ButtonLink href="https://github.com/Wesleygmssa/explore-repositrios-github">Front-End</ButtonLink>
