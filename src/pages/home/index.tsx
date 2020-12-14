@@ -33,7 +33,7 @@ box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 
 
 const ConteudoUm = () => {
-	return <div></div>
+	return    <h3>Conhecimento obtido através do curso.</h3>
   
 }
 
@@ -99,7 +99,8 @@ const Home: React.FC = () => {
                     conhecimento e interesses com ReactNative.
                  </p>          
                   <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>       
-                    {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}        
+                    {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}
+                 
            </Content>
        </Container>
     </PageDefault>

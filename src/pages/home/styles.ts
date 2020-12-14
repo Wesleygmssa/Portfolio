@@ -49,6 +49,10 @@ export const Content = styled.div`
         font-size: 32px;
     }
 
+    h3{
+        opacity: 0.6;
+    }
+
     p{
         text-align: center;
         max-width:800px;
