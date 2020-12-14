@@ -3,6 +3,8 @@ import GobarberWeb from '../../assets/GobarberWeb.png';
 import Ecoleta from '../../assets/ecoleta.png';
 import proffy from '../../assets/proffy.png';
 import aluraflix from '../../assets/aluraflix.png';
+import explorer from '../../assets/explorer.png';
+import happy from '../../assets/happy.png';
 import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
@@ -92,6 +94,56 @@ const Projects: React.FC = () => {
                     <CardContent>
                         <h3>AluraFlix</h3>
                         <p>ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, formulário e etc..</p>
+                        <ul>
+                          <a href="/">
+                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
+                         </a>
+                          <a href="/">
+                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
+                          </a>
+                
+                        </ul>
+                        <div className="button-group">
+                          <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Front-End</ButtonLink>
+                          {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
+                        </div>
+                   </CardContent>
+              </Card>   
+
+
+              <Card>
+                      <div className="card-img"> 
+                         <img src={explorer} alt="GoBarber"/>
+                    </div>
+                    <CardContent>
+                        <h3>Explore repositórios</h3>
+                        <p>Projeto onde fazemos consumo de api do gitHub, Utilzando a bliblioteca axios</p>
+                        <ul>
+                          <a href="/">
+                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
+                         </a>
+                          <a href="/">
+                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
+                          </a>
+                
+                        </ul>
+                        <div className="button-group">
+                          <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Front-End</ButtonLink>
+                          {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
+                        </div>
+                   </CardContent>
+              </Card>   
+
+
+
+
+              <Card>
+                      <div className="card-img"> 
+                         <img src={happy} alt="GoBarber"/>
+                    </div>
+                    <CardContent>
+                        <h3>Happy</h3>
+                        <p>Projeto onde fazemos a implementação do mapa leaflet, marcando um ponto no mapa.</p>
                         <ul>
                           <a href="/">
                             <FaReact size={40} style={{ color: "#7AE3F8" }} />

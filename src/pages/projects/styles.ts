@@ -4,6 +4,7 @@ export const Content = styled.section`
  height: 100%;
 
  h4{
+     margin-top: 24px;
      color: #fff;
      padding: 32px;
      text-align: center;
@@ -17,7 +18,6 @@ export const Cards = styled.section`
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 1024px;
     width: 100%;
     padding: 60px 30px;
 `;
@@ -85,6 +85,8 @@ export const CardContent = styled.div`
 
     }
     P{
+        width: 100%;
+        height: 100px;
         width: 100%;
         padding: 16px 0px;
     }
