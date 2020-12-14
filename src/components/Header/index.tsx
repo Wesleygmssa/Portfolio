@@ -7,11 +7,11 @@ return(
      
     <HeaderContainer>
     <div>
-        <NavLink exact to="/" activeClassName='menuActive' >
-            Sobre
-         </NavLink>
+             <NavLink exact to="/" activeClassName='menuActive' >
+                  Sobre
+             </NavLink>
         
-        <NavLink to="/projects" activeClassName='menuActive' >
+            <NavLink to="/projects" activeClassName='menuActive' >
             Projetos
          </NavLink>
     </div>
