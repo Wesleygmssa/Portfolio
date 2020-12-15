@@ -19,9 +19,9 @@ return(
             Contato
          </NavLink>
     </div>
-    <Bell>
+    {/* <Bell>
         <FiBell />
-    </Bell>
+    </Bell> */}
       </HeaderContainer>
 )
 }
