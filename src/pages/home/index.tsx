@@ -25,8 +25,8 @@ export const AnimationContainer = styled.div`
   /* border: 6px double #293647; */
 
   -webkit-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
+   box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 
 ;
 `;

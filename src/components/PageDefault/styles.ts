@@ -16,3 +16,8 @@ const apperFromCenter = keyframes`
 export const AnimationContainer = styled.div`
   animation: ${apperFromCenter} 1s;
 `;
+
+export const Container = styled.div`
+border: 1px solid red;
+min-height: 100vh;
+`;

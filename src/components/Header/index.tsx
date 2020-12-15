@@ -14,6 +14,10 @@ return(
             <NavLink to="/projects" activeClassName='menuActive' >
             Projetos
          </NavLink>
+
+         <NavLink to="/contact" activeClassName='menuActive' >
+            Contato
+         </NavLink>
     </div>
     <Bell>
         <FiBell />
