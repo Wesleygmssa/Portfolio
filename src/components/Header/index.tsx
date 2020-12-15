@@ -11,9 +11,9 @@ return(
                            Sobre
              </NavLink>
         
-            <NavLink to="/projects" activeClassName='menuActive' >
+             <NavLink to="/projects" activeClassName='menuActive' >
                            Projetos
-           </NavLink>
+             </NavLink>
 
              <NavLink to="/contact" activeClassName='menuActive' >
                      Cursos

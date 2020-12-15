@@ -27,8 +27,6 @@ display: flex;
 background-color:  #171f28;
 max-width: 400px; 
 width:100%;
-justify-content: center;
-align-items: center;
 flex-direction: column;
 padding: 8px 16px;
 border-radius: 5px;
