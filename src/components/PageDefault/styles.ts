@@ -18,6 +18,5 @@ export const AnimationContainer = styled.div`
 `;
 
 export const Container = styled.div`
-border: 1px solid red;
 min-height: 100vh;
 `;
