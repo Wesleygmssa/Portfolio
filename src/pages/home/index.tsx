@@ -86,7 +86,7 @@ const Home: React.FC = () => {
         <Container>
           <Content>
                  <img src="https://avatars1.githubusercontent.com/u/41512408?s=460&u=48175e5af2e5f24e725eb9354200350a242d0354&v=4" alt="Wesley Guerra"/>
-                 <h1>Olá, Sou Wesley</h1>
+                 <h1 className="typing-animation">Olá, Sou Wesley Guerra 😎</h1>
                  <p>
                      Hoje estou em busca de uma oportunidade como Dev Jr, mas sempre desenvolvia minhas próprias
                      ideias através de cursos, então já faz um tempo que estudo sobre a programação e na verdade não

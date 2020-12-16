@@ -16,7 +16,7 @@ return(
              </NavLink>
 
              <NavLink to="/contact" activeClassName='menuActive' >
-                     Cursos
+                    Curriculo
              </NavLink>
     </div>
     {/* <Bell>

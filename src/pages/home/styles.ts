@@ -47,6 +47,33 @@ export const Content = styled.div`
 
     h1{
         font-size: 32px;
+        border-right: 2px solid rgba(255,255,255,0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+ 
+
+    .typing-animation{
+        animation: linkCursor 500ms steps(40) infinite normal,typing 4s steps(40)  1s normal ;
+    }
+
+
+    @keyframes typing{
+        from{
+            width: 0;
+        }
+        to{
+            width: 12em;
+        }
+    }
+
+    @keyframes linkCursor{
+        from{
+            border-right-color: rgba(255,255,255,0.75);
+        }to{
+            border-right-color: transparent;
+        }
     }
 
     h3{
