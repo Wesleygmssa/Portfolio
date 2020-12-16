@@ -8,15 +8,15 @@ return(
     <HeaderContainer>
     <div>
              <NavLink exact to="/" activeClassName='menuActive' >
-                           Sobre
+                  Sobre
              </NavLink>
         
              <NavLink to="/projects" activeClassName='menuActive' >
-                           Projetos
+                  Projetos
              </NavLink>
 
              <NavLink to="/contact" activeClassName='menuActive' >
-                    Curriculo
+                   Certificados
              </NavLink>
     </div>
     {/* <Bell>
