@@ -18,7 +18,8 @@ export default createGlobalStyle`
      position: relative;
   }
   body , input , button{
-    font: 16px 'Roboto', serif;
+    font: 16px ;
+    font-family: 'Roboto Slab', serif;
   }
   h1,h2,h3,h4,h5,h6, strong{
     font-weight: 500;

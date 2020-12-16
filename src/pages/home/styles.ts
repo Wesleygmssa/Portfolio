@@ -55,7 +55,8 @@ export const Content = styled.div`
  
 
     .typing-animation{
-        animation: linkCursor 500ms steps(40) infinite normal,typing 4s steps(40)  1s normal ;
+        animation: linkCursor 500ms steps(40) infinite normal,
+        typing 4s steps(40)  1s normal both;
     }
 
 
@@ -64,7 +65,7 @@ export const Content = styled.div`
             width: 0;
         }
         to{
-            width: 12em;
+            width: 13em;
         }
     }
 
