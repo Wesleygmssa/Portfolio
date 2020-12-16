@@ -52,6 +52,12 @@ export const Content = styled.div`
         overflow: hidden;
     }
 
+    @media (max-width: 500px) {
+        h1{
+            font-size: 20px;
+        }
+  }
+
  
 
     .typing-animation{
