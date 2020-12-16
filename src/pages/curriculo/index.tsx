@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
   return (
     <PageDefault>
         <Content>
-            <h1>Embreve</h1>
+            <h1 className="text-block">Em breve</h1>
         </Content>
     </PageDefault>
   )
