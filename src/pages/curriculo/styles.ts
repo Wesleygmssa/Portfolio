@@ -16,11 +16,11 @@ export const Content = styled.div`
         
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         h1{
             font-size: 32px;
         }
-
+    }
     .text-block{
         overflow: hidden;
         position: relative;
