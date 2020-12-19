@@ -7,11 +7,9 @@ export const Content = styled.div`
     color: #fff;
     font-size: 56px;
     min-height: 100vh;
-    border: 1px solid red;
 
 
     iframe{
-        border: 1px solid red;
         width: 900px;
         min-height: 700px;
     }
