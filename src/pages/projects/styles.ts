@@ -104,9 +104,13 @@ export const CardContent = styled.div`
     display: flex;
     width: 100%;
 
+
     a{
         width: 100%;
         font-size: 16px;
+        background-color:  #0a9a38;
+        border: 0;
+
     }
 }
    

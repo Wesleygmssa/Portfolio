@@ -21,7 +21,7 @@ export const Content = styled.div`
   h3{
       text-align: center;
       font-size: 24px;
-      padding: 16px;
+      padding: 16px 20px;
       color: #fff;
   }
   
