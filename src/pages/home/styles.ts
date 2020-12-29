@@ -40,7 +40,7 @@ export const Content = styled.div`
     }
 
     h1,p, span{
-        color: #fff;
+        color: rgba(255,255,255,0.75);
         margin-top: 24px;
         font-family: 'Roboto', sans-serif;
     }
