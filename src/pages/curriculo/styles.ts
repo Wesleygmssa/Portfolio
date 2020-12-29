@@ -10,7 +10,8 @@ export const Content = styled.div`
 
 
     iframe{
-        width: 900px;
+        max-width: 900px;
+        width: 100%;
         min-height: 700px;
     }
 

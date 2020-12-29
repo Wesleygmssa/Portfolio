@@ -6,6 +6,7 @@ import aluraflix from '../../assets/aluraflix.png';
 import explorer from '../../assets/explorer.png';
 import happy from '../../assets/happy.png';
 import portfolio from '../../assets/portfolio.png';
+import ImgLogica from '../../assets/logica.png';
 import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
@@ -126,7 +127,7 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>   
 
-              <Card>
+                <Card>
                       <div className="card-img"> 
                          <img src={happy} alt="GoBarber"/>
                     </div>
@@ -150,13 +151,38 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>
               
-              <Card>
+                <Card>
                       <div className="card-img"> 
                          <img src={portfolio} alt="Portfolio"/>
                     </div>
                     <CardContent>
                         <h3>Meu site pessoal</h3>
                         <p>react, styled-components, netfly, GitHup.</p>
+                        <ul>
+                          <a href="/">
+                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
+                         </a>
+                          <a href="/">
+                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
+                          </a>
+                
+                        </ul>
+                        <div className="button-group">
+                          <ButtonLink href="https://github.com/Wesleygmssa/Portfolio">Front-End</ButtonLink>
+                          <ButtonLink href="https://hardcore-northcutt-0328a0.netlify.app/">Visite</ButtonLink>
+                          {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
+                        </div>
+                   </CardContent>
+              </Card>   
+
+                 
+              <Card>
+                      <div className="card-img"> 
+                         <img src={ImgLogica} alt="Logica de programação"/>
+                    </div>
+                    <CardContent>
+                        <h3>Treinamento de lógica</h3>
+                        <p>Fazendo aprimoramento da lógica.</p>
                         <ul>
                           <a href="/">
                             <FaReact size={40} style={{ color: "#7AE3F8" }} />

@@ -111,28 +111,7 @@ export const Content = styled.div`
         color: #fff;
     }
 
-    ul{
-        max-width:500px;
-        width: 100%;
-        padding: 30px 40px;
-        transition: 0.2s;
-        border: 1px dashed #fff;;
-
-        li{
-            list-style: none;
-            padding: 16px 0px;
-            color: #fff;
-        }
-
-        li + li{
-            border-top: 1px solid #575757;
-
-        }
-    }
-
-    /* ul + ul{
-        border-left: 2px solid #fff;
-    } */
+  
 
 `;
 

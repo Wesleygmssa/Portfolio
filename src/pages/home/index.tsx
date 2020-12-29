@@ -19,7 +19,8 @@ const apperFromCenter = keyframes`
 export const AnimationContainer = styled.div`
   display: flex;  
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px 20px;
   animation: ${apperFromCenter} 1s;
   /* background-color: #000000; */
   /* border: 6px double #293647; */
@@ -39,37 +40,16 @@ const ConteudoUm = () => {
 
 const ConteudoDois = () => {
 	return <AnimationContainer>
-          
-    <ul>
-             <h3>Front-end</h3> 
-
-             <li> Criação de interfaces com React e React-native</li>
-             <li> Criação de componentes </li>
-             <li> Consumo de api de back-end </li>
-             <li> Estilização utilizando styled-components </li>
-             <li> Utilização react-router-dom para controlar as rotas autenticadas </li>
-             <li> Utilização de contexto para validação de usuário salvando LocalStorage. </li>
-             <li> Passando propriedades para components </li>
-             <li> Formulários reutilizáveis </li>
-             <li> Usabilidade do input</li>
-             <li> Deploy na Vercel/netlify. </li>
+                  <h3>Estudante bootcamp/Gostack (Rocketseat) - Desenvolvedor full-stack</h3> 
+                  <span>Desenvolvendo aplicações em Java script, React, React-native e nodeJS</span>
+            <p>
+                No bootcamp/Gostack é uma forma de ganhar experiência através do curso onde construímos um projeto do zero ao 
+                deploy com as tecnologias ReactJS, React-Native, NodeJS e etc... Aprendemos na pratica a construir projetos reais.
+            </p>
              
-    </ul>
+        
 
-     <ul>
-             <h3>Back-end</h3>
-             <li>Criação do server com framework express </li>
-             <li> Organização de pasta projetos menores (Repositório, Services, Modelos, Routes, Middlewares, config e etc.…) </li>
-             <li> Autenticação de usuário JTW </li>
-             <li>Upload de imagens </li>
-             <li> Banco de dados utilizando TypeORM </li>
-             <li>Utilização do cors para retorna os dados em JSON para front-end </li>
-             <li> Configuração do docker para criação de banco de dados </li>
-             <li>Arquitetura SOLID e DDD </li>
-             <li>Teste unitários com a biblioteca Jest </li>
-             <li> Classes de erros centralizada </li>
-     </ul>
-  </AnimationContainer>
+     </AnimationContainer>
 }
 
 
