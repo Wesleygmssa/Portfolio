@@ -19,7 +19,7 @@ export const HeaderContainer = styled.div`
 
     a{
       font-weight: bold;
-      color: #FFF;
+      color:  #0eda50;
       font-size: 20px;
       text-decoration: none;
       opacity: 0.6;

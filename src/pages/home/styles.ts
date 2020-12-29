@@ -63,6 +63,7 @@ export const Content = styled.div`
     .typing-animation{
         animation: linkCursor 500ms steps(40) infinite normal,
         typing 4s steps(40)  1s normal both;
+        color:  #0eda50;
     }
 
 
@@ -108,7 +109,7 @@ export const Content = styled.div`
         font-size: 24px;
         text-align: center;
         background-color: transparent;
-        color: #fff;
+        color: #0eda50;
     }
 
   
