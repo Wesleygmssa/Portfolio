@@ -112,8 +112,7 @@ export const CardContent = styled.div`
         transition: 0.5s;
         background-color: var(--primary-color);
         border: 0;
-     
-
+    
     }
 }
    

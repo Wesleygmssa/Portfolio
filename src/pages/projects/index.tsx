@@ -9,7 +9,7 @@ import portfolio from '../../assets/portfolio.png';
 import ImgLogica from '../../assets/logica.png';
 import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
-import { FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaNodeJs, FaReact, FaJs , FaHtml5} from 'react-icons/fa';
 import PageDefault from '../../components/PageDefault';
 
 
@@ -185,12 +185,14 @@ const Projects: React.FC = () => {
                         <p>Fazendo aprimoramento da lógica.</p>
                         <ul>
                           <a href="/">
-                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
+                            <FaJs size={40} style={{ color: "#f2eb2a" }} />
                          </a>
-                          <a href="/">
-                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-                          </a>
-                
+
+                         <a href="/">
+                            <FaHtml5 size={40} style={{ color: "#c91212" }} />
+                         </a>
+                        
+                        
                         </ul>
                         <div className="button-group">
                           <ButtonLink href="https://github.com/Wesleygmssa/treinamento-logica">Front-End</ButtonLink>

@@ -15,7 +15,7 @@ const Footer: React.FC = (props) => {
   return (
     <>
       <FooterBase>
-        <div>
+        {/* <div>
              <div >
                  <FaHtml5 size={40} style={{ color: "#EB3C32" }} />
              </div>
@@ -40,7 +40,7 @@ const Footer: React.FC = (props) => {
               <div >
                  <FaPhp size={50} style={{ color: "#F6B524" }} />
               </div>
-       </div>
+       </div> */}
     
         <span>
                Copyright © 2020 Wesley Guerra <span style={{color: "#EB3C32"}}>❤</span> 
