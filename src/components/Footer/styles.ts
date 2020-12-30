@@ -20,7 +20,8 @@ export const FooterBase = styled.footer`
       margin-top:8px;
       text-align: center;
       font-weight: bold;
-      color: #0b0b0d;
+      color: var(--text-color);
+      padding: 8px;
   }
 
   
