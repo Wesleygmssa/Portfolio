@@ -13,10 +13,11 @@ export default createGlobalStyle`
     --segundary-color: #0060bf;
     --title-color: #34CB79;
     --text-color: rgba(255,255,255,0.75);
+    --background-color: #1B232E;
   }
 
   body{
-     background: #1B232E;
+     background: var(--background-color);
     -webkit-font-smoothing: antialiased;
      position: relative;
   }

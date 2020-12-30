@@ -109,7 +109,7 @@ export const CardContent = styled.div`
     a{
         width: 100%;
         font-size: 16px;
-        transition: 2s;
+        transition: 0.5s;
         background-color: var(--primary-color);
         border: 0;
      
