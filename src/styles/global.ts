@@ -8,8 +8,11 @@ export default createGlobalStyle`
     box-sizing:border-box;
   }
 
-  :root{
- 
+  :root {
+    --primary-color: #34CB79;
+    --segundary-color: #0060bf;
+    --title-color: #34CB79;
+    --text-color: rgba(255,255,255,0.75);
   }
 
   body{

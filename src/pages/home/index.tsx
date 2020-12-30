@@ -35,20 +35,19 @@ export const AnimationContainer = styled.div`
 
 const ConteudoUm = () => {
 	return    <h3>Experiência obtido através do curso.</h3>
-  
 }
 
 const ConteudoDois = () => {
 	return <AnimationContainer>
-                  <h3>Estudante bootcamp/Gostack (Rocketseat) - Desenvolvedor full-stack</h3> 
-                  <span>Desenvolvendo aplicações em Java script, React, React-native e nodeJS</span>
-            <p>
+        <div className="resume">
+             <h3>Estudante bootcamp/Gostack (Rocketseat) - Desenvolvedor full-stack</h3> 
+                 <span>Desenvolvendo aplicações em Java script, React, React-native e nodeJS</span>
+              <p>
                 No bootcamp/Gostack é uma forma de ganhar experiência através do curso onde construímos um projeto do zero ao 
                 deploy com as tecnologias ReactJS, React-Native, NodeJS e etc... Aprendemos na pratica a construir projetos reais.
-            </p>
-             
-        
-
+             </p>    
+        </div>
+         
      </AnimationContainer>
 }
 
@@ -75,11 +74,9 @@ const Home: React.FC = () => {
                  Comecei minha carreira com o intuito de seguir a trilha back-end, mas a verdade é que eu também gosto de fazer interfaces com React, 
                  então decidi que me tornaria um desenvolvedor fullstack, em meio a isso fiz alguns cursos Udemy e 
                  GoStack Bootcamp para expandi um pouco mais a minha stack de conhecimento e interesses com ReactNative.
-
                  </p>          
                   <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>       
-                    {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}
-                 
+                    {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}     
            </Content>
        </Container>
     </PageDefault>

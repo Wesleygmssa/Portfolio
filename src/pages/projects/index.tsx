@@ -169,7 +169,7 @@ const Projects: React.FC = () => {
                         </ul>
                         <div className="button-group">
                           <ButtonLink href="https://github.com/Wesleygmssa/Portfolio">Front-End</ButtonLink>
-                          <ButtonLink href="https://hardcore-northcutt-0328a0.netlify.app/">Visite</ButtonLink>
+                          {/* <ButtonLink href="https://hardcore-northcutt-0328a0.netlify.app/">Visite</ButtonLink> */}
                           {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
                         </div>
                    </CardContent>

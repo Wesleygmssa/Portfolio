@@ -10,8 +10,8 @@ export const HeaderContainer = styled.div`
 
   .menuActive{
     transition:  2s;
-      opacity: 1;
-  }
+    opacity: 0.5;  
+    }
 
  
 
@@ -19,10 +19,10 @@ export const HeaderContainer = styled.div`
 
     a{
       font-weight: bold;
-      color:  #0eda50;
+      color: var(--primary-color);
       font-size: 20px;
       text-decoration: none;
-      opacity: 0.6;
+      
 
     }
 

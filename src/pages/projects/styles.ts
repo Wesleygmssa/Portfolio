@@ -8,7 +8,7 @@ export const Content = styled.section`
      color: #fff;
      padding: 32px;
      text-align: center;
-     border: 1px solid ;
+     font-size: 20px;
  }
 `;
 
@@ -24,7 +24,7 @@ export const Cards = styled.section`
 
 export const Card = styled.div`
 display: flex;
-background-color:  #171f28;
+/* background-color:  #171f28; */
 max-width: 400px; 
 width:100%;
 flex-direction: column;
@@ -35,6 +35,7 @@ margin: 8px 8px;
 -webkit-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
+
 
 
  .card-img{
@@ -108,8 +109,10 @@ export const CardContent = styled.div`
     a{
         width: 100%;
         font-size: 16px;
-        background-color:  #0a9a38;
+        transition: 2s;
+        background-color: var(--primary-color);
         border: 0;
+     
 
     }
 }

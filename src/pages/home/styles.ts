@@ -31,7 +31,7 @@ export const Content = styled.div`
         height: 200px;
         border-radius: 40px;
         margin-top: 24px;
-        border: 3px solid #5c00b9;
+        border: 3px solid var(--primary-color);
         cursor: pointer;
 
         -webkit-box-shadow: 1px 4px 57px 6px rgba(0,0,0,0.75);
@@ -40,14 +40,14 @@ export const Content = styled.div`
     }
 
     h1,p, span{
-        color: rgba(255,255,255,0.75);
+        color: var(--text-color);
         margin-top: 24px;
         font-family: 'Roboto', sans-serif;
     }
 
     h1{
         font-size: 32px;
-        border-right: 2px solid rgba(255,255,255,0.75);
+        border-right: 2px solid  var(--text-color);;
         white-space: nowrap;
         overflow: hidden;
     }
@@ -63,7 +63,7 @@ export const Content = styled.div`
     .typing-animation{
         animation: linkCursor 500ms steps(40) infinite normal,
         typing 4s steps(40)  1s normal both;
-        color:  #0eda50;
+        color: var( --title-color);
     }
 
 
@@ -96,24 +96,21 @@ export const Content = styled.div`
         padding: 0px 15px;
         text-align: justify;
         position: relative;
+        font-weight: 500;
 
     }
     span{
         text-align: center;
         padding: 0px 16px;
-
     }
 
     button{
-        margin: 40px 40px;
+        margin: 100px 40px;
         font-size: 24px;
         text-align: center;
         background-color: transparent;
-        color: #0eda50;
+        color: var( --title-color);
     }
-
-  
-
 `;
 
 
