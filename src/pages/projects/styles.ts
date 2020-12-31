@@ -17,15 +17,15 @@ export const Cards = styled.section`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 auto;
+    max-width: 1180px;
     width: 100%;
+    margin: 0 auto;
     padding: 60px 30px;
 `;
 
 export const Card = styled.div`
 display: flex;
-/* background-color:  #171f28; */
-max-width: 400px; 
+max-width: 250px; 
 width:100%;
 flex-direction: column;
 padding: 8px 16px;
@@ -39,23 +39,21 @@ box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 
 
  .card-img{
-     max-width: 500px;
+     max-width: 300px;
      width: 100%;
  }
 
 
  img{
-    width:100%;
-    height: 200px;
+    max-width: 300px;
+     width: 100%;
+     max-height: 100px;
 }
 
 a{
     color: #fff;
 }
 
-/* & + div{
-    margin-left: 16px;
-} */
 
 
 @media (max-width: 850px) {
@@ -76,25 +74,31 @@ export const CardContent = styled.div`
     justify-content: center;
     color: #fff;
     text-align: center;
-    padding: 8px 8px;
 
     h3{
-        font-size: 32px;
-        padding: 8px 16px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 16px 16px;
 
     }
+
     P{
-        width: 100%;
-        height: 100px;
-        width: 100%;
-        padding: 16px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
         line-height: 25px;
+        min-height: 80px;
+        
     }
   
 
     ul{
         display: flex;
-        padding: 16px 0px;     
+        justify-content: center;
+        width: 100%;
+        padding: 16px;
 
         a + a{
             margin-left: 16px;
@@ -105,14 +109,12 @@ export const CardContent = styled.div`
     display: flex;
     width: 100%;
 
-
     a{
         width: 100%;
-        font-size: 16px;
+        font-size: 12px;
         transition: 0.5s;
         background-color: var(--primary-color);
         border: 0;
-    
     }
 }
    

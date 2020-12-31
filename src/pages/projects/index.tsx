@@ -43,165 +43,167 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>   
 
-                <Card>
-                      <div className="card-img"> 
-                         <img src={Ecoleta} alt="ecoleta"/>
-                    </div>
-                    <CardContent>
-                        <h3>Ecoleta</h3>
-                        <p>NLW1 O objetivo deste Projeto é analisar e comparar a evolução do meu aprendizado.</p>
-                        <ul>
-                          <a href="/">
-                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
-                         </a>
-                          <a href="/">
-                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-                          </a>
-                
-                        </ul>
-                        <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/web">Front-End</ButtonLink>
-                          <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink>
-                        </div>
-                   </CardContent>
-              </Card>    
 
-                <Card>
-                      <div className="card-img"> 
-                         <img src={proffy} alt="GoBarber"/>
-                    </div>
-                    <CardContent>
-                        <h3>Proffy</h3>
-                        <p>O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores online.</p>
-                        <ul>
-                          <a href="/">
-                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
-                         </a>
-                          <a href="/">
-                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-                          </a>
-                
-                        </ul>
-                        <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/nlw2-proffy/tree/master/web">Front-End</ButtonLink>
-                          <ButtonLink href="https://github.com/Wesleygmssa/nlw2-proffy/tree/master/backend">Back-End</ButtonLink>
-                        </div>
-                   </CardContent>
-              </Card>   
 
-                <Card>
-                      <div className="card-img"> 
-                         <img src={aluraflix} alt="AluraFlix"/>
-                    </div>
-                    <CardContent>
-                        <h3>AluraFlix</h3>
-                        <p>ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, formulário e etc..</p>
-                        <ul>
-                          <a href="/">
-                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
-                         </a>
-                        </ul>
-                        <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Front-End</ButtonLink>
-                          <ButtonLink href="https://aluraflix-8z1b6frcz.vercel.app/">Visite</ButtonLink>
-                        </div>
-                   </CardContent>
-              </Card>   
-
-                <Card>
-                      <div className="card-img"> 
-                         <img src={explorer} alt="explorer"/>
-                    </div>
-                    <CardContent>
-                        <h3>Explore repositórios</h3>
-                        <p>Projeto onde fazemos consumo de api do gitHub, Utilzando a bliblioteca axios</p>
-                        <ul>
-                          <a href="/">
-                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
-                         </a>
-                        </ul>
-                        <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/explore-repositrios-github">Front-End</ButtonLink>
-                          {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
-                        </div>
-                   </CardContent>
-              </Card>   
-
-                <Card>
-                      <div className="card-img"> 
-                         <img src={happy} alt="GoBarber"/>
-                    </div>
-                    <CardContent>
-                        <h3>Happy</h3>
-                        <p>Projeto onde fazemos a implementação do mapa leaflet, marcando um ponto no mapa.</p>
-                        <ul>
-                          <a href="/">
-                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
-                         </a>
-                          <a href="/">
-                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-                          </a>
-                
-                        </ul>
-                        <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/nlw3-happy-web-react">Front-End</ButtonLink>
-                          {/* <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Back-End</ButtonLink> */}
-                          {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
-                        </div>
-                   </CardContent>
-              </Card>
-              
-                <Card>
-                      <div className="card-img"> 
-                         <img src={portfolio} alt="Portfolio"/>
-                    </div>
-                    <CardContent>
-                        <h3>Meu site pessoal</h3>
-                        <p>react, styled-components, netfly, GitHup.</p>
-                        <ul>
-                          <a href="/">
-                            <FaReact size={40} style={{ color: "#7AE3F8" }} />
-                         </a>
-                          <a href="/">
-                            <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-                          </a>
-                
-                        </ul>
-                        <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/Portfolio">Front-End</ButtonLink>
-                          {/* <ButtonLink href="https://hardcore-northcutt-0328a0.netlify.app/">Visite</ButtonLink> */}
-                          {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
-                        </div>
-                   </CardContent>
-              </Card>   
-
-                 
               <Card>
-                      <div className="card-img"> 
-                         <img src={ImgLogica} alt="Logica de programação"/>
-                    </div>
-                    <CardContent>
-                        <h3>Treinamento de lógica</h3>
-                        <p>Fazendo aprimoramento da lógica.</p>
-                        <ul>
-                          <a href="/">
-                            <FaJs size={40} style={{ color: "#f2eb2a" }} />
-                         </a>
+<div className="card-img"> 
+   <img src={Ecoleta} alt="ecoleta"/>
+</div>
+<CardContent>
+  <h3>Ecoleta</h3>
+  <p>NLW1 O objetivo deste Projeto é analisar e comparar a evolução do meu aprendizado.</p>
+  <ul>
+    <a href="/">
+      <FaReact size={40} style={{ color: "#7AE3F8" }} />
+   </a>
+    <a href="/">
+      <FaNodeJs size={40} style={{ color: "#7CB701" }} />
+    </a>
 
-                         <a href="/">
-                            <FaHtml5 size={40} style={{ color: "#c91212" }} />
-                         </a>
-                        
-                        
-                        </ul>
-                        <div className="button-group">
-                          <ButtonLink href="https://github.com/Wesleygmssa/treinamento-logica">Front-End</ButtonLink>
-                          <ButtonLink href="https://wesleygmssa.github.io/treinamento-logica/">Visite</ButtonLink>
-                          {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
-                        </div>
-                   </CardContent>
-              </Card>   
-     
+  </ul>
+  <div className="button-group">
+    <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/web">Front-End</ButtonLink>
+    <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink>
+  </div>
+</CardContent>
+</Card>    
+
+<Card>
+<div className="card-img"> 
+   <img src={proffy} alt="GoBarber"/>
+</div>
+<CardContent>
+  <h3>Proffy</h3>
+  <p>O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores online.</p>
+  <ul>
+    <a href="/">
+      <FaReact size={40} style={{ color: "#7AE3F8" }} />
+   </a>
+    <a href="/">
+      <FaNodeJs size={40} style={{ color: "#7CB701" }} />
+    </a>
+
+  </ul>
+  <div className="button-group">
+    <ButtonLink href="https://github.com/Wesleygmssa/nlw2-proffy/tree/master/web">Front-End</ButtonLink>
+    <ButtonLink href="https://github.com/Wesleygmssa/nlw2-proffy/tree/master/backend">Back-End</ButtonLink>
+  </div>
+</CardContent>
+</Card>   
+
+<Card>
+<div className="card-img"> 
+   <img src={aluraflix} alt="AluraFlix"/>
+</div>
+<CardContent>
+  <h3>AluraFlix</h3>
+  <p>ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, formulário e etc..</p>
+  <ul>
+    <a href="/">
+      <FaReact size={40} style={{ color: "#7AE3F8" }} />
+   </a>
+  </ul>
+  <div className="button-group">
+    <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Front-End</ButtonLink>
+    <ButtonLink href="https://aluraflix-8z1b6frcz.vercel.app/">Visite</ButtonLink>
+  </div>
+</CardContent>
+</Card>   
+
+<Card>
+<div className="card-img"> 
+   <img src={explorer} alt="explorer"/>
+</div>
+<CardContent>
+  <h3>Explore repositórios</h3>
+  <p>Projeto onde fazemos consumo de api do gitHub, Utilzando a bliblioteca axios</p>
+  <ul>
+    <a href="/">
+      <FaReact size={40} style={{ color: "#7AE3F8" }} />
+   </a>
+  </ul>
+  <div className="button-group">
+    <ButtonLink href="https://github.com/Wesleygmssa/explore-repositrios-github">Front-End</ButtonLink>
+    {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
+  </div>
+</CardContent>
+</Card>   
+
+<Card>
+<div className="card-img"> 
+   <img src={happy} alt="GoBarber"/>
+</div>
+<CardContent>
+  <h3>Happy</h3>
+  <p>Projeto onde fazemos a implementação do mapa leaflet, marcando um ponto no mapa.</p>
+  <ul>
+    <a href="/">
+      <FaReact size={40} style={{ color: "#7AE3F8" }} />
+   </a>
+    <a href="/">
+      <FaNodeJs size={40} style={{ color: "#7CB701" }} />
+    </a>
+
+  </ul>
+  <div className="button-group">
+    <ButtonLink href="https://github.com/Wesleygmssa/nlw3-happy-web-react">Front-End</ButtonLink>
+    {/* <ButtonLink href="https://github.com/Wesleygmssa/aluraflix">Back-End</ButtonLink> */}
+    {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
+  </div>
+</CardContent>
+</Card>
+
+<Card>
+<div className="card-img"> 
+   <img src={portfolio} alt="Portfolio"/>
+</div>
+<CardContent>
+  <h3>Meu site pessoal</h3>
+  <p>react, styled-components, netfly, GitHup.</p>
+  <ul>
+    <a href="/">
+      <FaReact size={40} style={{ color: "#7AE3F8" }} />
+   </a>
+    <a href="/">
+      <FaNodeJs size={40} style={{ color: "#7CB701" }} />
+    </a>
+
+  </ul>
+  <div className="button-group">
+    <ButtonLink href="https://github.com/Wesleygmssa/Portfolio">Front-End</ButtonLink>
+    {/* <ButtonLink href="https://hardcore-northcutt-0328a0.netlify.app/">Visite</ButtonLink> */}
+    {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
+  </div>
+</CardContent>
+</Card>   
+
+
+<Card>
+<div className="card-img"> 
+   <img src={ImgLogica} alt="Logica de programação"/>
+</div>
+<CardContent>
+  <h3>Treinamento de lógica</h3>
+  <p>Fazendo aprimoramento da lógica.</p>
+  <ul>
+    <a href="/">
+      <FaJs size={40} style={{ color: "#f2eb2a" }} />
+   </a>
+
+   <a href="/">
+      <FaHtml5 size={40} style={{ color: "#c91212" }} />
+   </a>
+  
+  
+  </ul>
+  <div className="button-group">
+    <ButtonLink href="https://github.com/Wesleygmssa/treinamento-logica">Front-End</ButtonLink>
+    <ButtonLink href="https://wesleygmssa.github.io/treinamento-logica/">Visite</ButtonLink>
+    {/* <ButtonLink href="https://github.com/Wesleygmssa/ecoleta-nlw1-booster/tree/master/server">Back-End</ButtonLink> */}
+  </div>
+</CardContent>
+</Card> 
+
       </Cards>
     </Content>
     </PageDefault>
