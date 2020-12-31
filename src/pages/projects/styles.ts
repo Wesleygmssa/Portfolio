@@ -29,17 +29,26 @@ export const Cards = styled.section`
 
 export const Card = styled.div`
 display: flex;
-max-width: 260px; 
+max-width: 265px; 
 width:100%;
 height: 100%;
 flex-direction: column;
 padding: 8px 16px;
 border-radius: 5px;
 margin: 8px 8px;
+cursor: pointer;
+border: 1px solid transparent;
+transition: 0.8s;
+
 
 -webkit-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
 box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
+
+&:hover{
+border: 1px solid var(--primary-color);
+    
+}
 
 
 
