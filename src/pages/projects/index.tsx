@@ -1,12 +1,12 @@
 import React from 'react'
-import GobarberWeb from '../../assets/GobarberWeb.png';
-import Ecoleta from '../../assets/ecoleta.png';
-import proffy from '../../assets/proffy.png';
-import aluraflix from '../../assets/aluraflix.png';
-import explorer from '../../assets/explorer.png';
-import happy from '../../assets/happy.png';
-import portfolio from '../../assets/portfolio.png';
-import ImgLogica from '../../assets/logica.png';
+// import GobarberWeb from '../../assets/GobarberWeb.png';
+// import Ecoleta from '../../assets/ecoleta.png';
+// import proffy from '../../assets/proffy.png';
+// import aluraflix from '../../assets/aluraflix.png';
+// import explorer from '../../assets/explorer.png';
+// import happy from '../../assets/happy.png';
+// import portfolio from '../../assets/portfolio.png';
+// import ImgLogica from '../../assets/logica.png';
 import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
 import { FaNodeJs, FaReact, FaJs , FaHtml5} from 'react-icons/fa';
@@ -22,9 +22,9 @@ const Projects: React.FC = () => {
              
 
             <Card>
-                    <div className="card-img"> 
+                    {/* <div className="card-img"> 
                          <img src={GobarberWeb} alt="GoBarber"/>
-                    </div>
+                    </div> */}
                     <CardContent>
                         <h3>GoBarber</h3>
                         <p>Projeto criado do zero onde é feito o front-end e back-end, Utilizando as tecnologias</p>
@@ -45,9 +45,9 @@ const Projects: React.FC = () => {
               </Card>   
 
             <Card>
-<div className="card-img"> 
+{/* <div className="card-img"> 
    <img src={Ecoleta} alt="ecoleta"/>
-</div>
+</div> */}
 <CardContent>
   <h3>Ecoleta</h3>
   <p>NLW1 O objetivo deste Projeto é analisar e comparar a evolução do meu aprendizado.</p>
@@ -68,9 +68,9 @@ const Projects: React.FC = () => {
 </Card>    
 
             <Card>
-<div className="card-img"> 
+{/* <div className="card-img"> 
    <img src={proffy} alt="GoBarber"/>
-</div>
+</div> */}
 <CardContent>
   <h3>Proffy</h3>
   <p>O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores online.</p>
@@ -91,9 +91,9 @@ const Projects: React.FC = () => {
 </Card>   
 
             <Card>
-<div className="card-img"> 
+{/* <div className="card-img"> 
    <img src={aluraflix} alt="AluraFlix"/>
-</div>
+</div> */}
 <CardContent>
   <h3>AluraFlix</h3>
   <p>ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, formulário e etc..</p>
@@ -110,9 +110,9 @@ const Projects: React.FC = () => {
 </Card>   
 
             <Card>
-<div className="card-img"> 
+{/* <div className="card-img"> 
    <img src={explorer} alt="explorer"/>
-</div>
+</div> */}
 <CardContent>
   <h3>Explore repositórios</h3>
   <p>Projeto onde fazemos consumo de api do gitHub, Utilzando a bliblioteca axios</p>
@@ -129,9 +129,9 @@ const Projects: React.FC = () => {
 </Card>   
 
             <Card>
-<div className="card-img"> 
+{/* <div className="card-img"> 
    <img src={happy} alt="GoBarber"/>
-</div>
+</div> */}
 <CardContent>
   <h3>Happy</h3>
   <p>Projeto onde fazemos a implementação do mapa leaflet, marcando um ponto no mapa.</p>
@@ -153,9 +153,9 @@ const Projects: React.FC = () => {
 </Card>
 
             <Card>
-<div className="card-img"> 
+{/* <div className="card-img"> 
    <img src={portfolio} alt="Portfolio"/>
-</div>
+</div> */}
 <CardContent>
   <h3>Meu site pessoal</h3>
   <p>react, styled-components, netfly, GitHup.</p>
@@ -177,11 +177,11 @@ const Projects: React.FC = () => {
 </Card>   
 
             <Card>
-<div className="card-img"> 
+{/* <div className="card-img"> 
    <img src={ImgLogica} alt="Logica de programação"/>
-</div>
+</div> */}
 <CardContent>
-  <h3>Treinamento de lógica</h3>
+  <h3>Lógica</h3>
   <p>Fazendo aprimoramento da lógica.</p>
   <ul>
     <a href="/">

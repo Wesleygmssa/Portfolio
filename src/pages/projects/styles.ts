@@ -31,6 +31,7 @@ export const Card = styled.div`
 display: flex;
 max-width: 250px; 
 width:100%;
+height: 100%;
 flex-direction: column;
 padding: 8px 16px;
 border-radius: 5px;
@@ -45,6 +46,7 @@ box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
  .card-img{
      max-width: 300px;
      width: 100%;
+     
  }
 
 
@@ -78,10 +80,11 @@ export const CardContent = styled.div`
     justify-content: center;
     color: #fff;
     text-align: center;
+    
 
     h3{
         width: 100%;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         padding: 16px 16px;
 
@@ -94,7 +97,7 @@ export const CardContent = styled.div`
         font-size: 12px;
         line-height: 25px;
         min-height: 80px;
-        
+                 
     }
   
 
