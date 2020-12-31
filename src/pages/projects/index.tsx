@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
   return (
     <PageDefault>
         <Content>
-        <h4>Desenvolvendo aplicações em JavaScript, React, React-native, nodeJS e PHP </h4>
+        <h4>Desenvolvendo aplicações em <br></br>JavaScript, React, React-native, nodeJS e PHP </h4>
       <Cards>
              
 

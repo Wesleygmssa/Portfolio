@@ -4,11 +4,15 @@ export const Content = styled.section`
  height: 100%;
 
  h4{
-     margin-top: 24px;
+
+     max-width: 500px;
+     width: 100%;
      color: #fff;
-     padding: 32px;
+     padding: 8px;
+     margin: 16px auto;
      text-align: center;
      font-size: 20px;
+     border-bottom: 1px solid #fff;
  }
 `;
 
@@ -20,7 +24,7 @@ export const Cards = styled.section`
     max-width: 1180px;
     width: 100%;
     margin: 0 auto;
-    padding: 60px 30px;
+    padding: 16px 8px;
 `;
 
 export const Card = styled.div`
