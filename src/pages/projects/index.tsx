@@ -20,7 +20,8 @@ const Projects: React.FC = () => {
         <h4>Desenvolvendo aplicações em JavaScript, React, React-native, nodeJS e PHP </h4>
       <Cards>
              
-                <Card>
+
+            <Card>
                     <div className="card-img"> 
                          <img src={GobarberWeb} alt="GoBarber"/>
                     </div>
@@ -43,9 +44,7 @@ const Projects: React.FC = () => {
                    </CardContent>
               </Card>   
 
-
-
-              <Card>
+            <Card>
 <div className="card-img"> 
    <img src={Ecoleta} alt="ecoleta"/>
 </div>
@@ -68,7 +67,7 @@ const Projects: React.FC = () => {
 </CardContent>
 </Card>    
 
-<Card>
+            <Card>
 <div className="card-img"> 
    <img src={proffy} alt="GoBarber"/>
 </div>
@@ -91,7 +90,7 @@ const Projects: React.FC = () => {
 </CardContent>
 </Card>   
 
-<Card>
+            <Card>
 <div className="card-img"> 
    <img src={aluraflix} alt="AluraFlix"/>
 </div>
@@ -110,7 +109,7 @@ const Projects: React.FC = () => {
 </CardContent>
 </Card>   
 
-<Card>
+            <Card>
 <div className="card-img"> 
    <img src={explorer} alt="explorer"/>
 </div>
@@ -129,7 +128,7 @@ const Projects: React.FC = () => {
 </CardContent>
 </Card>   
 
-<Card>
+            <Card>
 <div className="card-img"> 
    <img src={happy} alt="GoBarber"/>
 </div>
@@ -153,7 +152,7 @@ const Projects: React.FC = () => {
 </CardContent>
 </Card>
 
-<Card>
+            <Card>
 <div className="card-img"> 
    <img src={portfolio} alt="Portfolio"/>
 </div>
@@ -177,8 +176,7 @@ const Projects: React.FC = () => {
 </CardContent>
 </Card>   
 
-
-<Card>
+            <Card>
 <div className="card-img"> 
    <img src={ImgLogica} alt="Logica de programação"/>
 </div>
