@@ -29,7 +29,7 @@ export const Cards = styled.section`
 
 export const Card = styled.div`
 display: flex;
-max-width: 250px; 
+max-width: 260px; 
 width:100%;
 height: 100%;
 flex-direction: column;
