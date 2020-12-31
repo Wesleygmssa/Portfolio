@@ -1,15 +1,15 @@
 import React from "react";
 import { FooterBase } from "./styles";
-import {
-  FaHtml5,
-  FaReact,
-  FaNodeJs,
-  FaNpm,
-  FaYarn,
-  FaDatabase,
-  FaCss3,
-  FaPhp
-} from "react-icons/fa";
+// import {
+//   FaHtml5,
+//   FaReact,
+//   FaNodeJs,
+//   FaNpm,
+//   FaYarn,
+//   FaDatabase,
+//   FaCss3,
+//   FaPhp
+// } from "react-icons/fa";
 
 const Footer: React.FC = (props) => {
   return (
