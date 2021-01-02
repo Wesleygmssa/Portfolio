@@ -23,11 +23,10 @@ const Projects: React.FC = () => {
                 <ul>
                      <a href="/">
                         <FaReact size={40} style={{ color: "#7AE3F8" }} />
-                    </a>
+                     </a>
                      <a href="/">
                         <FaNodeJs size={40} style={{ color: "#7CB701" }} />
                     </a>
-        
                 </ul>
                 <div className="button-group">
                  {data.link_frontEnd ? <ButtonLink href={data.link_frontEnd}>Front-End</ButtonLink> : '' } 
