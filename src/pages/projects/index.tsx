@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
 import { FaNodeJs, FaReact} from 'react-icons/fa';
