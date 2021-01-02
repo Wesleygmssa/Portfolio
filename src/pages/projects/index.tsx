@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react'
 import {Content, Cards, Card, CardContent} from './styles';
 import ButtonLink from '../../components/LinkButton';
-import { FaNodeJs, FaReact, FaJs , FaHtml5} from 'react-icons/fa';
+import { FaNodeJs, FaReact} from 'react-icons/fa';
 import PageDefault from '../../components/PageDefault';
-// import axios from 'axios';
 import datas from '../../data/data.json';
 
 
