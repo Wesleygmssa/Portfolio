@@ -29,21 +29,19 @@
         "id":5,
         "titulo": "Lógica",
         "text": "Projeto simples para aprimorar a lógica",
-        "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
-        "link_backEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber"
+        "link_frontEnd": "https://github.com/Wesleygmssa/treinamento-logica"
       }, {
         "id":6,
         "titulo": "AluraFlix",
         "text": "ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, fomulário e etc...",
-        "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
-        "link_backEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber"
+        "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber"
       },
       {
         "id":7,
         "titulo": "Ecoleta",
         "text": "Esse é o projeto Ecoleta, criado durante o evento Next Level Week criado pela Rocketseat.",
-        "link_frontEnd": "https://github.com/Wesleygmssa/treinamento-logica",
-        "link_visite": "https://wesleygmssa.github.io/treinamento-logica/"
+        "link_frontEnd": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/web",
+        "link_visite": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/server"
       },
       {
         "id":8,

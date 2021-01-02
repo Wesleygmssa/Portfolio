@@ -19,6 +19,7 @@ const Projects: React.FC = () => {
                 <CardContent>
                     <h3>{data.titulo}</h3>
                     <p>{data.text}</p>
+            
                 <ul>
                      <a href="/">
                         <FaReact size={40} style={{ color: "#7AE3F8" }} />
@@ -29,8 +30,8 @@ const Projects: React.FC = () => {
         
                 </ul>
                 <div className="button-group">
-                  <ButtonLink href={data.link_frontEnd}>Front-End</ButtonLink>
-                  <ButtonLink href={data.link_backEnd}>Back-End</ButtonLink>
+                 {data.link_frontEnd ? <ButtonLink href={data.link_frontEnd}>Front-End</ButtonLink> : '' } 
+                 {data.link_backEnd ? <ButtonLink href={data.link_backEnd}>Front-End</ButtonLink> : '' } 
                 </div>
            </CardContent>
       </Card> 
