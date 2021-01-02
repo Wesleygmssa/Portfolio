@@ -10,7 +10,9 @@ export const HeaderContainer = styled.div`
 
   .menuActive{
     transition:  2s;
-    opacity: 0.5;  
+    opacity: 0.8;  
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--primary-color);
     }
 
  

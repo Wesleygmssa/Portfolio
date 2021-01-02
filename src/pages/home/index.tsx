@@ -4,7 +4,7 @@ import Button from '../../components/Button';
 import PageDefault from '../../components/PageDefault';
 import { Container , Content} from './styles';
 
-
+//animação
 const apperFromCenter = keyframes`
  from{
    opacity: 0;
@@ -21,9 +21,7 @@ export const AnimationContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 10px 20px;
-  animation: ${apperFromCenter} 1s;
-  /* background-color: #000000; */
-  /* border: 6px double #293647; */
+  animation: ${apperFromCenter} 1s; //executando animação
 
   -webkit-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 6px 15px 2px rgba(0,0,0,0.75);
@@ -31,7 +29,6 @@ export const AnimationContainer = styled.div`
 
 ;
 `;
-
 
 const ConteudoUm = () => {
 	return    <h3>Experiência obtida através de cursos e projetos pessoais.</h3>

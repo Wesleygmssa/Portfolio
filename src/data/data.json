@@ -1,0 +1,56 @@
+[
+    
+      {
+        "id": 1,
+        "titulo": "Gobarber",
+        "text": "Projeto criado do zero onde é feito o front-end e back-end, Utilizando as tecnologias",
+        "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
+        "link_backEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber"
+      },
+      {
+        "id":2,
+        "titulo": "Explore repositórios",
+        "text": "Projeto onde fazemos consumo de api do GitHub, Utilizando a biblioteca axios.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/explore-repositrios-github"
+      },
+      {
+        "id":3,
+        "titulo": "Happy",
+        "text": "Projeto onde fazemos a implementação do mapa leaflet, marcando um ponto no mapa.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/nlw3-happy-web-react"
+      },
+      {
+        "id":4,
+        "titulo": "Meu site pessoal",
+        "text": "Projeto criado em react, styled-components, netfly, GitHup",
+        "link_frontEnd": "https://github.com/Wesleygmssa/Portfolio"
+      },
+      {
+        "id":5,
+        "titulo": "Lógica",
+        "text": "Projeto simples para aprimorar a lógica",
+        "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
+        "link_backEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber"
+      }, {
+        "id":6,
+        "titulo": "AluraFlix",
+        "text": "ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, fomulário e etc...",
+        "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
+        "link_backEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber"
+      },
+      {
+        "id":7,
+        "titulo": "Ecoleta",
+        "text": "NLW1 O Objetivo desde Projeto é analisar e comparar a evolução do meu aprendizado.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/treinamento-logica",
+        "link_visite": "https://wesleygmssa.github.io/treinamento-logica/"
+      },
+      {
+        "id":8,
+        "titulo": "Proffy",
+        "text": "O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/nlw2-proffy/tree/master/web",
+        "link_backEnd": "https://github.com/Wesleygmssa/nlw2-proffy/tree/master/backend"
+      }
+
+]
