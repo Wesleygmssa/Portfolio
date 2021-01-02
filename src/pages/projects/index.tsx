@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
                 </ul>
                 <div className="button-group">
                  {data.link_frontEnd ? <ButtonLink href={data.link_frontEnd}>Front-End</ButtonLink> : '' } 
-                 {data.link_backEnd ? <ButtonLink href={data.link_backEnd}>Front-End</ButtonLink> : '' } 
+                 {data.link_backEnd ? <ButtonLink href={data.link_backEnd}>Back-End</ButtonLink> : '' } 
                 </div>
            </CardContent>
       </Card> 
