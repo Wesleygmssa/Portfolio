@@ -8,10 +8,6 @@ import datas from '../../data/data.json';
 
 const Projects: React.FC = () => {
 
-//  useEffect(()=>{
-//      //fazer api buscando dados
-//  },[]);
-
   return (
     <PageDefault>
         <Content>
