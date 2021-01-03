@@ -4,7 +4,7 @@ import PageDefault from '../../components/PageDefault';
 import datas from '../../data/data.json';
 import ButtonLink from '../../components/LinkButton';
 import Icon from '../../components/Icon';
-import { FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 
 
 const Projects: React.FC = () => {
@@ -23,11 +23,13 @@ const Projects: React.FC = () => {
                         {(data.icon1 === 'FaReact')?<Icon icon={FaReact} style={{color: '#08cbf7'}}/>: '' }
                         {(data.icon2 === 'FaNodeJs')? <Icon icon={FaNodeJs} style={{color: '#09cc4a'}}/>: '' }
                         {(data.icon1 === 'FaJs')? <Icon icon={FaJs} style={{color: '#c9ff04'}}/>: '' }
+                        {(data.icon1 === 'FaJs')? <Icon icon={FaHtml5} style={{color: '#e00e0e'}}/>: '' }
                     </Icons>
 
                     <ButtonGroup >
                      {data.link_frontEnd ? <ButtonLink href={data.link_frontEnd}>Front-End</ButtonLink> : '' } 
                      {data.link_backEnd ? <ButtonLink href={data.link_backEnd}>Back-End</ButtonLink> : '' } 
+                     {data.link_visite ? <ButtonLink href={data.link_visite}>Visite</ButtonLink> : '' } 
                     </ButtonGroup>
                 </CardContent>
                 </Card> 

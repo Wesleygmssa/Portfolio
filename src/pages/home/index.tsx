@@ -33,7 +33,6 @@ export const AnimationContainer = styled.div`
 const ConteudoUm = () => {
 	return    <h3>Experiência obtida através de cursos e projetos pessoais.</h3>
 }
-
 const ConteudoDois = () => {
 	return(
      <AnimationContainer>
