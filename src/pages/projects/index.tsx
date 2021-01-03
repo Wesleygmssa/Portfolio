@@ -4,7 +4,7 @@ import PageDefault from '../../components/PageDefault';
 import datas from '../../data/data.json';
 import ButtonLink from '../../components/LinkButton';
 import Icon from '../../components/Icon';
-import { FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 
 
 const Projects: React.FC = () => {
@@ -20,12 +20,9 @@ const Projects: React.FC = () => {
                              <h3>{data.titulo}</h3>
                              <p>{data.text}</p>
                     <Icons>
-                        <Icon 
-                            icon={FaReact} style={{color: '#08cbf7'}}
-                        />
-                         <Icon 
-                            icon={FaNodeJs} style={{color: '#09cc4a'}} 
-                        />
+                        {(data.icon1 === 'FaReact')?<Icon icon={FaReact} style={{color: '#08cbf7'}}/>: '' }
+                        {(data.icon2 === 'FaNodeJs')? <Icon icon={FaNodeJs} style={{color: '#09cc4a'}}/>: '' }
+                        {(data.icon1 === 'FaJs')? <Icon icon={FaJs} style={{color: '#c9ff04'}}/>: '' }
                     </Icons>
 
                     <ButtonGroup >
