@@ -35,17 +35,18 @@ const ConteudoUm = () => {
 }
 
 const ConteudoDois = () => {
-	return <AnimationContainer>
-        <div className="resume">
-             <h3>Estudante bootcamp/Gostack (Rocketseat) - Desenvolvedor full-stack</h3> 
+	return(
+     <AnimationContainer>
+          <div className="resume">
+              <h3>Estudante bootcamp/Gostack (Rocketseat) - Desenvolvedor full-stack</h3> 
                  <span>Desenvolvendo aplicações em Java script, React, React-native e nodeJS</span>
               <p>
                 No bootcamp/Gostack é uma forma de ganhar experiência através do curso onde construímos um projeto do zero ao 
                 deploy com as tecnologias ReactJS, React-Native, NodeJS e etc... Aprendemos na pratica a construir projetos reais.
              </p>    
         </div>
-         
      </AnimationContainer>
+    )
 }
 
 

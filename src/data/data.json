@@ -6,8 +6,10 @@
         "text": "Projeto criado do zero onde é feito o front-end e back-end, Utilizando as tecnologias",
         "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
         "link_backEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
-        "image_1": "FaReact",
-        "image_2": "FaNodeJs"
+        "images" :[
+           {"image_1": "FaReact"},
+           {"image_2": "FaNodeJs"}
+        ]
       },
       {
         "id":2,

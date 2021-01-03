@@ -16,7 +16,6 @@ export const Content = styled.section`
  }
 `;
 
-
 export const Cards = styled.section`
     display: flex;
     justify-content: center;
@@ -96,7 +95,6 @@ export const CardContent = styled.div`
         font-size: 20px;
         font-weight: bold;
         padding: 16px 16px;
-
     }
 
     P{
@@ -105,23 +103,24 @@ export const CardContent = styled.div`
         align-items: center;
         font-size: 12px;
         line-height: 25px;
-        min-height: 80px;
-                 
+        min-height: 80px;            
     }
-  
+`;
 
-    ul{
+export const Icons = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 16px;
+        padding: 16px;     
+`;
 
-        a + a{
+export const Icon = styled.div`
+   & + div{
             margin-left: 16px;
         }
-    }
+`;
 
-.button-group{
+export const ButtonGroup = styled.div`
     display: flex;
     width: 100%;
 
@@ -132,7 +131,5 @@ export const CardContent = styled.div`
         background-color: var(--primary-color);
         border: 0;
     }
-}
-   
 
 `;

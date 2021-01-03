@@ -1,5 +1,5 @@
 import React from 'react'
-import {Content, Cards, Card, CardContent} from './styles';
+import {Content, Cards, Card, CardContent, Icons, Icon, ButtonGroup} from './styles';
 import ButtonLink from '../../components/LinkButton';
 import { FaNodeJs, FaReact} from 'react-icons/fa';
 import PageDefault from '../../components/PageDefault';
@@ -19,19 +19,18 @@ const Projects: React.FC = () => {
                 <CardContent>
                     <h3>{data.titulo}</h3>
                     <p>{data.text}</p>
-            
-                <ul>
-                     <a href="/">
+                <Icons>
+                     <Icon >
                         <FaReact size={40} style={{ color: "#7AE3F8" }} />
-                     </a>
-                     <a href="/">
+                     </Icon>
+                     <Icon >
                         <FaNodeJs size={40} style={{ color: "#7CB701" }} />
-                    </a>
-                </ul>
-                <div className="button-group">
+                    </Icon>
+                </Icons>
+                <ButtonGroup >
                  {data.link_frontEnd ? <ButtonLink href={data.link_frontEnd}>Front-End</ButtonLink> : '' } 
                  {data.link_backEnd ? <ButtonLink href={data.link_backEnd}>Back-End</ButtonLink> : '' } 
-                </div>
+                </ButtonGroup>
            </CardContent>
       </Card> 
              ))}
