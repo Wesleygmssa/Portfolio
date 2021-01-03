@@ -62,7 +62,8 @@ const Home: React.FC = () => {
     <PageDefault>
         <Container>
           <Content>
-                 <img src="https://avatars1.githubusercontent.com/u/41512408?s=460&u=48175e5af2e5f24e725eb9354200350a242d0354&v=4" alt="Wesley Guerra"/>
+          
+                 <img src="https://avatars2.githubusercontent.com/u/41512408?s=460&u=079b45ace61cd43ec5cb1b230e070375b4d2d382&v=4" alt="Wesley Guerra"/>
                  <h1 className="typing-animation">Olá, Sou Wesley Guerra 😎</h1>
                  <p>
                  Hoje estou em busca de uma oportunidade com Desenvolvedor Full stack, 

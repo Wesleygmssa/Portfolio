@@ -26,6 +26,8 @@ export const Cards = styled.section`
     padding: 16px 8px;
 `;
 
+
+
 export const Card = styled.div`
 display: flex;
 max-width: 265px; 
