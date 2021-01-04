@@ -8,7 +8,7 @@ export const Content = styled.section`
      max-width: 500px;
      width: 100%;
      color: #fff;
-     padding: 8px;
+     padding: 16px 8px;
      margin: 16px auto;
      text-align: center;
      font-size: 20px;
@@ -21,7 +21,7 @@ export const Cards = styled.section`
     flex-wrap: wrap;
     max-width: 1180px;
     width: 100%;
-    margin: 0 auto;
+    margin: 64px auto;
     padding: 16px 8px;
 `;
 

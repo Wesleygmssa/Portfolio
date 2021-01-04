@@ -2,10 +2,18 @@
     
       {
         "id": 1,
-        "titulo": "Gobarber",
+        "titulo": "Gobarber web",
         "text": "Projeto criado do zero onde é feito o front-end e back-end, Utilizando as tecnologias",
         "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
         "link_backEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
+        "icon1":"FaReact",
+        "icon2":"FaNodeJs"
+      },
+      {
+        "id": 1,
+        "titulo": "Gobarber Mobile",
+        "text": "Gobarber versão mobile utilizando a mesma api do web.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/mobile-gobarber",
         "icon1":"FaReact",
         "icon2":"FaNodeJs"
       },
@@ -70,8 +78,6 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/listadetarefas-projeto",
         "link_visite": "https://wesleygmssa.github.io/listadetarefas-projeto/",
         "icon1":"FaJs"   
-        
-        
       }
 
 ]
