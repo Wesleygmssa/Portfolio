@@ -89,6 +89,7 @@ export const CardContent = styled.div`
     justify-content: center;
     color: #fff;
     text-align: center;
+    position: relative;
     
 
     h3{
@@ -105,6 +106,23 @@ export const CardContent = styled.div`
         font-size: 12px;
         line-height: 25px;
         min-height: 80px;            
+    }
+
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 500;
+        width: 30%;
+        background-color: #cc0000;
+        padding: 3px;
+        position: absolute;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+        top: 10px;
+        left: -20px;
+
     }
 `;
 

@@ -7,7 +7,8 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
         "link_backEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
         "icon1":"FaReact",
-        "icon2":"FaNodeJs"
+        "icon2":"FaNodeJs",
+        "Highlighted": "true"
       },
       {
         "id": 1,
@@ -15,7 +16,10 @@
         "text": "Gobarber versão mobile utilizando a mesma api do web.",
         "link_frontEnd": "https://github.com/Wesleygmssa/mobile-gobarber",
         "icon1":"FaReact",
-        "icon2":"FaNodeJs"
+        "icon2":"FaNodeJs",
+        "Highlighted": "true"
+
+
       },
       {
         "id":2,
@@ -60,7 +64,9 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/web",
         "link_backEnd": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/server",
         "icon1":"FaReact",
-        "icon2":"FaNodeJs"
+        "icon2":"FaNodeJs",
+        "Highlighted": "true"
+
       },
       {
         "id":8,
