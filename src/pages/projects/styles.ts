@@ -26,12 +26,16 @@ export const Cards = styled.section`
 
 
     
-@media (max-width: 850px) {
-  
-  
-      justify-content: center;
-
+@media (max-width: 1000px) {
+    max-width: 900px;
+    
   }
+
+@media (max-width: 500px) {
+
+justify-content: center;
+
+}
 `;
 
 

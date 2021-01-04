@@ -11,9 +11,9 @@
         "Highlighted": "true"
       },
       {
-        "id": 1,
+        "id": 2,
         "titulo": "Gobarber Mobile",
-        "text": "Gobarber versão mobile utilizando a mesma api do web.",
+        "text": "Gobarber versão mobile utilizando a mesma api da web.",
         "link_frontEnd": "https://github.com/Wesleygmssa/mobile-gobarber",
         "icon1":"FaReact",
         "icon2":"FaNodeJs",
@@ -22,21 +22,21 @@
 
       },
       {
-        "id":2,
+        "id":3,
         "titulo": "Explore repositórios",
         "text": "Projeto onde fazemos consumo de api do GitHub, Utilizando a biblioteca axios.",
         "link_frontEnd": "https://github.com/Wesleygmssa/explore-repositrios-github",
         "icon1":"FaReact"   
       },
       {
-        "id":3,
+        "id":4,
         "titulo": "Happy",
         "text": "Projeto onde fazemos a implementação do mapa leaflet, marcando um ponto no mapa.",
         "link_frontEnd": "https://github.com/Wesleygmssa/nlw3-happy-web-react",
         "icon1":"FaReact"   
       },
       {
-        "id":4,
+        "id":5,
         "titulo": "Meu site pessoal",
         "text": "Projeto criado em react, styled-components, netfly, GitHup",
         "link_frontEnd": "https://github.com/Wesleygmssa/Portfolio",
@@ -45,7 +45,7 @@
 
       },
       {
-        "id":5,
+        "id":6,
         "titulo": "Lógica",
         "text": "Projeto simples para aprimorar a lógica",
         "link_frontEnd": "https://github.com/Wesleygmssa/treinamento-logica",
@@ -53,14 +53,14 @@
         "icon1":"FaJs"   
         
       }, {
-        "id":6,
+        "id":7,
         "titulo": "AluraFlix",
         "text": "ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, fomulário e etc...",
         "link_frontEnd": "https://github.com/Wesleygmssa/aluraflix",
         "icon1":"FaReact"        
       },
       {
-        "id":7,
+        "id":8,
         "titulo": "Ecoleta",
         "text": "Esse é o projeto Ecoleta, criado durante o evento Next Level Week criado pela Rocketseat.",
         "link_frontEnd": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/web",
@@ -71,7 +71,7 @@
 
       },
       {
-        "id":8,
+        "id":9,
         "titulo": "Proffy",
         "text": "O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores.",
         "link_frontEnd": "https://github.com/Wesleygmssa/nlw2-proffy/tree/master/web",
@@ -80,7 +80,7 @@
         "icon2":"FaNodeJs"
       },
       {
-        "id":9,
+        "id":10,
         "titulo": "Lista de tarefas",
         "text": "Lista de tarefas onde e salvo a lista no localstorage no navegador",
         "link_frontEnd": "https://github.com/Wesleygmssa/listadetarefas-projeto",
