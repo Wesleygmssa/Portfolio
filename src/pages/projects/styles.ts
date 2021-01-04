@@ -18,7 +18,6 @@ export const Content = styled.section`
 
 export const Cards = styled.section`
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     max-width: 1180px;
     width: 100%;

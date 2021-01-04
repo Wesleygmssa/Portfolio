@@ -42,7 +42,7 @@
         "id":6,
         "titulo": "AluraFlix",
         "text": "ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, fomulário e etc...",
-        "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
+        "link_frontEnd": "https://github.com/Wesleygmssa/aluraflix",
         "icon1":"FaReact"        
       },
       {
@@ -62,6 +62,16 @@
         "link_backEnd": "https://github.com/Wesleygmssa/nlw2-proffy/tree/master/backend",
         "icon1":"FaReact",
         "icon2":"FaNodeJs"
+      },
+      {
+        "id":9,
+        "titulo": "Lista de tarefas",
+        "text": "Lista de tarefas onde e salvo a lista no localstorage no navegador",
+        "link_frontEnd": "https://github.com/Wesleygmssa/listadetarefas-projeto",
+        "link_visite": "https://wesleygmssa.github.io/listadetarefas-projeto/",
+        "icon1":"FaJs"   
+        
+        
       }
 
 ]
