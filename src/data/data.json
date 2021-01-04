@@ -40,7 +40,9 @@
         "titulo": "Meu site pessoal",
         "text": "Projeto criado em react, styled-components, netfly, GitHup",
         "link_frontEnd": "https://github.com/Wesleygmssa/Portfolio",
-        "icon1":"FaReact"   
+        "icon1":"FaReact",
+        "Highlighted": "true"
+
       },
       {
         "id":5,
