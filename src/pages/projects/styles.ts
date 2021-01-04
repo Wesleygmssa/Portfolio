@@ -23,6 +23,15 @@ export const Cards = styled.section`
     width: 100%;
     margin: 64px auto;
     padding: 16px 8px;
+
+
+    
+@media (max-width: 850px) {
+  
+  
+      justify-content: center;
+
+  }
 `;
 
 
@@ -76,6 +85,7 @@ a{
   & + div{
       margin-top: 16px;
       margin-left: 0px;
+      display: flex;
   }
   }
 
