@@ -115,7 +115,7 @@ export const CardContent = styled.div`
         font-size: 13px;
         font-weight: 500;
         width: 30%;
-        background-color: #cc0000;
+        background-color: #c53030;
         padding: 3px;
         position: absolute;
         border-radius: 5px;
