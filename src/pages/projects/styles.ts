@@ -22,8 +22,7 @@ export const Cards = styled.section`
     max-width: 1180px;
     width: 100%;
     margin: 64px auto;
-    padding: 16px 8px;
-
+    padding: 16px 25px;
 
     
 @media (max-width: 1000px) {
