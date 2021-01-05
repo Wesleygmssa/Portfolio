@@ -125,7 +125,7 @@ export const CardContent = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 13px;
+        font-size: 10px;
         font-weight: 500;
         width: 30%;
         background-color: #c53030;

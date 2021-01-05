@@ -66,8 +66,7 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/web",
         "link_backEnd": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/server",
         "icon1":"FaReact",
-        "icon2":"FaNodeJs",
-        "Highlighted": "true"
+        "icon2":"FaNodeJs"
 
       },
       {
