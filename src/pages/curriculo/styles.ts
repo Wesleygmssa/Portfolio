@@ -74,3 +74,17 @@ export const Content = styled.div`
         }
     }
 `;
+
+export const Videomaker = styled.div`
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    iframe{
+        width: 100%;
+        margin: 10px;
+    }
+`;

@@ -1,17 +1,31 @@
 import React from 'react'
 import PageDefault from '../../components/PageDefault';
-import {Content} from './styles';
+import { Content, Videomaker } from './styles';
 
 
 const Contact: React.FC = () => {
-  return (
-    <PageDefault>
-        <Content>
-            {/* <h1 className="text-block">Em breve</h1> */}
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6715351093980758016" 
-            title="Publicação incorporada"></iframe>
-        </Content>
-    </PageDefault>
-  )
+    return (
+        <PageDefault>
+            <Content>
+                {/* <h1 className="text-block">Em breve</h1> */}
+                <Videomaker>
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/yZxqFQa_978"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    >
+                    </iframe>
+
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/R5abDxDeg0I"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    ></iframe>
+                </Videomaker>
+            </Content>
+        </PageDefault>
+    )
 }
 export default Contact;
