@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
             <Content>
                 {/* <h1 className="text-block">Em breve</h1> */}
                 <Videomaker>
-                    <iframe
+                    <iframe title="task"
                         width="560"
                         height="315"
                         src="https://www.youtube.com/embed/yZxqFQa_978"
@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
                     >
                     </iframe>
 
-                    <iframe
+                    <iframe title="GoBarber"
                         width="560"
                         height="315"
                         src="https://www.youtube.com/embed/R5abDxDeg0I"
