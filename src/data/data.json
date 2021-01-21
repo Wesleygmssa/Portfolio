@@ -98,5 +98,13 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/Calculadora-javascript-factory-functions",
         "link_visite": "https://wesleygmssa.github.io/Calculadora-javascript-factory-functions/",
         "icon1": "FaJs"
+    },
+    {
+        "id": 12,
+        "titulo": "question-and-answer",
+        "text": "Projeto de pergunta e resposta",
+        "link_frontEnd": "https://github.com/Wesleygmssa/question-and-answer",
+        "icon1": "FaJs",
+        "icon2": "FaNodeJs"
     }
 ]
