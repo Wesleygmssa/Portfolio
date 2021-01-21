@@ -47,7 +47,7 @@ export const Content = styled.div`
 
     h1{
         font-size: 32px;
-        border-right: 2px solid  var(--text-color);;
+        border-right: 2px solid  var(--text-color);
         white-space: nowrap;
         overflow: hidden;
     }
@@ -112,5 +112,22 @@ export const Content = styled.div`
         color: var( --title-color);
     }
 `;
+
+export const Info = styled.div`
+ display: flex;
+ flex-direction: column;
+
+ ul {
+     display: flex;
+     justify-content: center;
+
+     li{
+         color:  var(--text-color);
+         list-style: none;
+         padding: 10px;
+     }
+ }
+ 
+`
 
 
