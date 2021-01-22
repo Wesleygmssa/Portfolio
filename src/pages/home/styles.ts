@@ -120,6 +120,7 @@ export const Info = styled.div`
  ul {
      display: flex;
      justify-content: center;
+     flex-wrap: wrap;
 
      li{
          color:  var(--text-color);

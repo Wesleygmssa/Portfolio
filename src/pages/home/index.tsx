@@ -70,7 +70,7 @@ const Home: React.FC = () => {
                         <p>Software Developer, currently focusing on NodeJS, ReactJS and React Native.</p>
                         <span>Let's code 🚀</span>
 
-                        <h3>💻 Currently studying</h3>
+                        <h3>💻 Currently studying Technologies</h3>
                         <ul>
                             <li>Nodejs</li>
                             <li>React</li>
