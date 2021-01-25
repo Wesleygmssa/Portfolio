@@ -81,10 +81,9 @@ export const Videomaker = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 
     iframe{
-        width: 100%;
+        width: 300px;
         margin: 10px;
     }
 `;

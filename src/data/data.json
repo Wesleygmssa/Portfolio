@@ -1,6 +1,15 @@
 [
     {
         "id": 0,
+        "titulo": "Blog",
+        "text": "Criação blog com painel administrativo - CRUD completo",
+        "link_frontEnd": "https://github.com/Wesleygmssa/blog-guiapress",
+        "link_backEnd": "https://github.com/Wesleygmssa/blog-guiapress",
+        "icon2": "FaNodeJs",
+        "Highlighted": "true"
+    },
+    {
+        "id": 0,
         "titulo": "TodDO",
         "text": "Projeto criado para organizar sua vida (ToDO).",
         "link_frontEnd": "https://github.com/Wesleygmssa/web-task",

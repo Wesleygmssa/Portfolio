@@ -128,7 +128,6 @@ export const Info = styled.div`
          padding: 10px;
      }
  }
- 
 `
 
 
