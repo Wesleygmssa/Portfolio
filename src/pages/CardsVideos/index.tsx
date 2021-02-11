@@ -13,7 +13,8 @@ const Contact: React.FC = () => {
         <PageDefault>
             <Container>
                 {datas.map(data => (
-                    < FilmList key={data.key} >
+
+                    <> {data.key && (< FilmList >
                         <Link to={`/${data.id}`}>
                             <FilmBox key={data.id}>
                                 <Poster
@@ -25,15 +26,16 @@ const Contact: React.FC = () => {
                                     <Rate>{data.id}</Rate>
                                     <Date>
                                         {/* <Moment format="DD/MM/YYYY"></Moment> */}
-                                    10/12/2020
-                                </Date>
+                                10/12/2020
+                            </Date>
                                     <Overview>
                                         <p>{data.text}</p>
                                     </Overview>
                                 </Info>
                             </FilmBox>
                         </Link>
-                    </FilmList>
+                    </FilmList>)}
+                    </>
                 ))}
             </Container >
         </PageDefault >
