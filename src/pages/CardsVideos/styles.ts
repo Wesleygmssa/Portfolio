@@ -8,6 +8,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
 `;
 
 export const FilmList = styled.div`
@@ -19,6 +20,7 @@ export const FilmList = styled.div`
   font-family: 'Lato';
   display: flex;
   flex-direction: column;
+
 
 
   a {
@@ -54,11 +56,11 @@ export const FilmBox = styled.li`
 
 export const Poster = styled.img`
   display: flex;
-  /* width: 400px; */
-  width: 200px;
-  /* height: 500px !important; */
+  max-width: 200px;
   height: 100%;
   bottom: 0px;
+  width:100%;
+
 `;
 
 export const Info = styled.div`
@@ -68,17 +70,18 @@ export const Info = styled.div`
 
 
 export const Title = styled.h1`
+width: 100%;
   background: #116193;
   font-family: 'Abel';
   font-weight: lighter;
   font-size: 40px;
   width: 100%;
-  padding: 10px 95px;
+  /* padding: 10px 95px; */
   color: #00e8e4;
 `;
 
 export const Rate = styled.h3`
-  margin-top: -30px;
+  margin-top: 10px;
   margin-left: 15px;
   width: 60px;
   height: 60px;
@@ -103,9 +106,13 @@ export const Date = styled.h2`
   color: #999;
 `;
 
-export const Overview = styled.p`
+export const Overview = styled.div`
   margin: 25px 15px;
   color: #777;
   font-size: 17px;
   font-weight: normal;
+
+  p{
+      width: 100%;
+  }
 `;
