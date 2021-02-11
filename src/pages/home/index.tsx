@@ -65,8 +65,6 @@ const Home: React.FC = () => {
                     <img src="https://avatars2.githubusercontent.com/u/41512408?s=460&u=079b45ace61cd43ec5cb1b230e070375b4d2d382&v=4" alt="Wesley Guerra" />
                     <h1 className="typing-animation">Wesley Guerra Hi there 👋</h1>
                     <Info>
-
-
                         <p>Software Developer, currently focusing on NodeJS, ReactJS and React Native.</p>
                         <span>Let's code 🚀</span>
 
@@ -79,12 +77,6 @@ const Home: React.FC = () => {
                             <li>Docker</li>
                             <li>MySQL</li>
                         </ul>
-                        {/* Desenvolvedor Full stack sempre desenvolvi minhas próprias ideias através de conhecimentos obtidos em cursos,
-                        então já faz um tempo que estudo sobre a programação e na verdade não mudei muito,
-                        continuo em busca de aprender mais para me possibilitar ter ideias ainda mais divertidas e desafiadoras.
-                        Comecei minha carreira com o intuito de seguir a trilha back-end, mas a verdade é que eu também gosto de fazer interfaces com React,
-                        então decidi que me tornaria um desenvolvedor fullstack, em meio a isso fiz alguns cursos Udemy e
-                        GoStack Bootcamp para expandi um pouco mais a minha stack de conhecimento e interesses com ReactNative. */}
                     </Info>
                     <Button type="button" onClick={handleTogle}>Resumo Profissional</Button>
                     {togleConteudos ? <ConteudoDois /> : <ConteudoUm />}

@@ -15,9 +15,9 @@ const Projects: React.FC = () => {
                 <h4>Desenvolvendo aplicações em <br></br>JavaScript, React, React-native, nodeJS e PHP </h4>
                 <Cards>
                     {datas.map(data => (
-                        <Card key={data.titulo} >
+                        <Card key={data.title} >
                             <CardContent>
-                                <h3>{data.titulo}</h3>
+                                <h3>{data.title}</h3>
                                 <p>{data.text}</p>
                                 {(data.Highlighted) ? <span>Desenvolvendo</span> : ''}
                                 {/* {!(data.Highlighted)?  <span style={{background:"#c9ff04"}}>Destaque</span> : ''}  */}
