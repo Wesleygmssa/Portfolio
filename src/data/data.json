@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Gobarber web",
-        "text": "Projeto criado do zero onde é feito o front-end e back-end, Utilizando as tecnologias",
+        "text": "Projeto criado do zero onde é feito o front-end e back-end, Utilizando as melhores tecnologias do mercado atual",
         "link_frontEnd": "https://github.com/Wesleygmssa/gobaber-web-react",
         "link_backEnd": "https://github.com/Wesleygmssa/gobaber-nodejs-api",
         "icon1": "FaReact",
