@@ -10,9 +10,9 @@ const Routes: React.FC = () => {
     return (
         <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/projects" exact component={Projects} />
-            <Route path="/cardsvideos" exact component={CardsVideos} />
-            <Route path="/:id" exact component={Videos} />
+            <Route path="/projects"  component={Projects} />
+            <Route path="/cardsvideos"  component={CardsVideos} />
+            <Route path="/:id"  component={Videos} />
         </Switch>
     )
 }
