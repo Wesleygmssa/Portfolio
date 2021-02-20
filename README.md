@@ -4,9 +4,8 @@
 
 
 <p align="center">
-   <img src="01.png" >
+   <img src="portfolfio.png" >
 </p>
-
 
 ### :computer: How To Run
 
@@ -35,3 +34,5 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 ---
 
 Make with ♥ by Wesley Guerra :wave:
+
+
