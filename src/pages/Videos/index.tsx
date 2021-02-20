@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react';
 import data from '../../data/data.json';
 import { useLocation } from 'react-router-dom';
