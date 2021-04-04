@@ -1,29 +1,27 @@
-import { NavLink } from 'react-router-dom';
-import { HeaderContainer } from './styles';
+import { NavLink } from "react-router-dom";
+import { HeaderContainer } from "./styles";
 // import {FiBell} from 'react-icons/fi';
 const Header: React.FC = () => {
-
     return (
-
         <HeaderContainer>
             <div>
-                <NavLink exact to="/" activeClassName='menuActive' >
+                <NavLink exact to="/" activeClassName="menuActive">
                     Sobre
-             </NavLink>
+                </NavLink>
 
-                <NavLink to="/projects" activeClassName='menuActive' >
+                <NavLink to="/projects" activeClassName="menuActive">
                     Projetos
-             </NavLink>
+                </NavLink>
 
-                <NavLink to="/cardsvideos" activeClassName='menuActive' >
+                {/* <NavLink to="/cardsvideos" activeClassName='menuActive' >
                     Videos
-             </NavLink>
+             </NavLink> */}
             </div>
             {/* <Bell>
         <FiBell />
     </Bell> */}
         </HeaderContainer>
-    )
-}
+    );
+};
 
 export default Header;
