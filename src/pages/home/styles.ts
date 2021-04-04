@@ -128,5 +128,23 @@ export const Info = styled.div`
 
 export const BoxSkills = styled.div`
     width: 100%;
-    border: 1px solid red;
+`;
+export const Skills = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span svg {
+        top: -10px;
+        position: relative;
+    }
+    progress[value] {
+        width: 60%;
+        height: 20px;
+    }
+
+    strong {
+        margin-left: 5px;
+        color: #fff;
+    }
 `;

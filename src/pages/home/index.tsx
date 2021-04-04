@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import PageDefault from "../../components/PageDefault";
+import { FaHtml5, FaReact, FaCss3 } from "react-icons/fa";
 
-import { Container, Content, Info, BoxSkills } from "./styles";
+import { Container, Content, Info, BoxSkills, Skills } from "./styles";
 
 //animação
 const apperFromCenter = keyframes`
@@ -90,7 +91,41 @@ const Home: React.FC = () => {
                             <li>MySQL</li>
                         </ul>
                     </Info>
-                    <BoxSkills></BoxSkills>
+                    <BoxSkills>
+                        <Skills>
+                            <span>
+                                <FaHtml5
+                                    style={{ color: "#EB3C32" }}
+                                    size={40}
+                                />
+                            </span>
+                            <progress max="100" value="80" />
+
+                            <strong> 90%</strong>
+                        </Skills>
+                        <Skills>
+                            <span>
+                                <FaCss3
+                                    size={40}
+                                    style={{ color: "#016EB6" }}
+                                />
+                            </span>
+                            <progress max="100" value="80" />
+
+                            <strong> 90%</strong>
+                        </Skills>
+                        <Skills>
+                            <span>
+                                <FaReact
+                                    size={40}
+                                    style={{ color: "#7AE3F8" }}
+                                />
+                            </span>
+                            <progress max="120" value="80" />
+
+                            <strong> 80%</strong>
+                        </Skills>
+                    </BoxSkills>
                 </Content>
             </Container>
         </PageDefault>
