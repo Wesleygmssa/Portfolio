@@ -127,7 +127,8 @@ export const Info = styled.div`
 `;
 
 export const BoxSkills = styled.div`
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
 `;
 
 //animação
