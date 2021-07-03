@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-
-
 const apperFromCenter = keyframes`
  from{
    opacity: 0;
@@ -14,9 +12,9 @@ const apperFromCenter = keyframes`
 `;
 
 export const AnimationContainer = styled.div`
-  animation: ${apperFromCenter} 1s;
+    animation: ${apperFromCenter} 1s;
 `;
 
 export const Container = styled.div`
-min-height: 100vh;
+    min-height: 90vh;
 `;
