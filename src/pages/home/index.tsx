@@ -113,6 +113,7 @@ const Home: React.FC = () => {
                                     style={{ color: "#EB3C32" }}
                                     size={40}
                                 />
+                                HTML
                             </span>
                             <progress max="100" value={valueInitialHtml} />
 
@@ -124,6 +125,7 @@ const Home: React.FC = () => {
                                     size={40}
                                     style={{ color: "#016EB6" }}
                                 />
+                                CSS
                             </span>
                             <progress max="100" value={valueInitialCss} />
 
@@ -135,10 +137,21 @@ const Home: React.FC = () => {
                                     size={40}
                                     style={{ color: "#7AE3F8" }}
                                 />
+                                REACT
                             </span>
                             <progress max="100" value={valueInitialReact} />
-
                             <strong> {valueInitialReact}%</strong>
+                        </Skills>
+                        <Skills>
+                            <span>
+                                <FaReact
+                                    size={40}
+                                    style={{ color: "#7AE3F8" }}
+                                />
+                                REACT-NATIVE
+                            </span>
+                            <progress max="100" value={valueInitialNode} />
+                            <strong> {valueInitialNode}%</strong>
                         </Skills>
                         <Skills>
                             <span>
@@ -146,6 +159,7 @@ const Home: React.FC = () => {
                                     size={40}
                                     style={{ color: "#09cc4a" }}
                                 />
+                                NODEJS
                             </span>
                             <progress max="100" value={valueInitialNode} />
 

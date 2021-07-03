@@ -127,8 +127,10 @@ export const Info = styled.div`
 `;
 
 export const BoxSkills = styled.div`
-    max-width: 1000px;
+    max-width: 900px;
     width: 100%;
+    position: relative;
+    left: -60px;
 `;
 
 //animação
@@ -145,6 +147,10 @@ export const Skills = styled.div`
     align-items: center;
     justify-content: center;
 
+    & + {
+        margin-top: 50px;
+    }
+
     span svg {
         top: -10px;
         position: relative;
@@ -159,6 +165,13 @@ export const Skills = styled.div`
         margin-left: 5px;
         color: #fff;
     }
-    progress {
+    span {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        color: #fff;
+        align-items: center;
+
+        width: 160px;
     }
 `;
