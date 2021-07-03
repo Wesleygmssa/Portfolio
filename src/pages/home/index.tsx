@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import PageDefault from "../../components/PageDefault";
 import { FaHtml5, FaReact, FaCss3, FaNodeJs } from "react-icons/fa";
@@ -57,6 +57,11 @@ const ConteudoDois = () => {
 
 const Home: React.FC = () => {
     const [togleConteudos, setTogleConteudos] = useState(false);
+    const [valueInitial, setValueInitial] = useState(0);
+
+    useEffect(() => {
+        setValueInitial(90);
+    }, []);
 
     const handleTogle = () => {
         // setTogleConteudos(prev => !prev);
@@ -99,7 +104,7 @@ const Home: React.FC = () => {
                                     size={40}
                                 />
                             </span>
-                            <progress max="100" value="90" />
+                            <progress max="100" value={valueInitial} />
 
                             <strong> 100%</strong>
                         </Skills>

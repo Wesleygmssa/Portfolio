@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.section`
     height: 100%;
@@ -127,7 +127,17 @@ export const Info = styled.div`
 `;
 
 export const BoxSkills = styled.div`
-    width: 100%;
+    width: 1000px;
+`;
+
+//animação
+const WidthSkill = keyframes`
+ from{
+   width: 0;
+ }
+ to{
+   width: 60%;
+ }
 `;
 export const Skills = styled.div`
     display: flex;
@@ -141,10 +151,13 @@ export const Skills = styled.div`
     progress[value] {
         width: 60%;
         height: 20px;
+        animation: ${WidthSkill} 4s; //executando animação
     }
 
     strong {
         margin-left: 5px;
         color: #fff;
+    }
+    progress {
     }
 `;
