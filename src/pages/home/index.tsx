@@ -57,10 +57,20 @@ const ConteudoDois = () => {
 
 const Home: React.FC = () => {
     const [togleConteudos, setTogleConteudos] = useState(false);
-    const [valueInitial, setValueInitial] = useState(0);
+    const [valueInitialHtml, setValueInitialHtml] = useState(0);
+    const [valueInitialCss, setValueInitialCss] = useState(0);
+    const [valueInitialReact, setValueInitialReact] = useState(0);
+    const [valueInitialNode, setValueInitialNode] = useState(0);
 
     useEffect(() => {
-        setValueInitial(90);
+        for (let i = 0; i <= 90; i++) {
+            setTimeout(function () {
+                setValueInitialHtml(i);
+                setValueInitialCss(i);
+                setValueInitialReact(i - 10);
+                setValueInitialNode(i - 20);
+            }, 3000);
+        }
     }, []);
 
     const handleTogle = () => {
@@ -104,9 +114,9 @@ const Home: React.FC = () => {
                                     size={40}
                                 />
                             </span>
-                            <progress max="100" value={valueInitial} />
+                            <progress max="100" value={valueInitialHtml} />
 
-                            <strong> 100%</strong>
+                            <strong> {valueInitialHtml}%</strong>
                         </Skills>
                         <Skills>
                             <span>
@@ -115,9 +125,9 @@ const Home: React.FC = () => {
                                     style={{ color: "#016EB6" }}
                                 />
                             </span>
-                            <progress max="100" value="90" />
+                            <progress max="100" value={valueInitialCss} />
 
-                            <strong> 100%</strong>
+                            <strong> {valueInitialCss}%</strong>
                         </Skills>
                         <Skills>
                             <span>
@@ -126,9 +136,9 @@ const Home: React.FC = () => {
                                     style={{ color: "#7AE3F8" }}
                                 />
                             </span>
-                            <progress max="100" value="80" />
+                            <progress max="100" value={valueInitialReact} />
 
-                            <strong> 100%</strong>
+                            <strong> {valueInitialReact}%</strong>
                         </Skills>
                         <Skills>
                             <span>
@@ -137,9 +147,9 @@ const Home: React.FC = () => {
                                     style={{ color: "#09cc4a" }}
                                 />
                             </span>
-                            <progress max="100" value="70" />
+                            <progress max="100" value={valueInitialNode} />
 
-                            <strong> 100%</strong>
+                            <strong> {valueInitialNode}%</strong>
                         </Skills>
                     </BoxSkills>
                 </Content>
