@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import PageDefault from "../../components/PageDefault";
-import { FaHtml5, FaReact, FaCss3 } from "react-icons/fa";
+import { FaHtml5, FaReact, FaCss3, FaNodeJs } from "react-icons/fa";
 
 import { Container, Content, Info, BoxSkills, Skills } from "./styles";
 
@@ -99,9 +99,9 @@ const Home: React.FC = () => {
                                     size={40}
                                 />
                             </span>
-                            <progress max="100" value="80" />
+                            <progress max="100" value="90" />
 
-                            <strong> 90%</strong>
+                            <strong> 100%</strong>
                         </Skills>
                         <Skills>
                             <span>
@@ -110,9 +110,9 @@ const Home: React.FC = () => {
                                     style={{ color: "#016EB6" }}
                                 />
                             </span>
-                            <progress max="100" value="80" />
+                            <progress max="100" value="90" />
 
-                            <strong> 90%</strong>
+                            <strong> 100%</strong>
                         </Skills>
                         <Skills>
                             <span>
@@ -121,9 +121,20 @@ const Home: React.FC = () => {
                                     style={{ color: "#7AE3F8" }}
                                 />
                             </span>
-                            <progress max="120" value="80" />
+                            <progress max="100" value="80" />
 
-                            <strong> 80%</strong>
+                            <strong> 100%</strong>
+                        </Skills>
+                        <Skills>
+                            <span>
+                                <FaNodeJs
+                                    size={40}
+                                    style={{ color: "#09cc4a" }}
+                                />
+                            </span>
+                            <progress max="100" value="70" />
+
+                            <strong> 100%</strong>
                         </Skills>
                     </BoxSkills>
                 </Content>

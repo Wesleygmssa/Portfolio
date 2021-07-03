@@ -56,26 +56,7 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/nlw3-happy-web-react",
         "icon1": "FaReact",
         "key": ""
-    },
-    {
-        "id": 7,
-        "title": "Meu site pessoal",
-        "text": "Projeto criado em react, styled-components, netfly, GitHup",
-        "link_frontEnd": "https://github.com/Wesleygmssa/Portfolio",
-        "icon1": "FaReact",
-        "Highlighted": "true",
-        "key": ""
-    },
-    {
-        "id": 8,
-        "title": "Lógica",
-        "text": "Projeto simples para aprimorar a lógica",
-        "link_frontEnd": "https://github.com/Wesleygmssa/treinamento-logica",
-        "link_visite": "https://wesleygmssa.github.io/treinamento-logica/",
-        "icon1": "FaJs",
-        "key": ""
-    },
-    {
+    },{
         "id": 9,
         "title": "AluraFlix",
         "text": "ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, fomulário e etc...",
