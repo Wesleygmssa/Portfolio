@@ -92,17 +92,7 @@
         "link_visite": "https://wesleygmssa.github.io/listadetarefas-projeto/",
         "icon1": "FaJs",
         "key": ""
-    },
-    {
-        "id": 13,
-        "title": "Calculadora",
-        "text": "Aprimorando lógica de programação e funções, factory",
-        "link_frontEnd": "https://github.com/Wesleygmssa/Calculadora-javascript-factory-functions",
-        "link_visite": "https://wesleygmssa.github.io/Calculadora-javascript-factory-functions/",
-        "icon1": "FaJs",
-        "key": ""
-    },
-    {
+    }, {
         "id": 14,
         "title": "answer",
         "text": "Projeto de pergunta e resposta",
