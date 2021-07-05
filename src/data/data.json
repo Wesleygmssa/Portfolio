@@ -1,6 +1,14 @@
 [
     {
         "id": 1,
+        "title": "Dashgo",
+        "text": "Construindo um painel administrativo contento fluxo de autenticação, dashboard, listagem e cadastro usando Chakra UI no Next.JS.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/dashgo-next",
+        "icon1": "FaReact",
+        "Highlighted": "true"
+    },
+    {
+        "id": 1,
         "title": "Valoriza",
         "text": "Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.",
         "link_backEnd": "https://github.com/Wesleygmssa/nlwValoriza",
