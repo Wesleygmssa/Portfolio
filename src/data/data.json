@@ -36,6 +36,14 @@
     },
     {
         "id": 2,
+        "title": "Plantmanager",
+        "text": "Projeto para gerenciar suas plantas de forma fácil. Criado em React-Native",
+        "link_frontEnd": "https://github.com/Wesleygmssa/plantmanager",
+        "icon1": "FaReact",
+        "Highlighted": "true"
+    },
+    {
+        "id": 2,
         "title": "TodDO",
         "text": "Projeto criado para organizar sua vida (ToDO).",
         "link_frontEnd": "https://github.com/Wesleygmssa/web-task",
