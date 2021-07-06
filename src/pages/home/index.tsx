@@ -103,11 +103,11 @@ const Home: React.FC = () => {
                             <li>React Native</li>
                             <li>TypeScript</li>
                             <li>Docker</li>
-                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
                         </ul>
                     </Info>
                     <BoxSkills>
-                        <Skills>
+                        {/* <Skills>
                             <span>
                                 <FaHtml5
                                     style={{ color: "#EB3C32" }}
@@ -118,19 +118,7 @@ const Home: React.FC = () => {
                             <progress max="100" value={valueInitialHtml} />
 
                             <strong> {valueInitialHtml}%</strong>
-                        </Skills>
-                        <Skills>
-                            <span>
-                                <FaCss3
-                                    size={40}
-                                    style={{ color: "#016EB6" }}
-                                />
-                                CSS
-                            </span>
-                            <progress max="100" value={valueInitialCss} />
-
-                            <strong> {valueInitialCss}%</strong>
-                        </Skills>
+                        </Skills> */}
                         <Skills>
                             <span>
                                 <FaReact
@@ -153,6 +141,19 @@ const Home: React.FC = () => {
                             <progress max="100" value={valueInitialNode} />
                             <strong> {valueInitialNode}%</strong>
                         </Skills>
+                        <Skills>
+                            <span>
+                                <FaCss3
+                                    size={40}
+                                    style={{ color: "#016EB6" }}
+                                />
+                                CSS
+                            </span>
+                            <progress max="100" value={valueInitialCss} />
+
+                            <strong> {valueInitialCss}%</strong>
+                        </Skills>
+
                         <Skills>
                             <span>
                                 <FaNodeJs
