@@ -3,7 +3,8 @@ import styled, { keyframes } from "styled-components";
 import PageDefault from "../../components/PageDefault";
 import { FaHtml5, FaReact, FaCss3, FaNodeJs } from "react-icons/fa";
 
-import { Container, Content, Info, BoxSkills, Skills } from "./styles";
+import { Container, Content, Info, BoxSkills } from "./styles";
+import { Skills } from "../../components/Skills";
 
 //animação
 const apperFromCenter = keyframes`
@@ -107,65 +108,30 @@ const Home: React.FC = () => {
                         </ul>
                     </Info>
                     <BoxSkills>
-                        {/* <Skills>
-                            <span>
-                                <FaHtml5
-                                    style={{ color: "#EB3C32" }}
-                                    size={40}
-                                />
-                                HTML
-                            </span>
-                            <progress max="100" value={valueInitialHtml} />
-
-                            <strong> {valueInitialHtml}%</strong>
-                        </Skills> */}
-                        <Skills>
-                            <span>
-                                <FaReact
-                                    size={40}
-                                    style={{ color: "#7AE3F8" }}
-                                />
-                                REACT
-                            </span>
-                            <progress max="100" value={valueInitialReact} />
-                            <strong> {valueInitialReact}%</strong>
-                        </Skills>
-                        <Skills>
-                            <span>
-                                <FaReact
-                                    size={40}
-                                    style={{ color: "#7AE3F8" }}
-                                />
-                                REACT-NATIVE
-                            </span>
-                            <progress max="100" value={valueInitialNode} />
-                            <strong> {valueInitialNode}%</strong>
-                        </Skills>
-                        <Skills>
-                            <span>
-                                <FaCss3
-                                    size={40}
-                                    style={{ color: "#016EB6" }}
-                                />
-                                CSS
-                            </span>
-                            <progress max="100" value={valueInitialCss} />
-
-                            <strong> {valueInitialCss}%</strong>
-                        </Skills>
-
-                        <Skills>
-                            <span>
-                                <FaNodeJs
-                                    size={40}
-                                    style={{ color: "#09cc4a" }}
-                                />
-                                NODEJS
-                            </span>
-                            <progress max="100" value={valueInitialNode} />
-
-                            <strong> {valueInitialNode}%</strong>
-                        </Skills>
+                        <Skills
+                            valueInitial={valueInitialReact}
+                            colorType={`#7AE3F8`}
+                            icon={FaReact}
+                            name={"REACT"}
+                        />
+                        <Skills
+                            valueInitial={valueInitialNode}
+                            colorType={`#7AE3F8`}
+                            icon={FaReact}
+                            name={"REACT-NATIVE"}
+                        />
+                        <Skills
+                            valueInitial={valueInitialCss}
+                            colorType={`#016EB6`}
+                            icon={FaCss3}
+                            name={"CSS"}
+                        />
+                        <Skills
+                            valueInitial={valueInitialNode}
+                            colorType={`#09cc4a`}
+                            icon={FaNodeJs}
+                            name={"NODEJS"}
+                        />
                     </BoxSkills>
                 </Content>
             </Container>
