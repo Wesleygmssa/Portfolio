@@ -1,12 +1,14 @@
 import { Container } from "./styles";
 import { ReactNode } from "react";
-import { IconBaseProps } from "react-icons";
+// import { IconBaseProps } from "react-icons";
+import { ElementType } from "react";
 
 type PropsSkill = {
     valueInitial: number;
     children?: ReactNode;
     colorType: string;
-    icon?: React.ComponentType<IconBaseProps>;
+    // icon?: React.ComponentType<IconBaseProps>;
+    icon: ElementType;
     name: string;
 };
 
