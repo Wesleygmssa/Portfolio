@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import PageDefault from "../../components/PageDefault";
-import { FaHtml5, FaReact, FaCss3, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaCss3, FaNodeJs } from "react-icons/fa";
 
 import { Container, Content, Info, BoxSkills } from "./styles";
 import { Skills } from "../../components/Skills";
@@ -58,7 +58,6 @@ const ConteudoDois = () => {
 
 const Home: React.FC = () => {
     const [togleConteudos, setTogleConteudos] = useState(false);
-    const [valueInitialHtml, setValueInitialHtml] = useState(0);
     const [valueInitialCss, setValueInitialCss] = useState(0);
     const [valueInitialReact, setValueInitialReact] = useState(0);
     const [valueInitialNode, setValueInitialNode] = useState(0);
@@ -66,7 +65,6 @@ const Home: React.FC = () => {
     useEffect(() => {
         for (let i = 0; i <= 90; i++) {
             setTimeout(function () {
-                setValueInitialHtml(i);
                 setValueInitialCss(i);
                 setValueInitialReact(i - 10);
                 setValueInitialNode(i - 20);
