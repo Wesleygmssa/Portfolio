@@ -6,11 +6,11 @@ const Header: React.FC = () => {
         <HeaderContainer>
             <div>
                 <NavLink exact to="/" activeClassName="menuActive">
-                    Sobre
+                    About
                 </NavLink>
 
                 <NavLink to="/projects" activeClassName="menuActive">
-                    Projetos
+                    Projects
                 </NavLink>
 
                 {/* <NavLink to="/cardsvideos" activeClassName='menuActive' >
