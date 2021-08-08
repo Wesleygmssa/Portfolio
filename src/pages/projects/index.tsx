@@ -18,8 +18,8 @@ const Projects: React.FC = () => {
         <PageDefault>
             <Content>
                 <h4>
-                    Developing apps in <br></br>JavaScript, React, React-native,
-                    nodeJS e PHP{" "}
+                    Desenvolvendo sistemas em JavaScript, React, React-native,
+                    nodeJS, PHP e algumas outras.
                 </h4>
                 <Cards>
                     {datas.map((data) => (
