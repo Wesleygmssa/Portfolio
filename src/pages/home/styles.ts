@@ -110,6 +110,9 @@ export const Content = styled.div`
 export const Info = styled.div`
     display: flex;
     flex-direction: column;
+    h3 {
+        margin-top: 20px;
+    }
 
     ul {
         display: flex;
@@ -120,6 +123,13 @@ export const Info = styled.div`
             color: var(--text-color);
             list-style: none;
             padding: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        li:hover {
+            color: var(--primary-color);
+            font-size: 14px;
         }
     }
 

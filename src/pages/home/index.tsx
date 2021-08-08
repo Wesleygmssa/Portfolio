@@ -110,7 +110,10 @@ const Home: React.FC = () => {
                             </p>
                         </Content>
 
-                        {/* <h3>💻 Estudando as Tecnologias</h3>
+                        <h3>
+                            🚀 Atualmente fazendo Bootcamp da Reckeatseat com as
+                            tecnologias:
+                        </h3>
                         <ul>
                             <li>Nodejs</li>
                             <li>React</li>
@@ -118,7 +121,8 @@ const Home: React.FC = () => {
                             <li>TypeScript</li>
                             <li>Docker</li>
                             <li>PostgreSQL</li>
-                        </ul> */}
+                            <li>Teste unitários</li>
+                        </ul>
                     </Info>
 
                     {/* <BoxSkills>
