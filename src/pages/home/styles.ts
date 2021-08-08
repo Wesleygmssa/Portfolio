@@ -9,7 +9,6 @@ export const Container = styled.section`
         height: 100%;
     }
 `;
-
 export const Content = styled.div`
     display: flex;
     justify-content: center;
@@ -58,7 +57,7 @@ export const Content = styled.div`
     }
 
     .typing-animation {
-        animation: linkCursor 500ms steps(40) infinite normal,
+        animation: linkCursor 400ms steps(40) infinite normal,
             typing 4s steps(40) 1s normal both;
         color: var(--title-color);
     }
@@ -68,7 +67,7 @@ export const Content = styled.div`
             width: 0;
         }
         to {
-            width: 13em;
+            width: 9em;
         }
     }
 
@@ -108,7 +107,6 @@ export const Content = styled.div`
         color: var(--title-color);
     }
 `;
-
 export const Info = styled.div`
     display: flex;
     flex-direction: column;
@@ -124,15 +122,20 @@ export const Info = styled.div`
             padding: 10px;
         }
     }
-`;
 
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+`;
 export const BoxSkills = styled.div`
     max-width: 900px;
     width: 100%;
     position: relative;
     left: -60px;
 `;
-
 //animação
 const WidthSkill = keyframes`
  from{

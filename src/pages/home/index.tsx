@@ -85,17 +85,32 @@ const Home: React.FC = () => {
                         src="https://avatars2.githubusercontent.com/u/41512408?s=460&u=079b45ace61cd43ec5cb1b230e070375b4d2d382&v=4"
                         alt="Wesley Guerra"
                     />
-                    <h1 className="typing-animation">
-                        Wesley Guerra Hi there 👋
-                    </h1>
+                    <h1 className="typing-animation">Olá, Sou Wesley 👋</h1>
                     <Info>
-                        <p>
-                            Software Developer, currently focusing on NodeJS,
-                            ReactJS and React Native.
-                        </p>
-                        <span>Let's code 🚀</span>
+                        <h3>Desenvolvedor de software</h3>
 
-                        <h3>💻 Currently studying Technologies</h3>
+                        <Content>
+                            <p>
+                                Natural de Salvador/BA, entusiasta das melhores
+                                tecnologias de desenvolvimento web, mobile. e
+                                trabalhando como desenvolvedor front-end na
+                                Stefanini.
+                            </p>
+                            <p>
+                                Já trabalhei em lugares como SENAI, Petrobras,
+                                Correios, (Stefanini atualmente) e algumas
+                                outras. Sou formado em Analise e desenvolvimento
+                                de sistemas.
+                            </p>
+                            <p>
+                                Sou apaixonado por trabalhar com projetos
+                                desafiadores e criativos. Não gosto de ficar na
+                                zona de conforto, então procuro me aprimorar
+                                constantemente.
+                            </p>
+                        </Content>
+
+                        {/* <h3>💻 Estudando as Tecnologias</h3>
                         <ul>
                             <li>Nodejs</li>
                             <li>React</li>
@@ -103,9 +118,10 @@ const Home: React.FC = () => {
                             <li>TypeScript</li>
                             <li>Docker</li>
                             <li>PostgreSQL</li>
-                        </ul>
+                        </ul> */}
                     </Info>
-                    <BoxSkills>
+
+                    {/* <BoxSkills>
                         <Skills
                             valueInitial={valueInitialReact}
                             colorType={`#7AE3F8`}
@@ -130,7 +146,7 @@ const Home: React.FC = () => {
                             icon={FaNodeJs}
                             name={"NODEJS"}
                         />
-                    </BoxSkills>
+                    </BoxSkills> */}
                 </Content>
             </Container>
         </PageDefault>
