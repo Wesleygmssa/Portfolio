@@ -85,12 +85,10 @@ export const Content = styled.div`
     }
 
     p {
-        text-align: center;
         max-width: 800px;
         width: 100%;
         line-height: 25px;
         padding: 0px 15px;
-        text-align: justify;
         position: relative;
         font-weight: 500;
     }
