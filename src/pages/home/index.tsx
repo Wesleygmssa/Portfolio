@@ -92,7 +92,7 @@ const Home: React.FC = () => {
                         <Content>
                             <p>
                                 Natural de Salvador/BA, entusiasta das melhores
-                                tecnologias de desenvolvimento web, mobile. e
+                                tecnologias de desenvolvimento web, mobile e
                                 trabalhando como desenvolvedor front-end na
                                 Stefanini.
                             </p>
