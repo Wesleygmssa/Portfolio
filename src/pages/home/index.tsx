@@ -111,8 +111,8 @@ const Home: React.FC = () => {
                         </Content>
 
                         <h3>
-                            🚀 Atualmente fazendo Bootcamp da Reckeatseat com as
-                            tecnologias:
+                            🚀 Atualmente fazendo Bootcamp da Reckeatseat focado
+                            nas tecnologias:
                         </h3>
                         <ul>
                             <li>Nodejs</li>
