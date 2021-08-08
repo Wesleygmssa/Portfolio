@@ -137,6 +137,14 @@ export const Info = styled.div`
         justify-content: center;
         font-size: 18px;
     }
+
+    @media (max-width: 500px) {
+        p {
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+        }
+    }
 `;
 export const BoxSkills = styled.div`
     max-width: 900px;
