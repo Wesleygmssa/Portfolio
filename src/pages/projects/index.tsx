@@ -6,6 +6,7 @@ import {
     Icons,
     ButtonGroup,
     Card,
+    Tec,
 } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import datas from "../../data/data.json";
@@ -27,7 +28,7 @@ const Projects: React.FC = () => {
                             <CardContent>
                                 <h3>{data.title}</h3>
                                 <p>{data.text}</p>
-                                {data.Highlighted ? <span>Recentes</span> : ""}
+                                {/* {data.Highlighted ? <span>Recentes</span> : ""} */}
                                 {/* {!(data.Highlighted)?  <span style={{background:"#c9ff04"}}>Destaque</span> : ''}  */}
                                 <Icons>
                                     {data.icon1 === "FaReact" ? (
@@ -63,10 +64,21 @@ const Projects: React.FC = () => {
                                         ""
                                     )}
                                 </Icons>
+                                <Tec>
+                                    {data.tec?.map((item) => (
+                                        <div>{item}</div>
+                                    ))}
+                                </Tec>
 
                                 <ButtonGroup>
                                     {data.link_frontEnd ? (
-                                        <ButtonLink href={data.link_frontEnd}>
+                                        <ButtonLink
+                                            href={
+                                                data.link_frontEnd
+                                                    ? data.link_frontEnd
+                                                    : ""
+                                            }
+                                        >
                                             Front-End
                                         </ButtonLink>
                                     ) : (
@@ -79,13 +91,19 @@ const Projects: React.FC = () => {
                                     ) : (
                                         ""
                                     )}
-                                    {data.link_visite ? (
-                                        <ButtonLink href={data.link_visite}>
+                                    {/* {data?.link_visite ? (
+                                        <ButtonLink
+                                            href={
+                                                data.link_visite
+                                                    ? data.link_visite
+                                                    : ""
+                                            }
+                                        >
                                             Visite
                                         </ButtonLink>
                                     ) : (
                                         ""
-                                    )}
+                                    )} */}
                                 </ButtonGroup>
                             </CardContent>
                         </Card>

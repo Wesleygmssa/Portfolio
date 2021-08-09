@@ -34,7 +34,7 @@ export const Cards = styled.section`
 
 export const Card = styled.div`
     display: flex;
-    max-width: 265px;
+    max-width: 350px;
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -144,5 +144,22 @@ export const ButtonGroup = styled.div`
         transition: 0.5s;
         background-color: var(--primary-color);
         border: 0;
+    }
+`;
+
+export const Tec = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        font-size: 12px;
+        padding: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        font-weight: bold;
+
+        & + div {
+            margin-left: 5px;
+        }
     }
 `;

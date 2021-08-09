@@ -6,7 +6,7 @@
         "text": "Criado um site single page com javascript puro.",
         "link_frontEnd": "https://www.efizconsultoria.com.br",
         "icon1": "FaJs",
-        "Highlighted": "true"
+        "tec": ["javaScript", "css3"]
     },
     {
         "id": 2,
@@ -14,7 +14,7 @@
         "text": " Construído o clone da netflix na imserão da B7web, onde aprendemos alguns conceitos do React",
         "link_frontEnd": "https://github.com/Wesleygmssa/clonenetflix-w7web",
         "icon1": "FaReact",
-        "Highlighted": "true"
+        "tec": ["react", "styled-components", "prettier"]
     },
     {
         "id": 3,
@@ -22,7 +22,7 @@
         "text": "Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.",
         "link_backEnd": "https://github.com/Wesleygmssa/nlwValoriza",
         "icon2": "FaNodeJs",
-        "Highlighted": "true"
+        "tec": ["nodejs", "typeorm", "prettier", "typescript", "sqlite3"]
     },
     {
         "id": 4,
@@ -30,7 +30,7 @@
         "text": "Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.",
         "link_frontEnd": "https://github.com/Wesleygmssa/letmeask",
         "icon1": "FaReact",
-        "Highlighted": "true"
+        "tec": ["react","typescript", "firebase"]
     },
     {
         "id": 4,
@@ -41,7 +41,8 @@
         "icon1": "FaReact",
         "icon2": "FaNodeJs",
         "Highlighted": "true",
-        "key": "R5abDxDeg0I"
+        "key": "R5abDxDeg0I",
+        "tec": ["react","nodejs", "javascript", "typescript", "typeorm"]
     },
     {
         "id": 6,
@@ -49,18 +50,7 @@
         "text": "Projeto para gerenciar suas plantas de forma fácil. Criado em React-Native",
         "link_frontEnd": "https://github.com/Wesleygmssa/plantmanager",
         "icon1": "FaReact",
-        "Highlighted": "true"
-    },
-    {
-        "id": 7,
-        "title": "TodDO",
-        "text": "Projeto criado para organizar sua vida (ToDO).",
-        "link_frontEnd": "https://github.com/Wesleygmssa/web-task",
-        "link_backEnd": "https://github.com/Wesleygmssa/backend-task-api",
-        "icon1": "FaReact",
-        "icon2": "FaNodeJs",
-        "Highlighted": "true",
-        "key": "yZxqFQa_978"
+        "tec": ["react-native","expo-cli",  "typescript", "json-server"]
     },
     {
         "id": 8,
@@ -69,8 +59,8 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/blog-guiapress",
         "link_backEnd": "https://github.com/Wesleygmssa/blog-guiapress",
         "icon2": "FaNodeJs",
-        "Highlighted": "true",
-        "key": ""
+        "key": "",
+        "tec": ["nodejs","ejs", "javascript" ]
     },
     {
         "id": 9,
@@ -79,67 +69,8 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/mobile-gobarber",
         "icon1": "FaReact",
         "icon2": "FaNodeJs",
-        "Highlighted": "true",
-        "key": ""
-    },
-    {
-        "id": 10,
-        "title": "Explore repositórios",
-        "text": "Projeto onde fazemos consumo de api do GitHub, Utilizando a biblioteca axios.",
-        "link_frontEnd": "https://github.com/Wesleygmssa/explore-repositrios-github",
-        "icon1": "FaReact",
-        "key": ""
-    },
-    {
-        "id": 11,
-        "title": "Happy",
-        "text": "Projeto onde fazemos a implementação do mapa leaflet, marcando um ponto no mapa.",
-        "link_frontEnd": "https://github.com/Wesleygmssa/nlw3-happy-web-react",
-        "icon1": "FaReact",
-        "key": ""
-    },{
-        "id": 12,
-        "title": "AluraFlix",
-        "text": "ImersãoReact onde aprendemos conceitos como componentes, Roteamento, state, fomulário e etc...",
-        "link_frontEnd": "https://github.com/Wesleygmssa/aluraflix",
-        "icon1": "FaReact",
-        "key": ""
-    },
-    {
-        "id": 13,
-        "title": "Ecoleta",
-        "text": "Esse é o projeto Ecoleta, criado durante o evento Next Level Week criado pela Rocketseat.",
-        "link_frontEnd": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/web",
-        "link_backEnd": "https://github.com/Wesleygmssa/nlw1-ecoleta/tree/master/server",
-        "icon1": "FaReact",
-        "icon2": "FaNodeJs",
-        "key": ""
-    },
-    {
-        "id": 14,
-        "title": "Proffy",
-        "text": "O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores.",
-        "link_frontEnd": "https://github.com/Wesleygmssa/nlw2-proffy/tree/master/web",
-        "link_backEnd": "https://github.com/Wesleygmssa/nlw2-proffy/tree/master/backend",
-        "icon1": "FaReact",
-        "icon2": "FaNodeJs",
-        "key": ""
-    },
-    {
-        "id": 15,
-        "title": "Lista de tarefas",
-        "text": "Lista de tarefas onde e salvo a lista no localstorage no navegador",
-        "link_frontEnd": "https://github.com/Wesleygmssa/listadetarefas-projeto",
-        "link_visite": "https://wesleygmssa.github.io/listadetarefas-projeto/",
-        "icon1": "FaJs",
-        "key": ""
-    }, {
-        "id": 16,
-        "title": "answer",
-        "text": "Projeto de pergunta e resposta",
-        "link_frontEnd": "https://github.com/Wesleygmssa/question-and-answer",
-        "icon1": "FaJs",
-        "icon2": "FaNodeJs",
-        "key": "InTbRkaGrvs"
+        "key": "",
+        "tec": ["react-natve","typescript", "nodejs", "prettier" ]
     }
+    
 ]
