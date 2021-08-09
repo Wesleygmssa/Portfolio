@@ -12,7 +12,7 @@ const apperFromCenter = keyframes`
 `;
 
 export const AnimationContainer = styled.div`
-    animation: ${apperFromCenter} 1s;
+    animation: ${apperFromCenter} 2s;
 `;
 
 export const Container = styled.div`
