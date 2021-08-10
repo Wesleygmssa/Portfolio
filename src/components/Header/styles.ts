@@ -9,15 +9,17 @@ export const HeaderContainer = styled.div`
 
     .menuActive {
         transition: 2s;
-        opacity: 0.8;
+        opacity: 0.4;
         padding-bottom: 5px;
-        border-bottom: 2px solid var(--primary-color);
+        /* border-bottom: 1px solid var(--primary-color); */
+        border-bottom: 1px solid #fff;
     }
 
     div {
         a {
             font-weight: bold;
-            color: var(--primary-color);
+            /* color: var(--primary-color); */
+            color: #fff;
             font-size: 14px;
             text-decoration: none;
             transition: all 0.5s;

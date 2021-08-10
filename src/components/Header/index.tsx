@@ -5,6 +5,10 @@ const Header: React.FC = () => {
         <HeaderContainer>
             <div>
                 <NavLink exact to="/" activeClassName="menuActive">
+                    HOME
+                </NavLink>
+
+                <NavLink exact to="/about" activeClassName="menuActive">
                     SOBRE
                 </NavLink>
 

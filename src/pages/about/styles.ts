@@ -27,7 +27,8 @@ export const Content = styled.div`
         height: 200px;
         border-radius: 50%;
         margin-top: 24px;
-        border: 3px solid var(--primary-color);
+        /* border: 3px solid var(--primary-color); */
+        /* border: 3px solid #000; */
         cursor: pointer;
 
         -webkit-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
@@ -59,7 +60,8 @@ export const Content = styled.div`
     .typing-animation {
         animation: linkCursor 400ms steps(40) infinite normal,
             typing 4s steps(40) 1s normal both;
-        color: var(--title-color);
+        /* color: var(--title-color); */
+        color: #fff;
     }
 
     @keyframes typing {

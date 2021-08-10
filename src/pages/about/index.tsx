@@ -56,7 +56,7 @@ const ConteudoDois = () => {
     );
 };
 
-const Home: React.FC = () => {
+const About: React.FC = () => {
     const [togleConteudos, setTogleConteudos] = useState(false);
     const [valueInitialCss, setValueInitialCss] = useState(0);
     const [valueInitialReact, setValueInitialReact] = useState(0);
@@ -87,8 +87,6 @@ const Home: React.FC = () => {
                     />
                     <h1 className="typing-animation">Olá, Sou Wesley 👋</h1>
                     <Info>
-                        <h3>Desenvolvedor de software</h3>
-
                         <Content>
                             <p>
                                 Natural de Salvador/BA, entusiasta das melhores
@@ -157,4 +155,4 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default About;
