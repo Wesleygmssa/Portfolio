@@ -1,6 +1,15 @@
 [
     {
         "id": 1,
+        "title": "gamePlay",
+        "text": "Projeto criado na imersão do RockeatSeat. Onde aprendemos conceitos do react-native",
+        "link_frontEnd": "https://github.com/Wesleygmssa/gamePlay",
+        "icon1": "FaReact",
+        "tec": ["React-Native", "TypeScript"],
+        "Highlighted": "true"
+    },
+    {
+        "id": 1,
         "title": "Dashgo-Web",
         "text": "Projeto onde aprendemos alguns conceitos do Nextjs e Chakra-ui.",
         "link_frontEnd": "https://github.com/Wesleygmssa/dashgo-next",
