@@ -118,6 +118,9 @@ export const CardContent = styled.div`
         transform: rotate(-45deg);
         top: 25px;
         left: -25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 13px;
     }
 `;
 
