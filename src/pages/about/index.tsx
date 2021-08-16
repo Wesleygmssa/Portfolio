@@ -114,6 +114,7 @@ const About: React.FC = () => {
                         </h3>
                         <ul>
                             <li>Nodejs</li>
+                            <li>Nextjs</li>
                             <li>React</li>
                             <li>React Native</li>
                             <li>TypeScript</li>
