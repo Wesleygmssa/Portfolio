@@ -28,7 +28,11 @@ const Projects: React.FC = () => {
                             <CardContent>
                                 <h3>{data.title}</h3>
                                 <p>{data.text}</p>
-                                {/* {data.Highlighted ? <span>Recentes</span> : ""} */}
+                                {data.Highlighted ? (
+                                    <span>Construção</span>
+                                ) : (
+                                    ""
+                                )}
                                 {/* {!(data.Highlighted)?  <span style={{background:"#c9ff04"}}>Destaque</span> : ''}  */}
                                 <Icons>
                                     {data.icon1 === "FaReact" ? (

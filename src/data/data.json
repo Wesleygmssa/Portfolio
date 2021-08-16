@@ -1,7 +1,32 @@
 [
- 
     {
         "id": 1,
+        "title": "gamePlay",
+        "text": "Projeto criado na imersão do RockeatSeat. Onde aprendemos conceitos do react-native",
+        "link_frontEnd": "https://github.com/Wesleygmssa/gamePlay",
+        "icon1": "FaReact",
+        "tec": ["React-Native", "TypeScript"],
+        "Highlighted": "true"
+    },
+    {
+        "id": 1,
+        "title": "Dashgo-Web",
+        "text": "Projeto onde aprendemos alguns conceitos do Nextjs e Chakra-ui.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/dashgo-next",
+        "icon1": "FaReact",
+        "tec": ["NextJs", "TypeScript", "Chakra-ui"]
+    },
+    {
+        "id": 2,
+        "title": "Podcastr-Web",
+        "text": "Projeto criado na imersão da RockeatSeat.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/podcastr",
+        "icon1": "FaReact",
+        "tec": ["NextJs", "TypeScript", "Html", "Sass"]
+    },
+
+    {
+        "id": 3,
         "title": "EFIZ",
         "text": "Criado um site single page com javascript puro.",
         "link_frontEnd": "https://www.efizconsultoria.com.br",
@@ -9,15 +34,15 @@
         "tec": ["javaScript", "css3"]
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Clone da NETFLIX",
-        "text": " Construído o clone da netflix na imserão da B7web, onde aprendemos alguns conceitos do React",
+        "text": " Construído o clone da netflix na imersão da B7web, onde aprendemos alguns conceitos do React",
         "link_frontEnd": "https://github.com/Wesleygmssa/clonenetflix-w7web",
         "icon1": "FaReact",
         "tec": ["react", "styled-components", "prettier"]
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "Valoriza",
         "text": "Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.",
         "link_backEnd": "https://github.com/Wesleygmssa/nlwValoriza",
@@ -25,15 +50,15 @@
         "tec": ["nodejs", "typeorm", "prettier", "typescript", "sqlite3"]
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Letmeask ",
         "text": "Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.",
         "link_frontEnd": "https://github.com/Wesleygmssa/letmeask",
         "icon1": "FaReact",
-        "tec": ["react","typescript", "firebase"]
+        "tec": ["react", "typescript", "firebase"]
     },
     {
-        "id": 4,
+        "id": 7,
         "title": "Gobarber web",
         "text": "Projeto criado do zero onde é feito o front-end e back-end, Utilizando as melhores tecnologias do mercado",
         "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
@@ -42,35 +67,34 @@
         "icon2": "FaNodeJs",
         "Highlighted": "true",
         "key": "R5abDxDeg0I",
-        "tec": ["react","nodejs", "javascript", "typescript", "typeorm"]
+        "tec": ["react", "nodejs", "javascript", "typescript", "typeorm"]
     },
     {
-        "id": 6,
+        "id": 8,
         "title": "Plantmanager",
         "text": "Projeto para gerenciar suas plantas de forma fácil. Criado em React-Native",
         "link_frontEnd": "https://github.com/Wesleygmssa/plantmanager",
         "icon1": "FaReact",
-        "tec": ["react-native","expo-cli",  "typescript", "json-server"]
+        "tec": ["react-native", "expo-cli", "typescript", "json-server"]
     },
     {
-        "id": 8,
+        "id": 10,
         "title": "Blog",
         "text": "Criação blog com painel administrativo - CRUD completo",
         "link_frontEnd": "https://github.com/Wesleygmssa/blog-guiapress",
         "link_backEnd": "https://github.com/Wesleygmssa/blog-guiapress",
         "icon2": "FaNodeJs",
         "key": "",
-        "tec": ["nodejs","ejs", "javascript" ]
+        "tec": ["nodejs", "ejs", "javascript"]
     },
     {
-        "id": 9,
+        "id": 11,
         "title": "Gobarber Mobile",
         "text": "Gobarber versão mobile utilizando a mesma api da web.",
         "link_frontEnd": "https://github.com/Wesleygmssa/mobile-gobarber",
         "icon1": "FaReact",
         "icon2": "FaNodeJs",
         "key": "",
-        "tec": ["react-natve","typescript", "nodejs", "prettier" ]
+        "tec": ["react-natve", "typescript", "nodejs", "prettier"]
     }
-    
 ]
