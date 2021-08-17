@@ -1,11 +1,18 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   *{
-    margin:0;
+    margin: 0;
     padding: 0;
-    outline:0;
-    box-sizing:border-box;
+    box-sizing: border-box;
+    font-family: Open Sans, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    &::after,
+    &::before {
+      box-sizing: inherit;
+    }
   }
 
   :root {
