@@ -145,7 +145,6 @@ export const ButtonGroup = styled.div`
         width: 100%;
         font-size: 12px;
         transition: 0.5s;
-        background-color: var(--primary-color);
         border: 0;
     }
 `;
