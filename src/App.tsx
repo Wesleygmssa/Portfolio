@@ -2,10 +2,13 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import GlobalStyles from "./styles/global";
 import Routes from "./routes";
+
 import { ThemeProvider } from "styled-components";
 import light from "./styles/themes/light";
 import dark from "./styles/themes/light";
 import { useState } from "react";
+import AppProvider from "./context/index.";
+// import { useTheme } from "./context/selectTheme";
 
 const App: React.FC = () => {
     const [theme, setTheme] = useState(light);
@@ -16,10 +19,12 @@ const App: React.FC = () => {
 
     return (
         <ThemeProvider theme={light}>
-            <BrowserRouter>
-                <Routes />
-            </BrowserRouter>
-            <GlobalStyles />
+            <AppProvider>
+                <BrowserRouter>
+                    <Routes />
+                </BrowserRouter>
+                <GlobalStyles />
+            </AppProvider>
         </ThemeProvider>
     );
 };

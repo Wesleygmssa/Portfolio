@@ -9,7 +9,6 @@ const Header: React.FC = () => {
     const location = useLocation();
     const { colors } = useContext(ThemeContext);
 
-    console.log(location);
     return (
         <HeaderContainer>
             <div className="nav">

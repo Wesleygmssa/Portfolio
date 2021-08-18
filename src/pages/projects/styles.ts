@@ -42,8 +42,8 @@ export const Card = styled.div`
     border-radius: 5px;
     margin: 8px 8px;
     cursor: pointer;
-    border: 1px solid transparent;
     transition: 0.8s;
+    background-color: #fff;
 
     -webkit-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);

@@ -22,17 +22,17 @@ export const Content = styled.div`
     }
 
     img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
+        max-width: 800px;
+        width: 100%;
+        height: 600px;
         margin-top: 24px;
         /* border: 3px solid var(--primary-color); */
         /* border: 3px solid #000; */
         cursor: pointer;
 
-        -webkit-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
+        /* -webkit-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
-        box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75); */
     }
 
     h1,
@@ -101,7 +101,7 @@ export const Content = styled.div`
         font-size: 24px;
         text-align: center;
         background-color: transparent;
-        color: var(--title-color);
+        /* color: var(--title-color); */
     }
 `;
 export const Info = styled.div`
@@ -117,7 +117,7 @@ export const Info = styled.div`
         flex-wrap: wrap;
 
         li {
-            color: var(--text-color);
+            /* color: var(--text-color); */
             list-style: none;
             padding: 10px;
             cursor: pointer;
@@ -181,13 +181,13 @@ export const Skills = styled.div`
 
     strong {
         margin-left: 5px;
-        color: #fff;
+        /* color: #fff; */
     }
     span {
         display: flex;
         flex-direction: column;
         font-weight: bold;
-        color: #fff;
+        /* color: #fff; */
         align-items: center;
 
         width: 160px;
