@@ -14,7 +14,9 @@ export const HeaderContainer = styled.div`
         align-items: center;
     }
     .swicth {
+        position: absolute;
         margin-left: auto;
+        right: 8px;
     }
 
     .menuActive {
