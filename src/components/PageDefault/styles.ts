@@ -17,5 +17,4 @@ export const AnimationContainer = styled.div`
 
 export const Container = styled.div`
     min-height: 90vh;
-    border: 1px solid red;
 `;
