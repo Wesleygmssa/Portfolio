@@ -20,12 +20,10 @@ export const Content = styled.div`
         text-align: center;
         font-size: 80px;
         padding: 16px 20px;
-        color: #fff;
     }
 
     span {
         font-size: 35px;
-        color: #fff;
         opacity: 0.7;
         font-family: "Courier New", Courier, monospace;
         font-weight: 300;

@@ -67,7 +67,6 @@ export const Card = styled.div`
     }
 
     a {
-        color: #fff;
     }
 
     @media (max-width: 850px) {
@@ -84,7 +83,6 @@ export const CardContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
     text-align: center;
     position: relative;
 

@@ -7,6 +7,16 @@ export const HeaderContainer = styled.div`
     background: #293647;
     position: relative;
 
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swicth {
+        margin-left: auto;
+    }
+
     .menuActive {
         transition: 2s;
         opacity: 0.4;

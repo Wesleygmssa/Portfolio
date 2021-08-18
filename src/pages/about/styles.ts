@@ -19,7 +19,6 @@ export const Content = styled.div`
         text-align: center;
         font-size: 24px;
         padding: 16px 20px;
-        color: #fff;
     }
 
     img {
@@ -39,7 +38,6 @@ export const Content = styled.div`
     h1,
     p,
     span {
-        color: var(--text-color);
         margin-top: 24px;
         font-family: "Roboto", sans-serif;
     }
@@ -61,7 +59,6 @@ export const Content = styled.div`
         animation: linkCursor 400ms steps(40) infinite normal,
             typing 4s steps(40) 1s normal both;
         /* color: var(--title-color); */
-        color: #fff;
     }
 
     @keyframes typing {

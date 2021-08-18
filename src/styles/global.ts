@@ -24,9 +24,10 @@ export default createGlobalStyle`
   }
 
   body{
-     background: var(--background-color);
+     background: ${(props) => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;
      position: relative;
+     color: ${(props) => props.theme.colors.text};
   }
   body , input , button{
     font: 16px ;
