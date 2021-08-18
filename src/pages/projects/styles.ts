@@ -116,11 +116,11 @@ export const CardContent = styled.div`
         position: absolute;
         border-radius: 5px;
         transform: rotate(-45deg);
-        top: 25px;
-        left: -25px;
+        top: 10px;
+        left: -35px;
         font-weight: bold;
         letter-spacing: 2px;
-        font-size: 13px;
+        font-size: 12px;
     }
 `;
 
