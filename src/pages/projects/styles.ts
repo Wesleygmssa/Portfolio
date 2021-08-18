@@ -50,9 +50,9 @@ export const Card = styled.div`
     box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
 
     &:hover {
-        -webkit-box-shadow: 3px -4px 36px -2px var(--primary-color);
-        -moz-box-shadow: 3px -4px 36px -2px var(--primary-color);
-        box-shadow: 3px -4px 36px -2px var(--primary-color);
+        -webkit-box-shadow: 3px -4px 36px -2px #000;
+        -moz-box-shadow: 3px -4px 36px -2px #000;
+        box-shadow: 3px -4px 36px -2px #000;
     }
 
     .card-img {

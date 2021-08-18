@@ -26,6 +26,7 @@ export const Content = styled.div`
         width: 100%;
         height: 600px;
         margin-top: 24px;
+        border-radius: 5px;
         /* border: 3px solid var(--primary-color); */
         /* border: 3px solid #000; */
         cursor: pointer;
