@@ -43,14 +43,14 @@
         "text": " Construído o clone da netflix na imersão da B7web, onde aprendemos alguns conceitos do React",
         "link_frontEnd": "https://github.com/Wesleygmssa/clonenetflix-w7web",
         "icon1": "FaReact",
-        "tec": ["react", "styled-components", "prettier"]
+        "tec": ["react", "styled-components"]
     },
     {
         "title": "Valoriza",
         "text": "Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.",
         "link_backEnd": "https://github.com/Wesleygmssa/nlwValoriza",
         "icon2": "FaNodeJs",
-        "tec": ["nodejs", "typeorm", "prettier", "typescript", "sqlite3"]
+        "tec": ["nodejs", "typeorm",  "typescript", "sqlite3"]
     },
     {
         "title": "Letmeask ",
@@ -68,7 +68,7 @@
         "icon2": "FaNodeJs",
         "Highlighted": "true",
         "key": "R5abDxDeg0I",
-        "tec": ["react", "nodejs", "javascript", "typescript", "typeorm"]
+        "tec": ["react", "nodejs",  "typescript", "typeorm"]
     },
     {
         "title": "Plantmanager",
@@ -93,6 +93,6 @@
         "icon1": "FaReact",
         "icon2": "FaNodeJs",
         "key": "",
-        "tec": ["react-natve", "typescript", "nodejs", "prettier"]
+        "tec": ["react-natve", "typescript", "nodejs"]
     }
 ]
