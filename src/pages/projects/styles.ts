@@ -67,6 +67,7 @@ export const Card = styled.div`
     }
 
     a {
+        color: #fff;
     }
 
     @media (max-width: 850px) {
@@ -110,6 +111,7 @@ export const CardContent = styled.div`
         font-weight: 500;
         width: 30%;
         background-color: #c53030;
+        color: #fff;
         padding: 3px;
         position: absolute;
         border-radius: 5px;

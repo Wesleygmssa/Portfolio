@@ -12,10 +12,9 @@ import { FooterBase } from "./styles";
 // } from "react-icons/fa";
 
 const Footer: React.FC = (props) => {
-  return (
-    <>
-      <FooterBase>
-        {/* <div>
+    return (
+        <FooterBase>
+            {/* <div>
              <div >
                  <FaHtml5 size={40} style={{ color: "#EB3C32" }} />
              </div>
@@ -41,13 +40,13 @@ const Footer: React.FC = (props) => {
                  <FaPhp size={50} style={{ color: "#F6B524" }} />
               </div>
        </div> */}
-    
-        <span>
-               Copyright © 2020 Wesley Guerra <span style={{color: "#EB3C32"}}>❤</span> 
-        </span>
-      </FooterBase>
-    </>
-  );
+
+            <span>
+                Copyright © 2021 Wesley Guerra
+                <span style={{ color: "#EB3C32" }}>❤</span>
+            </span>
+        </FooterBase>
+    );
 };
 
 export default Footer;
