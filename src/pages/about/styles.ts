@@ -24,7 +24,7 @@ export const Content = styled.div`
     img {
         max-width: 800px;
         width: 100%;
-        max-height: 600px;
+        max-height: 700px;
         height: 100%;
         margin-top: 24px;
         border-radius: 5px;
