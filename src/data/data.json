@@ -1,6 +1,14 @@
 [
     {
-        "id": 1,
+        "title": "Task",
+        "text": "Projeto Criado para agendar suas tarefas do dia a dia",
+        "link_frontEnd": "https://github.com/Wesleygmssa/web-task/blob/master/src/views/Home/index.js",
+        "link_backEnd": "https://github.com/Wesleygmssa/backend-task-api",
+        "icon1": "FaReact",
+        "icon2": "FaNodeJs",
+        "tec": ["React", "MongoDB", "NodeJS", "Express"]
+    },
+    {
         "title": "gamePlay",
         "text": "Projeto criado na imersão do RockeatSeat. Onde aprendemos conceitos do react-native",
         "link_frontEnd": "https://github.com/Wesleygmssa/gamePlay",
@@ -9,7 +17,6 @@
         "Highlighted": "true"
     },
     {
-        "id": 1,
         "title": "Dashgo-Web",
         "text": "Projeto onde aprendemos alguns conceitos do Nextjs e Chakra-ui.",
         "link_frontEnd": "https://github.com/Wesleygmssa/dashgo-next",
@@ -17,7 +24,6 @@
         "tec": ["NextJs", "TypeScript", "Chakra-ui"]
     },
     {
-        "id": 2,
         "title": "Podcastr-Web",
         "text": "Projeto criado na imersão da RockeatSeat.",
         "link_frontEnd": "https://github.com/Wesleygmssa/podcastr",
@@ -26,7 +32,6 @@
     },
 
     {
-        "id": 3,
         "title": "EFIZ",
         "text": "Criado um site single page com javascript puro.",
         "link_frontEnd": "https://www.efizconsultoria.com.br",
@@ -34,7 +39,6 @@
         "tec": ["javaScript", "css3"]
     },
     {
-        "id": 4,
         "title": "Clone da NETFLIX",
         "text": " Construído o clone da netflix na imersão da B7web, onde aprendemos alguns conceitos do React",
         "link_frontEnd": "https://github.com/Wesleygmssa/clonenetflix-w7web",
@@ -42,7 +46,6 @@
         "tec": ["react", "styled-components", "prettier"]
     },
     {
-        "id": 5,
         "title": "Valoriza",
         "text": "Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.",
         "link_backEnd": "https://github.com/Wesleygmssa/nlwValoriza",
@@ -50,7 +53,6 @@
         "tec": ["nodejs", "typeorm", "prettier", "typescript", "sqlite3"]
     },
     {
-        "id": 6,
         "title": "Letmeask ",
         "text": "Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.",
         "link_frontEnd": "https://github.com/Wesleygmssa/letmeask",
@@ -58,7 +60,6 @@
         "tec": ["react", "typescript", "firebase"]
     },
     {
-        "id": 7,
         "title": "Gobarber web",
         "text": "Projeto criado do zero onde é feito o front-end e back-end, Utilizando as melhores tecnologias do mercado",
         "link_frontEnd": "https://github.com/Wesleygmssa/estudos-react-conceitos-gobaber",
@@ -70,7 +71,6 @@
         "tec": ["react", "nodejs", "javascript", "typescript", "typeorm"]
     },
     {
-        "id": 8,
         "title": "Plantmanager",
         "text": "Projeto para gerenciar suas plantas de forma fácil. Criado em React-Native",
         "link_frontEnd": "https://github.com/Wesleygmssa/plantmanager",
@@ -78,7 +78,6 @@
         "tec": ["react-native", "expo-cli", "typescript", "json-server"]
     },
     {
-        "id": 10,
         "title": "Blog",
         "text": "Criação blog com painel administrativo - CRUD completo",
         "link_frontEnd": "https://github.com/Wesleygmssa/blog-guiapress",
@@ -88,7 +87,6 @@
         "tec": ["nodejs", "ejs", "javascript"]
     },
     {
-        "id": 11,
         "title": "Gobarber Mobile",
         "text": "Gobarber versão mobile utilizando a mesma api da web.",
         "link_frontEnd": "https://github.com/Wesleygmssa/mobile-gobarber",
