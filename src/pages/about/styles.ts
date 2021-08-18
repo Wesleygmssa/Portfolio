@@ -86,7 +86,7 @@ export const Content = styled.div`
     }
 
     p {
-        max-width: 800px;
+        max-width: 810px;
         width: 100%;
         line-height: 25px;
         padding: 0px 15px;

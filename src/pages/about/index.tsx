@@ -66,9 +66,9 @@ const About: React.FC = () => {
                             </p>
                             <p>
                                 Já trabalhei em lugares como SENAI, Petrobras,
-                                Correios, (Stefanini atualmente) e algumas
-                                outras. Sou formado em Analise e desenvolvimento
-                                de sistemas.
+                                Correios, (atualmente no INEMA pela Stefanini )
+                                e algumas outras. Sou formado em Analise e
+                                desenvolvimento de sistemas.
                             </p>
                             <p>
                                 Sou apaixonado por trabalhar com projetos
