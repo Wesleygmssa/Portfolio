@@ -19,27 +19,27 @@ export const Content = styled.div`
         text-align: center;
         font-size: 24px;
         padding: 16px 20px;
-        color: #fff;
     }
 
     img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
+        max-width: 800px;
+        width: 100%;
+        max-height: 600px;
+        height: 100%;
         margin-top: 24px;
+        border-radius: 5px;
         /* border: 3px solid var(--primary-color); */
         /* border: 3px solid #000; */
         cursor: pointer;
 
-        -webkit-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
+        /* -webkit-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
-        box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75); */
     }
 
     h1,
     p,
     span {
-        color: var(--text-color);
         margin-top: 24px;
         font-family: "Roboto", sans-serif;
     }
@@ -61,7 +61,6 @@ export const Content = styled.div`
         animation: linkCursor 400ms steps(40) infinite normal,
             typing 4s steps(40) 1s normal both;
         /* color: var(--title-color); */
-        color: #fff;
     }
 
     @keyframes typing {
@@ -104,7 +103,7 @@ export const Content = styled.div`
         font-size: 24px;
         text-align: center;
         background-color: transparent;
-        color: var(--title-color);
+        /* color: var(--title-color); */
     }
 `;
 export const Info = styled.div`
@@ -120,7 +119,7 @@ export const Info = styled.div`
         flex-wrap: wrap;
 
         li {
-            color: var(--text-color);
+            /* color: var(--text-color); */
             list-style: none;
             padding: 10px;
             cursor: pointer;
@@ -184,13 +183,13 @@ export const Skills = styled.div`
 
     strong {
         margin-left: 5px;
-        color: #fff;
+        /* color: #fff; */
     }
     span {
         display: flex;
         flex-direction: column;
         font-weight: bold;
-        color: #fff;
+        /* color: #fff; */
         align-items: center;
 
         width: 160px;

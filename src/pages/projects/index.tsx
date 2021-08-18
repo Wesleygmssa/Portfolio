@@ -11,7 +11,7 @@ import {
 import PageDefault from "../../components/PageDefault";
 import datas from "../../data/data.json";
 import ButtonLink from "../../components/LinkButton";
-import Icon from "../../components/Icon";
+import { Icon } from "../../components/Icon";
 import { FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 
 const Projects: React.FC = () => {

@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import PageDefault from "../../components/PageDefault";
-import { FaReact, FaCss3, FaNodeJs } from "react-icons/fa";
+import ImgPerfil from "../../assets/wesley.png";
 
 import { Container, Content, Info, BoxSkills } from "./styles";
-import { Skills } from "../../components/Skills";
 
 //animação
 const apperFromCenter = keyframes`
@@ -29,32 +28,6 @@ export const AnimationContainer = styled.div`
     -moz-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75); ;
 `;
-
-const ConteudoUm = () => {
-    return <h3>Experiência obtida através de cursos e projetos pessoais.</h3>;
-};
-const ConteudoDois = () => {
-    return (
-        <AnimationContainer>
-            <div className="resume">
-                <h3>
-                    Estudante bootcamp/Gostack (Rocketseat) - Desenvolvedor
-                    full-stack
-                </h3>
-                <span>
-                    Desenvolvendo aplicações em Java script, React, React-native
-                    e nodeJS
-                </span>
-                <p>
-                    No bootcamp/Gostack é uma forma de ganhar experiência
-                    através do curso onde construímos um projeto do zero ao
-                    deploy com as tecnologias ReactJS, React-Native, NodeJS e
-                    etc... Aprendemos na pratica a construir projetos reais.
-                </p>
-            </div>
-        </AnimationContainer>
-    );
-};
 
 const About: React.FC = () => {
     const [togleConteudos, setTogleConteudos] = useState(false);
@@ -81,10 +54,7 @@ const About: React.FC = () => {
         <PageDefault>
             <Container>
                 <Content>
-                    <img
-                        src="https://avatars2.githubusercontent.com/u/41512408?s=460&u=079b45ace61cd43ec5cb1b230e070375b4d2d382&v=4"
-                        alt="Wesley Guerra"
-                    />
+                    <img src={ImgPerfil} alt="Wesley Guerra" />
                     <h1 className="typing-animation">Olá, Sou Wesley 👋</h1>
                     <Info>
                         <Content>
@@ -123,33 +93,6 @@ const About: React.FC = () => {
                             <li>Teste unitários</li>
                         </ul>
                     </Info>
-
-                    {/* <BoxSkills>
-                        <Skills
-                            valueInitial={valueInitialReact}
-                            colorType={`#7AE3F8`}
-                            icon={FaReact}
-                            name={"REACT"}
-                        />
-                        <Skills
-                            valueInitial={valueInitialNode}
-                            colorType={`#7AE3F8`}
-                            icon={FaReact}
-                            name={"REACT-NATIVE"}
-                        />
-                        <Skills
-                            valueInitial={valueInitialCss}
-                            colorType={`#016EB6`}
-                            icon={FaCss3}
-                            name={"CSS"}
-                        />
-                        <Skills
-                            valueInitial={valueInitialNode}
-                            colorType={`#09cc4a`}
-                            icon={FaNodeJs}
-                            name={"NODEJS"}
-                        />
-                    </BoxSkills> */}
                 </Content>
             </Container>
         </PageDefault>

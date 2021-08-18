@@ -42,17 +42,17 @@ export const Card = styled.div`
     border-radius: 5px;
     margin: 8px 8px;
     cursor: pointer;
-    border: 1px solid transparent;
     transition: 0.8s;
+    background-color: #fff;
 
     -webkit-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
 
     &:hover {
-        -webkit-box-shadow: 3px -4px 36px -2px var(--primary-color);
-        -moz-box-shadow: 3px -4px 36px -2px var(--primary-color);
-        box-shadow: 3px -4px 36px -2px var(--primary-color);
+        -webkit-box-shadow: 3px -4px 36px -2px #000;
+        -moz-box-shadow: 3px -4px 36px -2px #000;
+        box-shadow: 3px -4px 36px -2px #000;
     }
 
     .card-img {
@@ -67,7 +67,6 @@ export const Card = styled.div`
     }
 
     a {
-        color: #fff;
     }
 
     @media (max-width: 850px) {
@@ -84,7 +83,6 @@ export const CardContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
     text-align: center;
     position: relative;
 
