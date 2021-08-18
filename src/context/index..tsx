@@ -4,7 +4,7 @@ import { SelectTheme } from "./selectTheme";
 const AppProvider = ({ children }: any) => {
     return (
         <>
-            <SelectTheme>{children}</SelectTheme>;
+            <SelectTheme>{children}</SelectTheme>
         </>
     );
 };

@@ -19,10 +19,12 @@ const App: React.FC = () => {
 
     return (
         <ThemeProvider theme={light}>
-            <BrowserRouter>
-                <Routes />
-            </BrowserRouter>
-            <GlobalStyles />
+            <AppProvider>
+                <BrowserRouter>
+                    <Routes />
+                </BrowserRouter>
+                <GlobalStyles />
+            </AppProvider>
         </ThemeProvider>
     );
 };
