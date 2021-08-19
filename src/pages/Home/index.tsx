@@ -9,7 +9,7 @@ const About: React.FC = () => {
             <Container>
                 <Content>
                     <h1>Olá, Sou Wesley </h1>
-                    <span>Desenvolvedor de softwares</span>
+                    <span>💻 Software Develope</span>
                 </Content>
             </Container>
         </PageDefault>
