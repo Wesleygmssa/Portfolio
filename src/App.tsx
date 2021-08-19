@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import GlobalStyles from "./styles/global";
 import Routes from "./routes";
+import usePersistedState from "./utils/usePersistedState";
 
 import { ThemeProvider } from "styled-components";
 import light from "./styles/themes/light";
@@ -18,15 +19,15 @@ const App: React.FC = () => {
     };
 
     return (
-        <AppProvider>
-            <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
+            <AppProvider>
                 <BrowserRouter>
                     <Routes />
                     <ThemeSwitcher toggleTheme={toggleTheme} />
                 </BrowserRouter>
                 <GlobalStyles />
-            </ThemeProvider>
-        </AppProvider>
+            </AppProvider>
+        </ThemeProvider>
     );
 };
 
