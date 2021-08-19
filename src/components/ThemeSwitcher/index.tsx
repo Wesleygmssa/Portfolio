@@ -8,7 +8,7 @@ interface Props {
     toggleTheme(): void;
 }
 
-const ThemeSwitcher: React.FC<Props> = ({ toggleTheme }: any) => {
+export const ThemeSwitcher: React.FC<Props> = ({ toggleTheme }: any) => {
     const { colors, title } = useContext(ThemeContext);
 
     return (
@@ -21,13 +21,11 @@ const ThemeSwitcher: React.FC<Props> = ({ toggleTheme }: any) => {
                 height={10}
                 width={40}
                 handleDiameter={20}
-                offColor={colors.secondary}
-                onColor={colors.text}
-                offHandleColor={colors.secondary}
-                onHandleColor={colors.text}
+                // offColor={colors.secondary}
+                // onColor={colors.text}
+                // offHandleColor={colors.secondary}
+                // onHandleColor={colors.text}
             />
         </Container>
     );
 };
-
-export default ThemeSwitcher;

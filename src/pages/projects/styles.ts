@@ -43,7 +43,7 @@ export const Card = styled.div`
     margin: 8px 8px;
     cursor: pointer;
     transition: 0.8s;
-    background-color: #fff;
+    background-color: ${props => props.theme.colors.background};
 
     -webkit-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
