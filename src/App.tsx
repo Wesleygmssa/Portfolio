@@ -17,14 +17,14 @@ const App: React.FC = () => {
     };
 
     return (
-        <ThemeProvider theme={light}>
-            <AppProvider>
+        <AppProvider>
+            <ThemeProvider theme={light}>
                 <BrowserRouter>
                     <Routes />
                 </BrowserRouter>
                 <GlobalStyles />
-            </AppProvider>
-        </ThemeProvider>
+            </ThemeProvider>
+        </AppProvider>
     );
 };
 

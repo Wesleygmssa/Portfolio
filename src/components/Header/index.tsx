@@ -36,7 +36,7 @@ const Header: React.FC = () => {
                     uncheckedIcon={false}
                     height={10}
                     handleDiameter={20}
-                    offColor={colors.secundary}
+                    offColor={colors.secondary}
                     onColor={colors.primary}
                 />
             </div>
