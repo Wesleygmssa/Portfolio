@@ -5,7 +5,9 @@ import dark from "../styles/themes/light";
 const AreaContext = createContext({});
 
 export const SelectTheme = ({ children }: any) => {
-    const toggleTheme = (theme: any, setTheme: any) => {
+    const [theme, setTheme] = useState(light);
+
+    const toggleTheme = () => {
         setTheme(theme.title === "light" ? dark : light);
     };
 
@@ -16,7 +18,7 @@ export const SelectTheme = ({ children }: any) => {
     );
 };
 
-export function useTheme() {
+export function useThemeToggle() {
     const context = useContext(AreaContext);
 
     if (!context) {

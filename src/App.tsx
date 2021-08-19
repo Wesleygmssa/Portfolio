@@ -8,7 +8,6 @@ import light from "./styles/themes/light";
 import dark from "./styles/themes/light";
 import { useState } from "react";
 import AppProvider from "./context/index.";
-// import { useTheme } from "./context/selectTheme";
 
 const App: React.FC = () => {
     const [theme, setTheme] = useState(light);
