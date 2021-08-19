@@ -61,8 +61,7 @@ const About: React.FC = () => {
                             <p>
                                 Natural de Salvador/BA, entusiasta das melhores
                                 tecnologias de desenvolvimento web, mobile e
-                                trabalhando como desenvolvedor front-end na
-                                Stefanini.
+                                trabalhando como desenvolvedor front-end.
                             </p>
                             <p>
                                 Já trabalhei em lugares como SENAI, Petrobras,
