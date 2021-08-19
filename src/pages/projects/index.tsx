@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
                                 <h3>{data.title}</h3>
                                 <p>{data.text}</p>
                                 {data.Highlighted ? (
-                                    <span>Construção</span>
+                                    <span>Desenvolvimento</span>
                                 ) : (
                                     ""
                                 )}
