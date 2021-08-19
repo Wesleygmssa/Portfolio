@@ -22,19 +22,19 @@ export const Content = styled.div`
     }
 
     img {
-        max-width: 800px;
+        max-width: 600px;
         width: 100%;
-        max-height: 700px;
+        max-height: 600px;
         height: 100%;
         margin-top: 24px;
-        border-radius: 5px;
+        border-radius: 10px;
         /* border: 3px solid var(--primary-color); */
         /* border: 3px solid #000; */
         cursor: pointer;
 
-        /* -webkit-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
-        box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75); */
+        box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
     }
 
     h1,
