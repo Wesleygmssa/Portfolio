@@ -39,6 +39,14 @@
         "tec": ["javaScript", "css3"]
     },
     {
+        "title": "Gym Manager",
+        "text": "Sistema gerenciamento de academia, O mesmo salvando dados em JSON",
+        "link_frontEnd": "https://github.com/Wesleygmssa/gym-manager",
+        "icon1": "FaJs",
+        "icon2": "FaNodeJs",
+        "tec": ["JavaScript", "Nunjucks", "JSON", "Nodejs", "Express"]
+    },
+    {
         "title": "Clone da NETFLIX",
         "text": " Construído o clone da netflix na imersão da B7web, onde aprendemos alguns conceitos do React",
         "link_frontEnd": "https://github.com/Wesleygmssa/clonenetflix-w7web",
@@ -50,7 +58,7 @@
         "text": "Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.",
         "link_backEnd": "https://github.com/Wesleygmssa/nlwValoriza",
         "icon2": "FaNodeJs",
-        "tec": ["nodejs", "typeorm",  "typescript", "sqlite3"]
+        "tec": ["nodejs", "typeorm", "typescript", "sqlite3"]
     },
     {
         "title": "Letmeask ",
@@ -68,7 +76,7 @@
         "icon2": "FaNodeJs",
         "Highlighted": "true",
         "key": "R5abDxDeg0I",
-        "tec": ["react", "nodejs",  "typescript", "typeorm"]
+        "tec": ["react", "nodejs", "typescript", "typeorm"]
     },
     {
         "title": "Plantmanager",
