@@ -21,7 +21,7 @@ export const ThemeSwitcher: React.FC<Props> = ({ toggleTheme }: any) => {
                 height={10}
                 width={40}
                 handleDiameter={20}
-                offColor={colors.secondary}
+                offColor="#afacac"
                 onColor="#085D8B"
                 // offHandleColor={colors.secondary}
                 // onHandleColor={colors.text}

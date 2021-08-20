@@ -43,11 +43,13 @@ export const Card = styled.div`
     margin: 8px 8px;
     cursor: pointer;
     transition: 0.8s;
-    background-color: ${props => props.theme.colors.background};
+    background-color: ${(props) => props.theme.colors.background};
 
-    -webkit-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 6px 15px 2px
+        ${(props) => props.theme.colors.secondary};
+    -moz-box-shadow: -1px 6px 15px 2px
+        ${(props) => props.theme.colors.secondary};
+    box-shadow: -1px 6px 15px 2px ${(props) => props.theme.colors.secondary};
 
     &:hover {
         -webkit-box-shadow: 3px -4px 36px -2px #000;
