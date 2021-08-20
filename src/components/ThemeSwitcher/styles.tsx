@@ -11,6 +11,6 @@ align-items: center;
     z-index: 10;
     transition: transform 0.9s;
     &:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
     }
 `;
