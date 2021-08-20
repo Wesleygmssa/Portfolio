@@ -13,21 +13,21 @@ export const ThemeSwitcher: React.FC<Props> = ({ toggleTheme }: any) => {
 
     return (
         <Container>
-            <span style={{fontSize:24, paddingRight: 5}}>🌞</span> 
+            <span style={{fontSize:20, paddingRight: 5}}>🌞</span> 
             <Switch
                 onChange={toggleTheme}
                 checked={title === "dark"}
                 checkedIcon={false}
                 uncheckedIcon={false}
                 height={10}
-                width={40}
-                handleDiameter={20}
+                width={30}
+                handleDiameter={15}
                 offColor="#afacac"
                 onColor="#085D8B"
                 // offHandleColor={colors.secondary}
                 // onHandleColor={colors.text}
             />
-          <span style={{fontSize:24, paddingLeft: 5}}>🌛</span>
+          <span style={{fontSize:20}}>🌛</span>
         </Container>
     );
 };
