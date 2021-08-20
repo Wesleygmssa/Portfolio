@@ -5,7 +5,7 @@ display: flex;
 align-items: center;
     position: absolute;
     margin-top: 15px;
-    top: 5px;
+    top: 60px;
     right: 2%;
 
     z-index: 10;
