@@ -22,7 +22,7 @@ export const Content = styled.div`
     }
 
     img {
-        max-width: 600px;
+        max-width: 500px;
         width: 100%;
         max-height: 600px;
         height: 100%;
