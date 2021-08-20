@@ -4,7 +4,7 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
     padding: 24px;
-    background: #293647;
+    background: ${(props) => props.theme.colors.secondary};
     position: relative;
 
     .nav {

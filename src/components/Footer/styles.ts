@@ -6,7 +6,7 @@ export const FooterBase = styled.footer`
     flex-direction: column;
     align-items: center;
     height: 100px;
-    background: #293647;
+    background: ${(props) => props.theme.colors.secondary};
     padding-top: auto;
 
     > div {
