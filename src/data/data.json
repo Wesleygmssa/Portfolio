@@ -1,5 +1,16 @@
 [
     {
+        "title": "Dtmoney",
+        "text": "Tenha controle das suas finanças. Utilizando Dtmoney",
+        "link_frontEnd": "https://github.com/Wesleygmssa/dtmoney",
+        "icon1": "FaReact",
+        "tec": [
+            "React",
+            "styled-components",
+            "React-Modal"
+        ]
+    },
+    {
         "title": "Task",
         "text": "Projeto Criado para agendar suas tarefas do dia a dia",
         "link_frontEnd": "https://github.com/Wesleygmssa/web-task/blob/master/src/views/Home/index.js",
@@ -53,8 +64,8 @@
         "link_frontEnd": "https://www.efizconsultoria.com.br",
         "icon1": "FaJs",
         "tec": [
-            "javaScript",
-            "css3"
+            "JavaScript",
+            "Css3"
         ]
     },
     {
@@ -77,8 +88,8 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/clonenetflix-w7web",
         "icon1": "FaReact",
         "tec": [
-            "react",
-            "styled-components"
+            "React",
+            "Styled-components"
         ]
     },
     {
@@ -87,10 +98,10 @@
         "link_backEnd": "https://github.com/Wesleygmssa/nlwValoriza",
         "icon2": "FaNodeJs",
         "tec": [
-            "nodejs",
-            "typeorm",
-            "typescript",
-            "sqlite3"
+            "Nodejs",
+            "Typeorm",
+            "Typescript",
+            "Sqlite3"
         ]
     },
     {
@@ -99,9 +110,9 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/letmeask",
         "icon1": "FaReact",
         "tec": [
-            "react",
-            "typescript",
-            "firebase"
+            "React",
+            "Typescript",
+            "Firebase"
         ]
     },
     {
@@ -114,10 +125,10 @@
         "Highlighted": "true",
         "key": "R5abDxDeg0I",
         "tec": [
-            "react",
-            "nodejs",
-            "typescript",
-            "typeorm"
+            "React",
+            "Nodejs",
+            "Typescript",
+            "Typeorm"
         ]
     },
     {
@@ -127,10 +138,10 @@
         "icon1": "FaReact",
         "Highlighted": "true",
         "tec": [
-            "react-native",
-            "expo-cli",
-            "typescript",
-            "json-server"
+            "React-native",
+            "Expo-cli",
+            "Typescript",
+            "Json-server"
         ]
     },
     {
@@ -141,9 +152,9 @@
         "icon2": "FaNodeJs",
         "key": "",
         "tec": [
-            "nodejs",
-            "ejs",
-            "javascript"
+            "Nodejs",
+            "Ejs",
+            "Javascript"
         ]
     },
     {
@@ -154,9 +165,9 @@
         "icon2": "FaNodeJs",
         "key": "",
         "tec": [
-            "react-natve",
-            "typescript",
-            "nodejs"
+            "React-natve",
+            "Typescript",
+            "Nodejs"
         ]
     }
 ]
