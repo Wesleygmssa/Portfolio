@@ -153,6 +153,7 @@ export const ButtonGroup = styled.div`
         font-size: 12px;
         transition: 0.5s;
         border: 0;
+        font-size: 16px;
     }
 
     .button-bloqued {
