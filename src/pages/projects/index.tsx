@@ -13,6 +13,7 @@ import datas from "../../data/data.json";
 import ButtonLink from "../../components/LinkButton";
 import { Icon } from "../../components/Icon";
 import { FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
+import Button from "../../components/Button";
 
 const Projects: React.FC = () => {
     return (
@@ -33,7 +34,13 @@ const Projects: React.FC = () => {
                                 ) : (
                                     ""
                                 )}
-                                {/* {!(data.Highlighted)?  <span style={{background:"#c9ff04"}}>Destaque</span> : ''}  */}
+                                {data.bloqued ? (
+                                    <span style={{ background: "#0479ff" }}>
+                                        Privado
+                                    </span>
+                                ) : (
+                                    ""
+                                )}
                                 <Icons>
                                     {data.icon1 === "FaReact" ? (
                                         <Icon
@@ -75,26 +82,40 @@ const Projects: React.FC = () => {
                                 </Tec>
 
                                 <ButtonGroup>
-                                    {data.link_frontEnd ? (
-                                        <ButtonLink
-                                            href={
-                                                data.link_frontEnd
-                                                    ? data.link_frontEnd
-                                                    : ""
-                                            }
+                                    {!data.bloqued ? (
+                                        <>
+                                            {data.link_frontEnd ? (
+                                                <ButtonLink
+                                                    href={
+                                                        data.link_frontEnd
+                                                            ? data.link_frontEnd
+                                                            : ""
+                                                    }
+                                                >
+                                                    Front-End
+                                                </ButtonLink>
+                                            ) : (
+                                                ""
+                                            )}
+                                            {data.link_backEnd ? (
+                                                <ButtonLink
+                                                    href={data.link_backEnd}
+                                                >
+                                                    Back-End
+                                                </ButtonLink>
+                                            ) : (
+                                                ""
+                                            )}
+                                        </>
+                                    ) : (
+                                        <button
+                                            className="button-bloqued"
+                                            disabled
                                         >
                                             Front-End
-                                        </ButtonLink>
-                                    ) : (
-                                        ""
+                                        </button>
                                     )}
-                                    {data.link_backEnd ? (
-                                        <ButtonLink href={data.link_backEnd}>
-                                            Back-End
-                                        </ButtonLink>
-                                    ) : (
-                                        ""
-                                    )}
+
                                     {/* {data?.link_visite ? (
                                         <ButtonLink
                                             href={

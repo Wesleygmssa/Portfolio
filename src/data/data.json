@@ -1,5 +1,18 @@
 [
     {
+        "title": "SEIA FISCALIZAÇÂO",
+        "text": "O INEMA,  Realiza a fiscalização ambiental das atividades impactantes, efetiva e potencialmente degradadoras da qualidade do meio ambiente e recursos hídricos no Estado da Bahia.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/dtmoney",
+        "icon1": "FaReact",
+        "tec": [
+            "React",
+            "styled-components",
+            "React-Modal"
+        ],
+        "bloqued": true
+        
+    },
+    {
         "title": "Dtmoney",
         "text": "Tenha controle das suas finanças. Utilizando Dtmoney",
         "link_frontEnd": "https://github.com/Wesleygmssa/dtmoney",
