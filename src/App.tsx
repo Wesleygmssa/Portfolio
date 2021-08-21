@@ -22,7 +22,7 @@ interface IUser {
 }
 
 const App: React.FC = () => {
-    const [theme, setTheme] = usePersistedState(light);
+    const [theme, setTheme] = usePersistedState(dark);
 
     const toggleTheme = () => {
         setTheme(theme.title === "light" ? dark : light);
