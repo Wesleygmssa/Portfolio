@@ -103,9 +103,10 @@ export const CardContent = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 25px;
         min-height: 80px;
+        font-family: "Open Sans", sans-serif;
     }
 
     span {
