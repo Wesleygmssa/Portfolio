@@ -34,13 +34,7 @@ const Projects: React.FC = () => {
                                 ) : (
                                     ""
                                 )}
-                                {data.bloqued ? (
-                                    <span style={{ background: "#0479ff" }}>
-                                        Privado
-                                    </span>
-                                ) : (
-                                    ""
-                                )}
+                                {/* {!(data.Highlighted)?  <span style={{background:"#c9ff04"}}>Destaque</span> : ''}  */}
                                 <Icons>
                                     {data.icon1 === "FaReact" ? (
                                         <Icon
@@ -84,30 +78,19 @@ const Projects: React.FC = () => {
                                 <ButtonGroup>
                                     {!data.bloqued ? (
                                         <>
-                                            {data.visit ? (
+                                            {data.link_frontEnd ? (
                                                 <ButtonLink
-                                                    href={data.link_frontEnd}
+                                                    href={
+                                                        data.link_frontEnd
+                                                            ? data.link_frontEnd
+                                                            : ""
+                                                    }
                                                 >
-                                                    Visitar
+                                                    Front-End
                                                 </ButtonLink>
                                             ) : (
-                                                <>
-                                                    {data.link_frontEnd ? (
-                                                        <ButtonLink
-                                                            href={
-                                                                data.link_frontEnd
-                                                                    ? data.link_frontEnd
-                                                                    : ""
-                                                            }
-                                                        >
-                                                            Front-End
-                                                        </ButtonLink>
-                                                    ) : (
-                                                        ""
-                                                    )}
-                                                </>
+                                                ""
                                             )}
-
                                             {data.link_backEnd ? (
                                                 <ButtonLink
                                                     href={data.link_backEnd}
@@ -123,11 +106,11 @@ const Projects: React.FC = () => {
                                             className="button-bloqued"
                                             disabled
                                         >
-                                            Front-End
+                                            Front-end
                                         </button>
                                     )}
 
-                                    {/* {data?.link_visite ? (
+                                    {data?.link_visite ? (
                                         <ButtonLink
                                             href={
                                                 data.link_visite
@@ -139,7 +122,7 @@ const Projects: React.FC = () => {
                                         </ButtonLink>
                                     ) : (
                                         ""
-                                    )} */}
+                                    )}
                                 </ButtonGroup>
                             </CardContent>
                         </Card>

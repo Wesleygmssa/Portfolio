@@ -74,13 +74,12 @@
     {
         "title": "EFIZ",
         "text": "Criado um Website para Soluções contábeis e financeiras para profissionais na saúde pessoa física e jurídica.",
-        "link_frontEnd": "https://www.efizconsultoria.com.br",
         "icon1": "FaJs",
         "tec": [
             "JavaScript",
             "Css3"
         ],
-        "visit": true
+        "link_visite": "https://www.efizconsultoria.com.br"
     },
     {
         "title": "Gym Manager",
@@ -104,7 +103,8 @@
         "tec": [
             "React",
             "Styled-components"
-        ]
+        ],
+        "link_visite": "https://gifted-goldwasser-6012ac.netlify.app/"
     },
     {
         "title": "Valoriza",
@@ -127,7 +127,8 @@
             "React",
             "Typescript",
             "Firebase"
-        ]
+        ],
+        "link_visite": "https://relaxed-jones-75aff8.netlify.app/"
     },
     {
         "title": "Gobarber web",
