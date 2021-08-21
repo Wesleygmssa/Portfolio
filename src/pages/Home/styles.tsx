@@ -28,4 +28,13 @@ export const Content = styled.div`
         font-family: "Courier New", Courier, monospace;
         font-weight: 300;
     }
+
+    @media (max-width: 800px) {
+        h1 {
+            font-size: 50px;
+        }
+        span {
+            font-size: 20px;
+        }
+    }
 `;
