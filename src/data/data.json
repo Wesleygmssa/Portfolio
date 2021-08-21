@@ -179,6 +179,7 @@
         "icon1": "FaReact",
         "icon2": "FaNodeJs",
         "key": "",
+        "Highlighted": "true",
         "tec": [
             "React-natve",
             "Typescript",
