@@ -79,7 +79,8 @@
         "tec": [
             "JavaScript",
             "Css3"
-        ]
+        ],
+        "visit": true
     },
     {
         "title": "Gym Manager",

@@ -84,19 +84,30 @@ const Projects: React.FC = () => {
                                 <ButtonGroup>
                                     {!data.bloqued ? (
                                         <>
-                                            {data.link_frontEnd ? (
+                                            {data.visit ? (
                                                 <ButtonLink
-                                                    href={
-                                                        data.link_frontEnd
-                                                            ? data.link_frontEnd
-                                                            : ""
-                                                    }
+                                                    href={data.link_frontEnd}
                                                 >
-                                                    Front-End
+                                                    Visitar
                                                 </ButtonLink>
                                             ) : (
-                                                ""
+                                                <>
+                                                    {data.link_frontEnd ? (
+                                                        <ButtonLink
+                                                            href={
+                                                                data.link_frontEnd
+                                                                    ? data.link_frontEnd
+                                                                    : ""
+                                                            }
+                                                        >
+                                                            Front-End
+                                                        </ButtonLink>
+                                                    ) : (
+                                                        ""
+                                                    )}
+                                                </>
                                             )}
+
                                             {data.link_backEnd ? (
                                                 <ButtonLink
                                                     href={data.link_backEnd}
