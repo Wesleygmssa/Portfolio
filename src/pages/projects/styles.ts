@@ -172,7 +172,7 @@ export const ButtonGroup = styled.div`
         display: inline-block;
         transition: opacity 0.3s;
         background-color: #2274a5;
-        opacity: 0.4;
+        opacity: 0.6;
 
         &:disabled {
             cursor: not-allowed;
