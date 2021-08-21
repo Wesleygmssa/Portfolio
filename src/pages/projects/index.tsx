@@ -34,7 +34,13 @@ const Projects: React.FC = () => {
                                 ) : (
                                     ""
                                 )}
-                                {/* {!(data.Highlighted)?  <span style={{background:"#c9ff04"}}>Destaque</span> : ''}  */}
+                                {data.bloqued ? (
+                                    <span style={{ background: "#0468ff" }}>
+                                        Privado
+                                    </span>
+                                ) : (
+                                    ""
+                                )}
                                 <Icons>
                                     {data.icon1 === "FaReact" ? (
                                         <Icon
