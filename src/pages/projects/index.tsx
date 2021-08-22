@@ -19,10 +19,6 @@ const Projects: React.FC = () => {
     return (
         <PageDefault>
             <Content>
-                {/* <h4>
-                    Desenvolvendo sistemas em JavaScript, React, React-native,
-                    nodeJS, PHP e algumas outras.
-                </h4> */}
                 <Cards>
                     {datas.map((data) => (
                         <Card key={data.title}>
