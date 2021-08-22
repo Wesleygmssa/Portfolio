@@ -29,50 +29,39 @@ const Projects: React.FC = () => {
                             <CardContent>
                                 <h3>{data.title}</h3>
                                 <p>{data.text}</p>
-                                {data.Highlighted ? (
+                                {data.Highlighted && (
                                     <span>Desenvolvimento</span>
-                                ) : (
-                                    ""
                                 )}
-                                {data.bloqued ? (
+                                {data.bloqued && (
                                     <span style={{ background: "#0468ff" }}>
                                         Privado
                                     </span>
-                                ) : (
-                                    ""
                                 )}
                                 <Icons>
-                                    {data.icon1 === "FaReact" ? (
+                                    {data.icon1 === "FaReact" && (
                                         <Icon
                                             icon={FaReact}
                                             style={{ color: "#08cbf7" }}
                                         />
-                                    ) : (
-                                        ""
                                     )}
-                                    {data.icon2 === "FaNodeJs" ? (
+
+                                    {data.icon2 === "FaNodeJs" && (
                                         <Icon
                                             icon={FaNodeJs}
                                             style={{ color: "#09cc4a" }}
                                         />
-                                    ) : (
-                                        ""
                                     )}
-                                    {data.icon1 === "FaJs" ? (
+                                    {data.icon1 === "FaJs" && (
                                         <Icon
                                             icon={FaJs}
                                             style={{ color: "#c9ff04" }}
                                         />
-                                    ) : (
-                                        ""
                                     )}
-                                    {data.icon1 === "FaJs" ? (
+                                    {data.icon1 === "FaJs" && (
                                         <Icon
                                             icon={FaHtml5}
                                             style={{ color: "#e00e0e" }}
                                         />
-                                    ) : (
-                                        ""
                                     )}
                                 </Icons>
                                 <Tec>
@@ -84,27 +73,22 @@ const Projects: React.FC = () => {
                                 <ButtonGroup>
                                     {!data.bloqued ? (
                                         <>
-                                            {data.link_frontEnd ? (
+                                            {data.link_frontEnd && (
                                                 <ButtonLink
                                                     href={
+                                                        data.link_frontEnd &&
                                                         data.link_frontEnd
-                                                            ? data.link_frontEnd
-                                                            : ""
                                                     }
                                                 >
                                                     Código Front-end
                                                 </ButtonLink>
-                                            ) : (
-                                                ""
                                             )}
-                                            {data.link_backEnd ? (
+                                            {data.link_backEnd && (
                                                 <ButtonLink
                                                     href={data.link_backEnd}
                                                 >
                                                     Código-Back-end
                                                 </ButtonLink>
-                                            ) : (
-                                                ""
                                             )}
                                         </>
                                     ) : (
@@ -116,18 +100,15 @@ const Projects: React.FC = () => {
                                         </button>
                                     )}
 
-                                    {data?.link_visite ? (
+                                    {data?.link_visite && (
                                         <ButtonLink
                                             href={
+                                                data.link_visite &&
                                                 data.link_visite
-                                                    ? data.link_visite
-                                                    : ""
                                             }
                                         >
                                             Visite
                                         </ButtonLink>
-                                    ) : (
-                                        ""
                                     )}
                                 </ButtonGroup>
                             </CardContent>
