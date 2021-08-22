@@ -6,8 +6,7 @@
         "icon1": "FaReact",
         "tec": [
             "React",
-            "styled-components",
-            "React-Modal"
+            "styled-components"
         ],
         "bloqued": true
         
@@ -165,11 +164,13 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/blog-guiapress",
         "link_backEnd": "https://github.com/Wesleygmssa/blog-guiapress",
         "icon2": "FaNodeJs",
+        "icon1": "FaJs",
         "key": "",
         "tec": [
             "Nodejs",
             "Ejs",
-            "Javascript"
+            "Javascript",
+            "Css3"
         ]
     },
     {
