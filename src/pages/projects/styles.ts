@@ -184,16 +184,14 @@ export const ButtonGroup = styled.div`
 export const Tec = styled.div`
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
 
     div {
         font-size: 12px;
         padding: 5px;
         border: 1px solid #ddd;
+        border-radius: 8px;
         margin-bottom: 10px;
         font-weight: bold;
-
-        & + div {
-            margin-left: 5px;
-        }
     }
 `;
