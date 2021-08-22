@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
                                                             : ""
                                                     }
                                                 >
-                                                    Front-End
+                                                    Código Front-end
                                                 </ButtonLink>
                                             ) : (
                                                 ""
@@ -101,7 +101,7 @@ const Projects: React.FC = () => {
                                                 <ButtonLink
                                                     href={data.link_backEnd}
                                                 >
-                                                    Back-End
+                                                    Código-Back-end
                                                 </ButtonLink>
                                             ) : (
                                                 ""
@@ -112,7 +112,7 @@ const Projects: React.FC = () => {
                                             className="button-bloqued"
                                             disabled
                                         >
-                                            Front-end
+                                            Código Front-end
                                         </button>
                                     )}
 
