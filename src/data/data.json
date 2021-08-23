@@ -112,7 +112,8 @@
         "tec": [
             "React",
             "Typescript",
-            "Firebase"
+            "Firebase",
+            "classnames"
         ]
     },
     {
