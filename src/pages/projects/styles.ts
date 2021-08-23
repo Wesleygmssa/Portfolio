@@ -36,6 +36,7 @@ export const Card = styled.div`
     display: flex;
     max-width: 350px;
     width: 100%;
+    min-height: 360px;
     height: 100%;
     flex-direction: column;
     padding: 8px 16px;
@@ -47,8 +48,7 @@ export const Card = styled.div`
 
     -webkit-box-shadow: -1px 6px 15px 2px
         ${(props) => props.theme.colors.primary};
-    -moz-box-shadow: -1px 6px 15px 2px
-        ${(props) => props.theme.colors.primary};
+    -moz-box-shadow: -1px 6px 15px 2px ${(props) => props.theme.colors.primary};
     box-shadow: -1px 6px 15px 2px ${(props) => props.theme.colors.primary};
 
     &:hover {
@@ -90,6 +90,7 @@ export const CardContent = styled.div`
     justify-content: center;
     text-align: center;
     position: relative;
+    min-height: 340px;
 
     h3 {
         width: 100%;
@@ -102,9 +103,10 @@ export const CardContent = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 25px;
         min-height: 80px;
+        font-family: "Open Sans", sans-serif;
     }
 
     span {
@@ -120,8 +122,8 @@ export const CardContent = styled.div`
         position: absolute;
         border-radius: 5px;
         transform: rotate(-30deg);
-        top: 18px;
-        left: -30px;
+        top: 8px;
+        left: -45px;
         font-weight: bold;
         letter-spacing: 2px;
         font-size: 12px;
@@ -144,28 +146,52 @@ export const Icon = styled.div`
 export const ButtonGroup = styled.div`
     display: flex;
     width: 100%;
+    margin-top: auto;
 
     a {
         width: 100%;
         font-size: 12px;
         transition: 0.5s;
         border: 0;
+        font-size: 14px;
+    }
+
+    .button-bloqued {
+        flex: 1;
+        color: var(--white);
+        border: 1px solid #838383;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 16px 16px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        outline: none;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        transition: opacity 0.3s;
+        background-color: #2274a5;
+        opacity: 0.6;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
     }
 `;
 
 export const Tec = styled.div`
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
 
     div {
         font-size: 12px;
         padding: 5px;
         border: 1px solid #ddd;
+        border-radius: 8px;
         margin-bottom: 10px;
         font-weight: bold;
-
-        & + div {
-            margin-left: 5px;
-        }
     }
 `;

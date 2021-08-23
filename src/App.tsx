@@ -11,8 +11,18 @@ import { useState } from "react";
 import AppProvider from "./context/index.";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
+interface IUser {
+    avatar_url: string;
+    login: string;
+    name: string;
+    bio: string;
+    location: string;
+    company: string;
+    twitter_username: string;
+}
+
 const App: React.FC = () => {
-    const [theme, setTheme] = useState(light);
+    const [theme, setTheme] = usePersistedState(dark);
 
     const toggleTheme = () => {
         setTheme(theme.title === "light" ? dark : light);
