@@ -89,7 +89,7 @@ const About: React.FC = () => {
                             <li>TypeScript</li>
                             <li>Docker</li>
                             <li>PostgreSQL</li>
-                            <li>Teste unitários</li>
+                            <li>Testes</li>
                         </ul>
                     </Info>
                 </Content>
