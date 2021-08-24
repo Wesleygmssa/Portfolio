@@ -125,7 +125,8 @@
         "tec": [
             "React",
             "Typescript",
-            "Firebase"
+            "Firebase",
+            "classnames"
         ],
         "link_visite": "https://relaxed-jones-75aff8.netlify.app/"
     },
