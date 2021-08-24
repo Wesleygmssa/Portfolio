@@ -23,6 +23,18 @@
         ]
     },
     {
+        "title": "Buscar por Devs",
+        "text": "Projeto utilizado API do gitHub para buscar por devs e seus repositórios.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/buscardevsnextjs",
+        "icon1": "FaReact",
+        "tec": [
+            "NextJS",
+            "Sass",
+            "Next-auth",
+            "nookies"
+        ]
+    },
+    {
         "title": "Task",
         "text": "Projeto Criado para agendar suas tarefas do dia a dia",
         "link_frontEnd": "https://github.com/Wesleygmssa/web-task",
