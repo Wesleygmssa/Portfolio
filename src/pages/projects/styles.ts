@@ -34,7 +34,7 @@ export const Cards = styled.section`
 
 export const Card = styled.div`
     display: flex;
-    max-width: 350px;
+    max-width: 360px;
     width: 100%;
     min-height: 360px;
     height: 100%;
@@ -90,7 +90,7 @@ export const CardContent = styled.div`
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 340px;
+    min-height: 360px;
 
     h3 {
         width: 100%;
@@ -185,6 +185,8 @@ export const Tec = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    align-items: center;
+    justify-content: center;
 
     div {
         font-size: 12px;

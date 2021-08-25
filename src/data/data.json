@@ -5,8 +5,13 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/dtmoney",
         "icon1": "FaReact",
         "tec": [
-            "React",
-            "styled-components"
+            "react",
+            "styled-components",
+            "formik",
+            "moment",
+            "yup",
+            "react-to-print",
+            "axios"
         ],
         "bloqued": true
         
@@ -17,9 +22,13 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/dtmoney",
         "icon1": "FaReact",
         "tec": [
-            "React",
+            "react",
             "styled-components",
-            "React-Modal"
+            "polished",
+            "react-modal",
+            "miragejs",
+            "axios",
+            "typescript"
         ]
     },
     {
@@ -28,10 +37,13 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/buscardevsnextjs",
         "icon1": "FaReact",
         "tec": [
-            "NextJS",
-            "Sass",
-            "Next-auth",
-            "nookies"
+            "nextJS",
+            "sass",
+            "next-auth",
+            "nookies",
+            "axios",
+            "react-router-dom",
+            "react-scroll"
         ]
     },
     {
@@ -42,10 +54,15 @@
         "icon1": "FaReact",
         "icon2": "FaNodeJs",
         "tec": [
-            "React",
-            "MongoDB",
-            "NodeJS",
-            "Express"
+            "react",
+            "mongoDB",
+            "nodeJS",
+            "express",
+            "date-fns",
+            "axios",
+            "styled-components",
+            "express",
+            "cors"
         ]
     },
     {
@@ -54,8 +71,12 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/gamePlay",
         "icon1": "FaReact",
         "tec": [
-            "React-Native",
-            "TypeScript"
+            "react-Native",
+            "typeScript",
+            "expo-status-bar",
+            "expo-font",
+            "expo",
+            "expo-linear-gradient"
         ],
         "Highlighted": "true"
     },
@@ -65,9 +86,13 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/dashgo-next",
         "icon1": "FaReact",
         "tec": [
-            "NextJs",
-            "TypeScript",
-            "Chakra-ui"
+            "nextJs",
+            "typeScript",
+            "chakra-ui",
+            "yup",
+            "react-query",
+            "react-hook-form",
+            "react-icons"
         ]
     },
     {
@@ -76,10 +101,13 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/podcastr",
         "icon1": "FaReact",
         "tec": [
-            "NextJs",
-            "TypeScript",
-            "Html",
-            "Sass"
+            "nextJs",
+            "typeScript",
+            "sass",
+            "axios",
+            "date-fns",
+            "rc-slider",
+            "json-server"
         ]
     },
     {
@@ -87,8 +115,10 @@
         "text": "Criado um Website para Soluções contábeis e financeiras para profissionais na saúde pessoa física e jurídica.",
         "icon1": "FaJs",
         "tec": [
-            "JavaScript",
-            "Css3"
+            "javaScript",
+            "css3",
+            "html"
+
         ],
         "link_visite": "https://www.efizconsultoria.com.br"
     },
@@ -99,11 +129,14 @@
         "icon1": "FaJs",
         "icon2": "FaNodeJs",
         "tec": [
-            "JavaScript",
-            "Nunjucks",
+            "nodemon",
+            "nunjucks",
             "JSON",
-            "Nodejs",
-            "Express"
+            "nodejs",
+            "express",
+            "browser-sync",
+            "npm-run-all",
+            "method-override"
         ]
     },
     {
@@ -113,7 +146,10 @@
         "icon1": "FaReact",
         "tec": [
             "React",
-            "Styled-components"
+            "styled-components",
+            "polished",
+            "react-icons",
+            "react-router-dom"
         ],
         "link_visite": "https://gifted-goldwasser-6012ac.netlify.app/"
     },
@@ -123,10 +159,17 @@
         "link_backEnd": "https://github.com/Wesleygmssa/nlwValoriza",
         "icon2": "FaNodeJs",
         "tec": [
-            "Nodejs",
+            "nodejs",
             "Typeorm",
-            "Typescript",
-            "Sqlite3"
+            "typescript",
+            "ts-node-dev",
+            "cors",
+            "express",
+            "jsonwebtoken",
+            "reflect-metadata",
+            "sqlite3",
+            "uuid",
+            "bcryptjs"
         ]
     },
     {
@@ -135,10 +178,12 @@
         "link_frontEnd": "https://github.com/Wesleygmssa/letmeask",
         "icon1": "FaReact",
         "tec": [
-            "React",
-            "Typescript",
-            "Firebase",
-            "classnames"
+            "react",
+            "typescript",
+            "firebase",
+            "classnames",
+            "node-sass",
+            "react-router-dom"
         ],
         "link_visite": "https://relaxed-jones-75aff8.netlify.app/"
     },
@@ -152,10 +197,18 @@
         "Highlighted": "true",
         "key": "R5abDxDeg0I",
         "tec": [
-            "React",
-            "Nodejs",
-            "Typescript",
-            "Typeorm"
+            "react",
+            "nodejs",
+            "typescript",
+            "typeorm",
+            "uuidv4",
+            "yup",
+            "styled-components",
+            "axios",
+            "pg",
+            "cors",
+            "bcryptjs",
+            "jsonwebtoken"
         ]
     },
     {
@@ -165,10 +218,13 @@
         "icon1": "FaReact",
         "Highlighted": "true",
         "tec": [
-            "React-native",
-            "Expo-cli",
-            "Typescript",
-            "Json-server"
+            "Rract-native",
+            "expo-cli",
+            "typescript",
+            "json-server",
+            "expo-status-bar",
+            "expo-font",
+            "axios"
         ]
     },
     {
@@ -180,10 +236,16 @@
         "icon1": "FaJs",
         "key": "",
         "tec": [
-            "Nodejs",
-            "Ejs",
-            "Javascript",
-            "Css3"
+            "nodejs",
+            "ejs",
+            "slugify",
+            "mysql2",
+            "express-session",
+            "body-parser",
+            "bcryptjs",
+            "sequelize",
+            "express",
+            "nodemon"
         ]
     },
     {
@@ -195,9 +257,12 @@
         "key": "",
         "Highlighted": "true",
         "tec": [
-            "React-natve",
-            "Typescript",
-            "Nodejs"
+            "react-natve",
+            "typescript",
+            "nodejs",
+            "styled-components",
+            "react-native-vector-icons",
+            "eslint"
         ]
     }
 ]
