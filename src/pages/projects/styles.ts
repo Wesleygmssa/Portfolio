@@ -182,18 +182,17 @@ export const ButtonGroup = styled.div`
 `;
 
 export const Tec = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-
+    width: 300px;
+    max-height: 110px;
+    margin-top: 10px;
     div {
+        display: inline-block;
         font-size: 12px;
         padding: 5px;
         border: 1px solid #ddd;
         border-radius: 8px;
         margin-bottom: 10px;
         font-weight: bold;
+        max-height: 200px;
     }
 `;
