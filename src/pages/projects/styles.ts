@@ -146,7 +146,8 @@ export const Icon = styled.div`
 export const ButtonGroup = styled.div`
     display: flex;
     width: 100%;
-    margin-top: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     a {
         width: 100%;
@@ -183,7 +184,7 @@ export const ButtonGroup = styled.div`
 
 export const Tec = styled.div`
     width: 300px;
-    max-height: 110px;
+    min-height: 110px;
     margin-top: 10px;
     div {
         display: inline-block;
