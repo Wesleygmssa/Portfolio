@@ -17,6 +17,21 @@
         
     },
     {
+        "title": "ignite_autentication",
+        "text": "Processo completo de autenticação, autorização e refresh dentro do React com Next.js permitindo controlar o acesso à rotas e componentes tanto no client-side quando server-side.",
+        "link_frontEnd": "https://github.com/Wesleygmssa/ignite_autentication",
+        "icon1": "FaReact",
+        "tec": [
+            "react",
+            "next",
+            "nookies",
+            "axios"
+        ],
+        "bloqued": true,
+        "Highlighted": "true"
+        
+    },
+    {
         "title": "Dtmoney",
         "text": "Tenha controle das suas finanças. Utilizando Dtmoney",
         "link_frontEnd": "https://github.com/Wesleygmssa/dtmoney",
