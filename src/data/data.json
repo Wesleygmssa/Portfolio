@@ -14,7 +14,6 @@
             "axios"
         ],
         "bloqued": true
-        
     },
     {
         "title": "ignite_autentication",
@@ -26,10 +25,7 @@
             "next",
             "nookies",
             "axios"
-        ],
-        "bloqued": true,
-        "Highlighted": "true"
-        
+        ]
     },
     {
         "title": "Dtmoney",
@@ -133,7 +129,6 @@
             "javaScript",
             "css3",
             "html"
-
         ],
         "link_visite": "https://www.efizconsultoria.com.br"
     },
