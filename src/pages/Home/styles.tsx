@@ -10,13 +10,25 @@ export const Container = styled.section`
     }
 `;
 export const Content = styled.div`
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .background-image {
+        position: absolute;
+        max-width: 1800px;
+        width: 100%;
+        min-height: 500px;
+        height: 100%;
+        background-image: url("https://thumbs.gfycat.com/PlainFriendlyFowl-size_restricted.gif");
+        background-size: cover;
+        background-repeat: no-repeat, repeat;
+        background-position: center; /* Center the image */
+    }
 
     h1 {
+        z-index: 9999;
         text-align: center;
         font-size: 80px;
         padding: 16px 20px;
@@ -27,6 +39,7 @@ export const Content = styled.div`
         opacity: 0.7;
         font-family: "Courier New", Courier, monospace;
         font-weight: 300;
+        z-index: 9999;
     }
 
     @media (max-width: 800px) {

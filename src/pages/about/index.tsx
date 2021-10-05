@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import PageDefault from "../../components/PageDefault";
 import ImgPerfil from "../../assets/wesley.png";
 
-import { Container, Content, Info, BoxSkills } from "./styles";
+import { Container, Content, Info, Painel } from "./styles";
 
 //animação
 const apperFromCenter = keyframes`
@@ -58,39 +58,48 @@ const About: React.FC = () => {
                     <h1 className="typing-animation">Olá, Sou Wesley 👋</h1>
                     <Info>
                         <Content>
-                            <p>
-                                Natural de Salvador/BA, entusiasta das melhores
-                                tecnologias de desenvolvimento web, mobile e
-                                trabalhando como desenvolvedor front-end.
-                            </p>
-                            <p>
-                                Já trabalhei em lugares como SENAI, Petrobras,
-                                Correios, (atualmente no INEMA pela Stefanini )
-                                e algumas outras. Sou formado em Analise e
-                                desenvolvimento de sistemas.
-                            </p>
-                            <p>
-                                Sou apaixonado por trabalhar com projetos
-                                desafiadores e criativos. Não gosto de ficar na
-                                zona de conforto, então procuro me aprimorar
-                                constantemente.
-                            </p>
-                        </Content>
+                            <div className="painel-header">
+                                <div className="ball red"></div>
+                                <div className="ball yellow"></div>
+                                <div className="ball green"></div>
+                            </div>
+                            <Painel>
+                                <p>
+                                    Natural de Salvador/BA, entusiasta das
+                                    melhores tecnologias de desenvolvimento web,
+                                    mobile e trabalhando como desenvolvedor
+                                    front-end.
+                                </p>
+                                <p>
+                                    Já trabalhei em lugares como SENAI,
+                                    Petrobras, Correios, (atualmente no INEMA
+                                    pela Stefanini ) e algumas outras. Sou
+                                    formado em Analise e desenvolvimento de
+                                    sistemas.
+                                </p>
+                                <p>
+                                    Sou apaixonado por trabalhar com projetos
+                                    desafiadores e criativos. Não gosto de ficar
+                                    na zona de conforto, então procuro me
+                                    aprimorar constantemente.
+                                </p>
 
-                        <h3>
-                            🚀 Atualmente fazendo Bootcamp da Reckeatseat focado
-                            nas tecnologias:
-                        </h3>
-                        <ul>
-                            <li>Nodejs</li>
-                            <li>Nextjs</li>
-                            <li>React</li>
-                            <li>React Native</li>
-                            <li>TypeScript</li>
-                            <li>Docker</li>
-                            <li>PostgreSQL</li>
-                            <li>Testes</li>
-                        </ul>
+                                <h3>
+                                    🚀 Atualmente fazendo Bootcamp da
+                                    Reckeatseat focado nas tecnologias:
+                                </h3>
+                                <ul>
+                                    <li>Nodejs</li>
+                                    <li>Nextjs</li>
+                                    <li>React</li>
+                                    <li>React Native</li>
+                                    <li>TypeScript</li>
+                                    <li>Docker</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Testes</li>
+                                </ul>
+                            </Painel>
+                        </Content>
                     </Info>
                 </Content>
             </Container>

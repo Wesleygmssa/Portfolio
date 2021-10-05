@@ -11,6 +11,7 @@ const About: React.FC = () => {
                 <Content>
                     <h1>Olá, Sou Wesley </h1>
                     <span>💻 Software Develope</span>
+                    <div className="background-image"></div>
                 </Content>
             </Container>
         </PageDefault>

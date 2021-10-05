@@ -15,19 +15,24 @@ export const Content = styled.div`
     align-items: center;
     flex-direction: column;
 
+    h1 {
+        margin-bottom: 1rem;
+    }
+
     h3 {
         text-align: center;
         font-size: 24px;
         padding: 16px 20px;
+        margin-bottom: 1rem;
     }
 
     img {
-        max-width: 400px;
+        max-width: 15.5rem;
         width: 100%;
-        max-height: 400px;
+        max-height: 15.5rem;
         height: 100%;
         margin-top: 24px;
-        border-radius: 10px;
+        border-radius: 50%;
         /* border: 3px solid var(--primary-color); */
         /* border: 3px solid #000; */
         cursor: pointer;
@@ -105,10 +110,42 @@ export const Content = styled.div`
         background-color: transparent;
         /* color: var(--title-color); */
     }
+
+    .painel-header {
+        display: flex;
+        width: 100%;
+        padding: 10px 20px;
+        border: 2px solid #707070;
+        border-radius: 0.6rem 0.6rem 0rem 0rem;
+        background-color: #222222;
+        gap: 1rem;
+
+        .ball {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .red {
+            background-color: #d14d4d;
+        }
+
+        .yellow {
+            background-color: #d1bc4d;
+        }
+
+        .green {
+            background-color: #87d14d;
+        }
+    }
 `;
-export const Info = styled.div`
-    display: flex;
-    flex-direction: column;
+
+export const Painel = styled.div`
+    padding: 2rem;
+    border: 2px solid #707070;
+    border-radius: 0rem 0rem 0.6rem 0.6rem;
+    border-top: none;
+
     h3 {
         margin-top: 20px;
     }
@@ -119,7 +156,7 @@ export const Info = styled.div`
         flex-wrap: wrap;
 
         li {
-            /* color: var(--text-color); */
+            font-size: 1.125rem;
             list-style: none;
             padding: 10px;
             cursor: pointer;
@@ -146,6 +183,11 @@ export const Info = styled.div`
             align-items: center;
         }
     }
+`;
+
+export const Info = styled.div`
+    display: flex;
+    flex-direction: column;
 `;
 export const BoxSkills = styled.div`
     max-width: 900px;
