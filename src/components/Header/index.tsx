@@ -13,15 +13,15 @@ const Header: React.FC = () => {
     return (
         <HeaderContainer>
             <div className="nav">
-                {location.pathname === "/" ? (
+                {/* {location.pathname === "/" ? (
                     ""
                 ) : (
                     <NavLink exact to="/" activeClassName="menuActive">
                         HOME
                     </NavLink>
-                )}
+                )} */}
 
-                <NavLink exact to="/about" activeClassName="menuActive">
+                <NavLink exact to="/" activeClassName="menuActive">
                     SOBRE
                 </NavLink>
 

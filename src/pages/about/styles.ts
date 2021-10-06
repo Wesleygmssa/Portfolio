@@ -121,8 +121,8 @@ export const Content = styled.div`
         gap: 1rem;
 
         .ball {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             border-radius: 50%;
         }
 
@@ -141,7 +141,7 @@ export const Content = styled.div`
 `;
 
 export const Painel = styled.div`
-    padding: 2rem;
+    padding: 2rem 1rem;
     border: 2px solid #707070;
     border-radius: 0rem 0rem 0.6rem 0.6rem;
     border-top: none;
