@@ -36,9 +36,10 @@ export const Card = styled.div`
     display: flex;
     max-width: 360px;
     width: 100%;
-    min-height: 360px;
+    min-height: 300px;
     height: 100%;
     flex-direction: column;
+    justify-content: center;
     padding: 8px 16px;
     border-radius: 5px;
     margin: 8px 8px;
@@ -90,7 +91,6 @@ export const CardContent = styled.div`
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 360px;
 
     h3 {
         width: 100%;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Content,
     Cards,
@@ -14,98 +14,63 @@ import ButtonLink from "../../components/LinkButton";
 import { Icon } from "../../components/Icon";
 import { FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import Button from "../../components/Button";
+import { useEffect } from "react";
+import api from "../../services/api";
+
+interface IUser {
+    avatar_url: string;
+    login: string;
+    name: string;
+    bio: string;
+    location: string;
+    company: string;
+    twitter_username: string;
+}
+
+interface IRepository {
+    id: number;
+    name: string;
+    stargazers_count: number;
+    forks_count: number;
+    html_url: string;
+    description: string;
+}
 
 const Projects: React.FC = () => {
+    const [repositories, setRepositories] = useState<IRepository[]>([]);
+
+    console.log(repositories);
+
+    useEffect(() => {
+        async function getRepo() {
+            const reposResponse = await api.get<IRepository[]>(
+                `wesleygmssa/starred`
+            );
+            setRepositories(reposResponse.data);
+        }
+        getRepo();
+    }, []);
+
     return (
         <PageDefault>
             <Content>
                 <Cards>
-                    {datas.map((data) => (
-                        <Card key={data.title}>
+                    {repositories.map((data) => (
+                        <Card key={data.name}>
                             <CardContent>
-                                <h3>{data.title}</h3>
-                                <p>{data.text}</p>
-                                {data.Highlighted && (
-                                    <span>Desenvolvimento</span>
-                                )}
-                                {data.bloqued && (
-                                    <span style={{ background: "#0468ff" }}>
-                                        Privado
-                                    </span>
-                                )}
-                                <Icons>
-                                    {data.icon1 === "FaReact" && (
-                                        <Icon
-                                            icon={FaReact}
-                                            style={{ color: "#08cbf7" }}
-                                        />
-                                    )}
+                                <h3>{data.name}</h3>
+                                <p>{data.description}</p>
 
-                                    {data.icon2 === "FaNodeJs" && (
-                                        <Icon
-                                            icon={FaNodeJs}
-                                            style={{ color: "#09cc4a" }}
-                                        />
-                                    )}
-                                    {data.icon1 === "FaJs" && (
-                                        <Icon
-                                            icon={FaJs}
-                                            style={{ color: "#c9ff04" }}
-                                        />
-                                    )}
-                                    {data.icon1 === "FaJs" && (
-                                        <Icon
-                                            icon={FaHtml5}
-                                            style={{ color: "#e00e0e" }}
-                                        />
-                                    )}
-                                </Icons>
-                                <Tec>
+                                {/* <Tec>
                                     {data.tec?.map((item) => (
                                         <div>{item}</div>
                                     ))}
-                                </Tec>
+                                </Tec> */}
 
                                 <ButtonGroup>
-                                    {!data.bloqued ? (
-                                        <>
-                                            {data.link_frontEnd && (
-                                                <ButtonLink
-                                                    href={
-                                                        data.link_frontEnd &&
-                                                        data.link_frontEnd
-                                                    }
-                                                >
-                                                    Código Front-end
-                                                </ButtonLink>
-                                            )}
-                                            {data.link_backEnd && (
-                                                <ButtonLink
-                                                    href={data.link_backEnd}
-                                                >
-                                                    Código-Back-end
-                                                </ButtonLink>
-                                            )}
-                                        </>
-                                    ) : (
-                                        <button
-                                            className="button-bloqued"
-                                            disabled
-                                        >
-                                            Código Front-end
-                                        </button>
-                                    )}
-
-                                    {data?.link_visite && (
-                                        <ButtonLink
-                                            href={
-                                                data.link_visite &&
-                                                data.link_visite
-                                            }
-                                        >
-                                            Visite
-                                        </ButtonLink>
-                                    )}
+                                    <ButtonLink href={data.html_url}>
+                                        Código Fonte
+                                    </ButtonLink>
                                 </ButtonGroup>
                             </CardContent>
                         </Card>
