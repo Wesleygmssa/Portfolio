@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.section`
-    height: 100vh;
     position: relative;
     padding: 60px 30px;
 
@@ -17,11 +16,10 @@ export const Content = styled.div`
     flex-direction: column;
     .background-image {
         position: absolute;
-        max-width: 1800px;
+        max-width: 20000px;
         width: 100%;
-        min-height: 500px;
         height: 100%;
-        background-image: url("https://thumbs.gfycat.com/PlainFriendlyFowl-size_restricted.gif");
+        background-image: url("https://i.pinimg.com/originals/e5/14/15/e514153d56a92070b5bcd2ec898dea51.gif");
         background-size: cover;
         background-repeat: no-repeat, repeat;
         background-position: center; /* Center the image */
