@@ -34,6 +34,8 @@ interface IRepository {
     forks_count: number;
     html_url: string;
     description: string;
+    owner: IUser; //Tipando um objeto
+    login: string;
 }
 
 const Projects: React.FC = () => {
@@ -46,7 +48,14 @@ const Projects: React.FC = () => {
             const reposResponse = await api.get<IRepository[]>(
                 `wesleygmssa/starred`
             );
-            setRepositories(reposResponse.data);
+
+            function isBigEnough(value: any) {
+                return value?.owner?.login === "Wesleygmssa";
+            }
+
+            const filtered = reposResponse.data.filter(isBigEnough);
+
+            setRepositories(filtered);
         }
         getRepo();
     }, []);
