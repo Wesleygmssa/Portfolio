@@ -54,6 +54,7 @@ const Projects: React.FC = () => {
             }
 
             const filtered = reposResponse.data.filter(isBigEnough);
+            console.log(filtered);
 
             setRepositories(filtered);
         }
