@@ -3,6 +3,22 @@ import styled from "styled-components";
 export const Content = styled.section`
     height: 100%;
 
+    .content-loading {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        margin: 0 auto;
+        width: 80px;
+    }
+
     h4 {
         max-width: 500px;
         width: 100%;
