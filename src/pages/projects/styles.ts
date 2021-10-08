@@ -16,11 +16,11 @@ export const Content = styled.section`
     }
     img {
         margin: 0 auto;
-        width: 80px;
+        width: 5rem;
     }
 
     h4 {
-        max-width: 500px;
+        max-width: 31.25rem;
         width: 100%;
         color: #fff;
         padding: 16px 8px;

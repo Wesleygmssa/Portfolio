@@ -15,4 +15,7 @@ export const AnimationContainer = styled.div`
     animation: ${apperFromCenter} 2s;
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    min-height: 50rem;
+    width: 100%;
+`;
