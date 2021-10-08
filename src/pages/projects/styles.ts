@@ -61,6 +61,7 @@ export const Card = styled.div`
     margin: 8px 8px;
     cursor: pointer;
     transition: 0.8s;
+
     background-color: ${(props) => props.theme.colors.background};
 
     -webkit-box-shadow: -1px 6px 15px 2px
@@ -117,6 +118,7 @@ export const CardContent = styled.div`
 
     P {
         display: flex;
+        height: 190px;
         justify-content: center;
         align-items: center;
         font-size: 14px;
