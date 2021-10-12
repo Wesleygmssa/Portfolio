@@ -55,7 +55,7 @@ const About: React.FC = () => {
             <Container>
                 <Content>
                     <img src={ImgPerfil} alt="Wesley Guerra" />
-                    <h1 className="typing-animation">Olá, Sou Wesley 👋</h1>
+                    <h1 className="typing-animation">Hello, I'm Wesley 👋</h1>
                     <Info>
                         <Content>
                             <div className="painel-header">
@@ -65,28 +65,32 @@ const About: React.FC = () => {
                             </div>
                             <Painel>
                                 <p>
-                                    Natural de Salvador/BA, entusiasta das
-                                    melhores tecnologias de desenvolvimento web,
-                                    mobile e trabalhando como desenvolvedor
-                                    front-end.
+                                    Born in Salvador / BA, enthusiast of the
+                                    best technologies in web development, mobile
+                                    front-end and works as a developer.
                                 </p>
                                 <p>
-                                    Já trabalhei em lugares como SENAI,
-                                    Petrobras, Correios, (atualmente no INEMA
-                                    pela Stefanini ) e algumas outras. Sou
-                                    formado em Analise e desenvolvimento de
-                                    sistemas.
+                                    I've worked in places like SENAI, Petrobras,
+                                    Correios, (currently at INEMA by Stefanini)
+                                    and some others. I have a degree in Systems
+                                    Analysis and Development.
                                 </p>
                                 <p>
-                                    Sou apaixonado por trabalhar com projetos
-                                    desafiadores e criativos. Não gosto de ficar
-                                    na zona de conforto, então procuro me
-                                    aprimorar constantemente.
+                                    I am passionate about working with
+                                    challenging and creative projects. I don't
+                                    like being in the comfort zone, so I look
+                                    for myself constantly.
+                                </p>
+                                <p>
+                                    I am passionate about working with
+                                    challenging and creative projects. I don't
+                                    like being in the comfort zone, so I look
+                                    for myself constantly.
                                 </p>
 
                                 <h3>
-                                    🚀 Atualmente fazendo Bootcamp da
-                                    Reckeatseat focado nas tecnologias:
+                                    🚀 Currently doing Reckeatseat Bootcamp
+                                    focusing on technologies:
                                 </h3>
                                 <ul>
                                     <li>Nodejs</li>
