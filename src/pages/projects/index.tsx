@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import {
-  Content,
-  Cards,
-  CardContent,
-  Icons,
-  ButtonGroup,
-  Card,
-  Tec,
+    Content,
+    Cards,
+    CardContent,
+    Icons,
+    ButtonGroup,
+    Card,
+    Tec,
 } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import datas from "../../data/data.json";
@@ -18,81 +18,85 @@ import { useEffect } from "react";
 import api from "../../services/api";
 
 interface IUser {
-  avatar_url: string;
-  login: string;
-  name: string;
-  bio: string;
-  location: string;
-  company: string;
-  twitter_username: string;
+    avatar_url: string;
+    login: string;
+    name: string;
+    bio: string;
+    location: string;
+    company: string;
+    twitter_username: string;
 }
 
 interface IRepository {
-  id: number;
-  name: string;
-  stargazers_count: number;
-  forks_count: number;
-  html_url: string;
-  description: string;
-  owner: IUser; //Tipando um objeto
-  login: string;
+    id: number;
+    name: string;
+    stargazers_count: number;
+    forks_count: number;
+    html_url: string;
+    description: string;
+    owner: IUser; //Tipando um objeto
+    login: string;
 }
 
 const Projects: React.FC = () => {
-  const [repositories, setRepositories] = useState<IRepository[]>([]);
+    const [repositories, setRepositories] = useState<IRepository[]>([]);
 
-  console.log(repositories);
+    console.log(repositories);
 
-  useEffect(() => {
-    async function getRepo() {
-      const login = "Wesleygmssa";
-      const reposResponse = await api.get<IRepository[]>(`wesleygmssa/starred`);
+    useEffect(() => {
+        async function getRepo() {
+            const login = "Wesleygmssa";
+            const reposResponse = await api.get<IRepository[]>(
+                `${login}/starred`
+            );
 
-      function isBigEnough(value: any) {
-        return value?.owner?.login === login;
-      }
+            function isBigEnough(value: any) {
+                return value?.owner?.login === login;
+            }
 
-      const filtered = reposResponse.data.filter(isBigEnough);
+            const filtered = reposResponse.data.filter(isBigEnough);
 
-      setRepositories(filtered);
-    }
-    getRepo();
-  }, []);
+            setRepositories(filtered);
+        }
+        getRepo();
+    }, []);
 
-  return (
-    <PageDefault>
-      <Content>
-        {repositories.length < 0 && (
-          <div className="content-loading">
-            <img
-              src="http://portal.ufvjm.edu.br/a-universidade/cursos/grade_curricular_ckan/loading.gif"
-              alt="loading"
-            />
-          </div>
-        )}
+    return (
+        <PageDefault>
+            <Content>
+                {repositories.length < 1 && (
+                    <div className="content-loading">
+                        <img
+                            src="http://portal.ufvjm.edu.br/a-universidade/cursos/grade_curricular_ckan/loading.gif"
+                            alt="loading"
+                        />
+                    </div>
+                )}
 
-        <Cards>
-          {repositories.map((data) => (
-            <Card key={data.name}>
-              <CardContent>
-                <h3>{data.name}</h3>
-                <p>{data.description}</p>
+                <Cards>
+                    {repositories.map((data) => (
+                        <Card key={data.name}>
+                            <CardContent>
+                                <h3>{data.name}</h3>
+                                <p>{data.description}</p>
 
-                {/* <Tec>
+                                {/* <Tec>
                                     {data.tec?.map((item) => (
                                         <div>{item}</div>
                                     ))}
                                 </Tec> */}
 
-                <ButtonGroup>
-                  <ButtonLink href={data.html_url}>Código Fonte</ButtonLink>
-                </ButtonGroup>
-              </CardContent>
-            </Card>
-          ))}
-        </Cards>
-      </Content>
-    </PageDefault>
-  );
+                                <ButtonGroup>
+                                    <ButtonLink href={data.html_url}>
+                                        Código Fonte
+                                    </ButtonLink>
+                                </ButtonGroup>
+                            </CardContent>
+                        </Card>
+                    ))}
+                </Cards>
+            </Content>
+        </PageDefault>
+    );
 };
 export default Projects;
