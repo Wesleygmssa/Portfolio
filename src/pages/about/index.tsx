@@ -71,7 +71,7 @@ const About: React.FC = () => {
                                 </p>
                                 <p>
                                     I've worked in places like SENAI, Petrobras,
-                                    Correios, (currently at INEMA by Stefanini)
+                                    Correios, INEMA (currently at Compasso UOL)
                                     and some others. I have a degree in Systems
                                     Analysis and Development.
                                 </p>
