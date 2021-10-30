@@ -65,27 +65,12 @@ const About: React.FC = () => {
                             </div>
                             <Painel>
                                 <p>
-                                    Born in Salvador / BA, enthusiast of the
-                                    best technologies in web development, mobile
-                                    front-end and works as a developer.
-                                </p>
-                                <p>
-                                    I've worked in places like SENAI, Petrobras,
-                                    Correios, INEMA (currently at Compasso UOL)
-                                    and some others. I have a degree in Systems
-                                    Analysis and Development.
-                                </p>
-                                <p>
-                                    I am passionate about working with
-                                    challenging and creative projects. I don't
-                                    like being in the comfort zone, so I look
-                                    for myself constantly.
-                                </p>
-                                <p>
-                                    I am passionate about working with
-                                    challenging and creative projects. I don't
-                                    like being in the comfort zone, so I look
-                                    for myself constantly.
+                                    Graduated in Systems Analysis and
+                                    Development, acting as a Full Front-end
+                                    Developer. On a journey of learning and
+                                    continuous improvement, seeking to improve
+                                    myself every day in development practices
+                                    and studying the DevOps culture.
                                 </p>
 
                                 <h3>
