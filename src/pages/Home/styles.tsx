@@ -39,6 +39,7 @@ export const Content = styled.div`
         font-family: "Courier New", Courier, monospace;
         font-weight: 300;
         z-index: 9999;
+        color: #fff;
     }
 
     @media (max-width: 800px) {
