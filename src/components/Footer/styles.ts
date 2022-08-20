@@ -7,6 +7,12 @@ export const FooterBase = styled.footer`
     background: ${(props) => props.theme.colors.secondary};
     padding: 20px;
 
+    & {
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+
     > div {
         display: flex;
         justify-content: center;
