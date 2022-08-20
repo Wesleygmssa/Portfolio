@@ -7,8 +7,8 @@ import Projects from "../pages/projects/index";
 const Routes: React.FC = () => {
     return (
         <Switch>
-            {/* <Route path="/" exact component={Home} /> */}
-            <Route path="/" exact component={About} />
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
             <Route path="/projects" component={Projects} />
         </Switch>
     );

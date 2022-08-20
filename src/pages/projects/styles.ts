@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.section`
-    height: 100%;
-
+    min-height: 100vh;
     .content-loading {
         position: fixed;
         width: 100vw;

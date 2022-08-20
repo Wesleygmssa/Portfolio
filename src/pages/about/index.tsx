@@ -55,7 +55,7 @@ const About: React.FC = () => {
             <Container>
                 <Content>
                     <img src={ImgPerfil} alt="Wesley Guerra" />
-                    <h1 className="typing-animation">Hello, I'm Wesley 👋</h1>
+                    <h1 className="typing-animation">Hello, 👋</h1>
                     <Info>
                         <Content>
                             <div className="painel-header">

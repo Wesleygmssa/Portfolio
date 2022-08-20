@@ -19,7 +19,7 @@ export const Content = styled.div`
         max-width: 20000px;
         width: 100%;
         height: 100%;
-        background-image: url("https://i.pinimg.com/originals/e5/14/15/e514153d56a92070b5bcd2ec898dea51.gif");
+        background-image: url("https://impa.br/wp-content/uploads/2021/06/programacao-INT.jpg");
         background-size: cover;
         background-repeat: no-repeat, repeat;
         background-position: center; /* Center the image */
@@ -30,6 +30,7 @@ export const Content = styled.div`
         text-align: center;
         font-size: 80px;
         padding: 16px 20px;
+        color: #fff;
     }
 
     span {

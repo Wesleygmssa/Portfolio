@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 export const FooterBase = styled.footer`
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    height: 100px;
     background: ${(props) => props.theme.colors.secondary};
-    padding-top: auto;
+    padding: 20px;
 
     > div {
         display: flex;

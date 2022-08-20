@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import PageDefault from "../../components/PageDefault";
-// import ImgeGit from "../../assets/git.png";
-
 import { Container, Content } from "./styles";
 
 const About: React.FC = () => {
@@ -9,8 +7,8 @@ const About: React.FC = () => {
         <PageDefault>
             <Container>
                 <Content>
-                    <h1>Olá, Sou Wesley </h1>
-                    <span>💻 Software Develope</span>
+                    <h1>Hello, I'm Wesley </h1>
+                    <span>💻 Software developer</span>
                     <div className="background-image"></div>
                 </Content>
             </Container>

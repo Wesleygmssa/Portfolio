@@ -1,19 +1,8 @@
 import React, { useState } from "react";
-import {
-    Content,
-    Cards,
-    CardContent,
-    Icons,
-    ButtonGroup,
-    Card,
-    Tec,
-} from "./styles";
+import { Content, Cards, CardContent, ButtonGroup, Card } from "./styles";
 import PageDefault from "../../components/PageDefault";
-import datas from "../../data/data.json";
 import ButtonLink from "../../components/LinkButton";
-import { Icon } from "../../components/Icon";
-import { FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
-import Button from "../../components/Button";
+
 import { useEffect } from "react";
 import api from "../../services/api";
 
@@ -47,9 +36,9 @@ const Projects: React.FC = () => {
         async function getRepo() {
             const login = "Wesleygmssa";
             const reposResponse = await api.get<IRepository[]>(
-                `${login}/starred`
+                `/users/${login}/starred`
             );
-
+            console.log("reposResponse", reposResponse);
             function isBigEnough(value: any) {
                 return value?.owner?.login === login;
             }
@@ -78,7 +67,19 @@ const Projects: React.FC = () => {
                         <Card key={data.name}>
                             <CardContent>
                                 <h3>{data.name}</h3>
-                                <p>{data.description}</p>
+                                <p>
+                                    {data.description ? (
+                                        data.description
+                                    ) : (
+                                        <div
+                                            style={{
+                                                color: "#c53030",
+                                            }}
+                                        >
+                                            Without description
+                                        </div>
+                                    )}
+                                </p>
 
                                 {/* <Tec>
                                     {data.tec?.map((item) => (
