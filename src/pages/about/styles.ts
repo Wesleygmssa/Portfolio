@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.section`
-    height: 100%;
+    min-height: 80vh;
     position: relative;
-    padding: 60px 30px;
+    padding: 45px 30px;
 
     @media (min-width: 700px) {
         height: 100%;
