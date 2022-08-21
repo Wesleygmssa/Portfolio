@@ -12,6 +12,8 @@ import {
 } from "react-icons/fa";
 
 const Footer: React.FC = (props) => {
+    const today = new Date();
+    const year = today.getFullYear();
     return (
         <FooterBase>
             <div>
@@ -42,7 +44,7 @@ const Footer: React.FC = (props) => {
             </div>
 
             <span>
-                Copyright © 2021 Wesley Guerra
+                Políticas de Privacidade | Copyright {year} © - Wesley Guerra
                 <span style={{ color: "#EB3C32" }}>❤</span>
             </span>
         </FooterBase>
