@@ -71,25 +71,13 @@ const Projects: React.FC = () => {
                                     {data.description ? (
                                         data.description
                                     ) : (
-                                        <div
-                                            style={{
-                                                color: "#c53030",
-                                            }}
-                                        >
-                                            Without description
-                                        </div>
+                                        <div>Without description</div>
                                     )}
                                 </p>
 
-                                {/* <Tec>
-                                    {data.tec?.map((item) => (
-                                        <div>{item}</div>
-                                    ))}
-                                </Tec> */}
-
                                 <ButtonGroup>
                                     <ButtonLink href={data.html_url}>
-                                        Código Fonte
+                                        Source code
                                     </ButtonLink>
                                 </ButtonGroup>
                             </CardContent>
