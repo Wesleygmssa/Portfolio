@@ -1,6 +1,5 @@
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
-// type Response<T> = [T, Dispatch<SetStateAction<T>>];
 
 function usePersistedState<T>(initialState: T) {
     const [state, setState] = useState(() => {

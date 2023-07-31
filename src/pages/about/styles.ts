@@ -9,6 +9,7 @@ export const Container = styled.section`
         height: 100%;
     }
 `;
+
 export const Content = styled.div`
     display: flex;
     justify-content: center;
@@ -16,7 +17,17 @@ export const Content = styled.div`
     flex-direction: column;
 
     h1 {
+        text-align: center;
         margin-bottom: 1rem;
+        font-size: 24px;
+        overflow: hidden;
+        width: 500px;
+        max-height: 60px;
+        word-wrap: break-word; /* Break text into multiple lines if it exceeds width */
+
+        @media (max-width: 500px) {
+            font-size: 20px;
+        }
     }
 
     h3 {
@@ -24,48 +35,23 @@ export const Content = styled.div`
         font-size: 24px;
         padding: 16px 20px;
         margin-bottom: 1rem;
+        opacity: 0.6;
     }
 
     img {
-        max-width: 15.5rem;
-        width: 100%;
-        max-height: 15.5rem;
-        height: 100%;
-        margin-top: 24px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
         border-radius: 50%;
-        /* border: 3px solid var(--primary-color); */
-        /* border: 3px solid #000; */
-        cursor: pointer;
-
-        -webkit-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
-        box-shadow: 1px 4px 57px 6px rgba(0, 0, 0, 0.75);
-    }
-
-    h1,
-    p,
-    span {
-        margin-top: 24px;
-        font-family: "Roboto", sans-serif;
-    }
-
-    h1 {
-        font-size: 32px;
-        border-right: 2px solid var(--text-color);
-        white-space: nowrap;
-        overflow: hidden;
-    }
-
-    @media (max-width: 500px) {
-        h1 {
-            font-size: 20px;
-        }
+        border: 4px solid #707070;
+        padding: 5px;
+        margin-bottom: 1rem;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
     }
 
     .typing-animation {
-        animation: linkCursor 400ms steps(40) infinite normal,
-            typing 4s steps(40) 1s normal both;
-        /* color: var(--title-color); */
+        animation: linkCursor 500ms steps(40) infinite,
+            typing 4s steps(40) 1s both;
     }
 
     @keyframes typing {
@@ -86,10 +72,6 @@ export const Content = styled.div`
         }
     }
 
-    h3 {
-        opacity: 0.6;
-    }
-
     p {
         max-width: 810px;
         width: 100%;
@@ -98,6 +80,7 @@ export const Content = styled.div`
         position: relative;
         font-weight: 500;
     }
+
     span {
         text-align: center;
         padding: 0px 16px;
@@ -108,7 +91,6 @@ export const Content = styled.div`
         font-size: 24px;
         text-align: center;
         background-color: transparent;
-        /* color: var(--title-color); */
     }
 
     .painel-header {
@@ -161,11 +143,11 @@ export const Painel = styled.div`
             padding: 10px;
             cursor: pointer;
             transition: all 0.2s;
-        }
 
-        li:hover {
-            color: var(--primary-color);
-            font-size: 14px;
+            &:hover {
+                color: var(--primary-color);
+                font-size: 14px;
+            }
         }
     }
 
@@ -174,10 +156,8 @@ export const Painel = styled.div`
         align-items: center;
         justify-content: center;
         font-size: 18px;
-    }
 
-    @media (max-width: 500px) {
-        p {
+        @media (max-width: 500px) {
             font-size: 20px;
             text-align: center;
             align-items: center;
@@ -189,21 +169,23 @@ export const Info = styled.div`
     display: flex;
     flex-direction: column;
 `;
+
 export const BoxSkills = styled.div`
     max-width: 900px;
     width: 100%;
     position: relative;
     left: -60px;
 `;
-//animação
+
 const WidthSkill = keyframes`
- from{
-   width: 0;
- }
- to{
-   width: 60%;
- }
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
 `;
+
 export const Skills = styled.div`
     display: flex;
     align-items: center;
@@ -217,23 +199,22 @@ export const Skills = styled.div`
         top: -10px;
         position: relative;
     }
+
     progress[value] {
         width: 60%;
         height: 20px;
-        animation: ${WidthSkill} 4s; //executando animação
+        animation: ${WidthSkill} 4s;
     }
 
     strong {
         margin-left: 5px;
-        /* color: #fff; */
     }
+
     span {
         display: flex;
         flex-direction: column;
         font-weight: bold;
-        /* color: #fff; */
         align-items: center;
-
         width: 160px;
     }
 `;

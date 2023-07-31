@@ -21,9 +21,9 @@ const Header: React.FC = () => {
                     </NavLink>
                 )} */}
 
-                <NavLink exact to="/" activeClassName="menuActive">
+                {/* <NavLink exact to="/" activeClassName="menuActive">
                     HOME
-                </NavLink>
+                </NavLink> */}
 
                 <NavLink exact to="/about" activeClassName="menuActive">
                     SOBRE
