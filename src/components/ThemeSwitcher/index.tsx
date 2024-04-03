@@ -13,7 +13,7 @@ export const ThemeSwitcher: React.FC<Props> = ({ toggleTheme }: any) => {
 
     return (
         <Container>
-            <span style={{fontSize:20, paddingRight: 5}}>🌞</span> 
+            <span style={{ fontSize: 20, paddingRight: 5 }}>🌞</span>
             <Switch
                 onChange={toggleTheme}
                 checked={title === "dark"}
@@ -24,10 +24,10 @@ export const ThemeSwitcher: React.FC<Props> = ({ toggleTheme }: any) => {
                 handleDiameter={15}
                 offColor="#afacac"
                 onColor="#085D8B"
-                // offHandleColor={colors.secondary}
-                // onHandleColor={colors.text}
+                offHandleColor={colors.secondary}
+                onHandleColor={colors.text}
             />
-          <span style={{fontSize:20}}>🌛</span>
+            <span style={{ fontSize: 20 }}>🌛</span>
         </Container>
     );
 };
