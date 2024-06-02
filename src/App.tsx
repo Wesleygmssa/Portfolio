@@ -10,8 +10,6 @@ import dark from "./styles/themes/dark";
 import AppProvider from "./context/index.";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
-
-
 const App: React.FC = () => {
     const [theme, setTheme] = usePersistedState(dark);
 

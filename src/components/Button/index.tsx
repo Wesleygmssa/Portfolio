@@ -3,7 +3,7 @@ import { Container } from "./styles";
 
 interface ButtonLinkProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
-const Button: React.FC<ButtonLinkProps> = ({ children, ...rest }) => {
+const Button: React.FC<ButtonLinkProps> = ({ children, ...rest }: any) => {
     return (
         <Container type="button" {...rest}>
             {children}

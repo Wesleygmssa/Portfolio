@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { HeaderContainer } from "./styles";
 import { useLocation } from "react-router-dom";
-import Swicth from "react-switch";
+// import Swicth from "react-switch";
 import { ThemeContext } from "styled-components";
 import React, { useContext } from "react";
 
 const Header: React.FC = () => {
     const location = useLocation();
-    const { colors } = useContext(ThemeContext);
+    // const { colors } = useContext(ThemeContext);
 
     return (
         <HeaderContainer>
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                 </NavLink>
             </div>
             <div className="swicth">
-                <Swicth
+                {/* <Swicth
                     onChange={() => {}}
                     checked={false}
                     checkedIcon={false}
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                     handleDiameter={20}
                     offColor={colors.secondary}
                     onColor={colors.primary}
-                />
+                /> */}
             </div>
         </HeaderContainer>
     );
