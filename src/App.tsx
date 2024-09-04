@@ -22,8 +22,8 @@ const App: React.FC = () => {
             <AppProvider>
                 <BrowserRouter>
                     <Routes />
-                    <ThemeSwitcher toggleTheme={toggleTheme} />
                 </BrowserRouter>
+                <ThemeSwitcher toggleTheme={toggleTheme} />
                 <GlobalStyles />
             </AppProvider>
         </ThemeProvider>
@@ -31,3 +31,13 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+// function App() {
+//     return (
+//         <div>
+//             <h1>Hello, Vite + React!</h1>
+//         </div>
+//     );
+// }
+
+// export default App;
