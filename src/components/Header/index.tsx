@@ -1,7 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { HeaderContainer } from "./styles";
-import { useLocation } from "react-router-dom";
-import Swicth from "react-switch";
+import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
 import React, { useContext } from "react";
 
@@ -12,24 +11,30 @@ const Header: React.FC = () => {
     return (
         <HeaderContainer>
             <div className="nav">
-                <NavLink exact to="/about" activeClassName="menuActive">
+                <NavLink
+                    to="/about"
+                    className={({ isActive }) => (isActive ? "menuActive" : "")}
+                >
                     ABOUT
                 </NavLink>
 
-                <NavLink to="/projects" activeClassName="menuActive">
+                <NavLink
+                    to="/projects"
+                    className={({ isActive }) => (isActive ? "menuActive" : "")}
+                >
                     PROJECTS
                 </NavLink>
             </div>
-            <div className="swicth">
-                <Swicth
+            <div className="switch">
+                <Switch
                     onChange={() => {}}
                     checked={false}
                     checkedIcon={false}
                     uncheckedIcon={false}
                     height={10}
                     handleDiameter={20}
-                    offColor={colors?.secondary}
-                    onColor={colors?.primary}
+                    offColor={colors?.secondary || "#888"}
+                    onColor={colors?.primary || "#000"}
                 />
             </div>
         </HeaderContainer>

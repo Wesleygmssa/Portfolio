@@ -39,14 +39,19 @@ export const Content = styled.div`
     }
 
     img {
-        width: 200px;
-        height: 200px;
+        width: 500px; /* Aumentando o tamanho da imagem */
+        height: 500px; /* Aumentando o tamanho da imagem */
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 0%; /* Deixando a imagem quadrada */
         border: 4px solid #707070;
         padding: 5px;
         margin-bottom: 1rem;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+
+        @media (max-width: 500px) {
+            width: 300px; /* Tamanho menor para telas pequenas */
+            height: 300px;
+        }
     }
 
     .typing-animation {
