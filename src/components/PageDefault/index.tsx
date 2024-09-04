@@ -4,7 +4,7 @@ import Header from "../Header";
 import Contact from "../Contact";
 import { AnimationContainer, Container } from "./styles";
 
-const PageDefault: React.FC = ({ children }) => {
+const PageDefault: React.FC<React.ReactNodeArray> = ({ children }: any) => {
     return (
         <>
             <Container>

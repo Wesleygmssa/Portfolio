@@ -7,7 +7,7 @@ import React, { useContext } from "react";
 
 const Header: React.FC = () => {
     const location = useLocation();
-    const { colors } = useContext(ThemeContext);
+    const { colors } = useContext(ThemeContext) || {};
 
     return (
         <HeaderContainer>
@@ -28,8 +28,8 @@ const Header: React.FC = () => {
                     uncheckedIcon={false}
                     height={10}
                     handleDiameter={20}
-                    offColor={colors.secondary}
-                    onColor={colors.primary}
+                    offColor={colors?.secondary}
+                    onColor={colors?.primary}
                 />
             </div>
         </HeaderContainer>
