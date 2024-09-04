@@ -1,22 +1,17 @@
 import React, { useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import About from "../pages/about";
 import Projects from "../pages/projects";
 
-const Routes: React.FC = () => {
-    // useEffect(() => {
-    //     if (window.location.pathname === "/") {
-    //         window.location.pathname = "/about";
-    //     }
-    // }, []);
-    // teste
-
+const AppRoutes: React.FC = () => {
     return (
-        <Switch>
-            <Route path="/" exact render={() => <About />} />
-            <Route path="/projects" render={() => <Projects />} />
-        </Switch>
+        <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            {/* Redirecionar para /about se o caminho for "/" */}
+            <Route path="*" element={<Navigate to="/about" />} />
+        </Routes>
     );
 };
 
-export default Routes;
+export default AppRoutes;
