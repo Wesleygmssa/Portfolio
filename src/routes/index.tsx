@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import About from "../pages/about";
-import Projects from "../pages/projects/index";
+import Projects from "../pages/projects";
 
 const Routes: React.FC = () => {
     useEffect(() => {
@@ -9,11 +9,12 @@ const Routes: React.FC = () => {
             window.location.pathname = "/about";
         }
     }, []);
+    // teste
 
     return (
         <Switch>
-            <Route path="/about" exact component={About} />
-            <Route path="/projects" component={Projects} />
+            <Route path="/about" exact render={() => <About />} />
+            <Route path="/projects" render={() => <Projects />} />
         </Switch>
     );
 };
