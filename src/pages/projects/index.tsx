@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Content, Cards, CardContent, ButtonGroup, Card } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import ButtonLink from "../../components/LinkButton";
-
-import { useEffect } from "react";
 import api from "../../services/api";
 
 interface IUser {
@@ -23,14 +21,13 @@ interface IRepository {
     forks_count: number;
     html_url: string;
     description: string;
-    owner: IUser; //Tipando um objeto
+    owner: IUser;
     login: string;
+    image_url?: string; // Campo adicionado para imagem do projeto
 }
 
 const Projects: React.FC = () => {
     const [repositories, setRepositories] = useState<IRepository[]>([]);
-
-    console.log(repositories);
 
     useEffect(() => {
         async function getRepo() {
@@ -38,14 +35,20 @@ const Projects: React.FC = () => {
             const reposResponse = await api.get<IRepository[]>(
                 `/users/${login}/starred`
             );
-            console.log("reposResponse", reposResponse);
             function isBigEnough(value: any) {
                 return value?.owner?.login === login;
             }
 
             const filtered = reposResponse.data.filter(isBigEnough);
 
-            setRepositories(filtered);
+            const projectsWithImages = filtered.map((repo) => ({
+                ...repo,
+                image_url: repo.image_url
+                    ? repo.image_url
+                    : "https://via.placeholder.com/300x150?text=No+Image",
+            }));
+
+            setRepositories(projectsWithImages);
         }
         getRepo();
     }, []);
@@ -64,7 +67,12 @@ const Projects: React.FC = () => {
 
                 <Cards>
                     {repositories.map((data) => (
-                        <Card key={data.name}>
+                        <Card key={data.id}>
+                            <img
+                                src={data.image_url}
+                                alt={data.name}
+                                className="card-img"
+                            />
                             <CardContent>
                                 <h3>{data.name}</h3>
                                 <p>

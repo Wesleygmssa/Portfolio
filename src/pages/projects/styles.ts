@@ -50,8 +50,9 @@ export const Cards = styled.section`
 `;
 
 export const Card = styled.div`
-    flex: 1 1 calc(33.33% - 32px); /* Faz com que os cards ocupem 33% da largura com espaçamento */
-    max-width: calc(33.33% - 32px);
+    flex: 1 1 calc(30% - 32px); /* Ajuste para 30% da largura */
+    max-width: calc(40% - 32px);
+    height: auto;
     margin: 16px;
     display: flex;
     flex-direction: column;
@@ -89,12 +90,12 @@ export const Card = styled.div`
     }
 
     @media (max-width: 850px) {
-        flex: 1 1 calc(50% - 32px); /* Ajusta para 2 cards por linha em telas menores */
-        max-width: calc(50% - 32px);
+        flex: 1 1 calc(45% - 32px); /* Ajuste para 45% da largura em telas menores */
+        max-width: calc(45% - 32px);
     }
 
     @media (max-width: 500px) {
-        flex: 1 1 100%; /* Ajusta para 1 card por linha em telas muito pequenas */
+        flex: 1 1 100%; /* Ajuste para 100% da largura em telas pequenas */
         max-width: 100%;
     }
 `;
@@ -117,7 +118,7 @@ export const CardContent = styled.div`
 
     p {
         display: flex;
-        height: 190px;
+        height: 100px; /* Ajuste na altura para manter o padrão entre cards */
         justify-content: center;
         align-items: center;
         font-size: 14px;
@@ -125,6 +126,7 @@ export const CardContent = styled.div`
         min-height: 80px;
         font-family: "Open Sans", sans-serif;
         color: #555; /* Texto em cinza médio */
+        width: 280px;
     }
 
     span {
@@ -169,22 +171,26 @@ export const ButtonGroup = styled.div`
     margin-bottom: 10px;
 
     a {
-        width: 100%;
+        flex: 1; /* Define que todos os botões ocupem a mesma quantidade de espaço */
         font-size: 14px;
         transition: 0.5s;
         border: 0;
-        font-size: 14px;
         color: #fff; /* Cor branca para texto dos botões */
         text-align: center; /* Alinhamento centralizado */
+        padding: 16px 0; /* Define uma altura fixa */
+        background-color: #1d4ed8; /* Azul escuro */
+        border-radius: 5px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #1e3a8a; /* Azul mais escuro no hover */
+        }
     }
 
     .button-bloqued {
-        flex: 1;
         color: #fff;
         border: 1px solid #838383;
-        box-sizing: border-box;
         cursor: pointer;
-        padding: 16px 16px;
         font-style: normal;
         font-weight: bold;
         text-align: center;
