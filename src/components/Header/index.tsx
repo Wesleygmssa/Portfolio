@@ -32,7 +32,7 @@ const Header: React.FC = () => {
                     PROJECTS
                 </NavLink>
             </div>
-            <div className="switch">
+            {/* <div className="switch">
                 <Switch
                     onChange={() => {}}
                     checked={false}
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
                     offColor={colors?.secondary || "#888"}
                     onColor={colors?.primary || "#000"}
                 />
-            </div>
+            </div> */}
         </HeaderContainer>
     );
 };
