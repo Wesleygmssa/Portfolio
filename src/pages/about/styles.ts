@@ -149,12 +149,13 @@ export const Painel = styled.div`
             padding: 10px;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
+            color: #ff6347;
 
-            &:hover {
+            /* &:hover {
                 color: #ff6347;
                 font-size: 14px;
                 transform: scale(1.05);
-            }
+            } */
         }
     }
 

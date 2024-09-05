@@ -100,8 +100,8 @@ const About: React.FC = () => {
                                     Front-end Developer. I believe that family
                                     is the foundation of everything. Beyond my
                                     professional focus, I enjoy practicing
-                                    various sports like running, swimming, and
-                                    football.
+                                    various sports like running, gym, swimming,
+                                    and football.
                                 </p>
                                 <p>
                                     I also love reading books on different
@@ -122,7 +122,7 @@ const About: React.FC = () => {
                                     Sênior. Além do meu foco profissional,
                                     acredito que a família é a base de tudo.
                                     Gosto de praticar diversos esportes, como
-                                    corrida, natação e futebol.
+                                    corrida, academia, natação e futebol.
                                 </p>
                                 <p>
                                     Amo ler livros sobre variados temas e sou

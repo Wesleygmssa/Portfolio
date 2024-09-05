@@ -2,18 +2,20 @@ import styled from "styled-components";
 
 export const Content = styled.section`
     min-height: 100vh;
+    background-color: #fff; /* Fundo branco */
+
     .content-loading {
         position: fixed;
         width: 100vw;
         height: 100vh;
         top: 0;
         left: 0;
-
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 999;
     }
+
     img {
         margin: 0 auto;
         width: 5rem;
@@ -22,59 +24,48 @@ export const Content = styled.section`
     h4 {
         max-width: 31.25rem;
         width: 100%;
-        color: #fff;
+        color: #444; /* Cinza escuro */
         padding: 16px 8px;
         margin: 16px auto;
         text-align: center;
         font-size: 20px;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #ddd; /* Borda leve */
     }
 `;
 
 export const Cards = styled.section`
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /* Distribui os cards uniformemente */
     max-width: 1180px;
     width: 100%;
     margin: 64px auto;
     padding: 16px 25px;
 
     @media (max-width: 1000px) {
-        max-width: 900px;
-    }
-
-    @media (max-width: 500px) {
         justify-content: center;
     }
 `;
 
 export const Card = styled.div`
+    flex: 1 1 calc(33.33% - 32px); /* Faz com que os cards ocupem 33% da largura com espaçamento */
+    max-width: calc(33.33% - 32px);
+    margin: 16px;
     display: flex;
-    max-width: 360px;
-    width: 100%;
-    min-height: 300px;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
-    padding: 8px 16px;
-    border-radius: 5px;
-    margin: 8px 8px;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.8s;
-
-    background-color: ${(props) => props.theme.colors.background};
-
-    -webkit-box-shadow: -1px 6px 15px 2px
-        ${(props) => props.theme.colors.primary};
-    -moz-box-shadow: -1px 6px 15px 2px ${(props) => props.theme.colors.primary};
-    box-shadow: -1px 6px 15px 2px ${(props) => props.theme.colors.primary};
+    transition: 0.3s;
+    background-color: #f9fafb; /* Fundo suave */
+    border: 1px solid #e0e0e0; /* Borda leve */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Sombra leve */
 
     &:hover {
-        -webkit-box-shadow: 3px -4px 36px -2px
-            ${(props) => props.theme.colors.primary};
-        -moz-box-shadow: 3px -4px 36px -2px
-            ${(props) => props.theme.colors.primary};
-        box-shadow: 3px -4px 36px -2px ${(props) => props.theme.colors.primary};
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        transform: scale(1.03); /* Efeito hover */
     }
 
     .card-img {
@@ -85,19 +76,24 @@ export const Card = styled.div`
     img {
         max-width: 300px;
         width: 100%;
-        max-height: 100px;
+        max-height: 150px;
+        border-radius: 8px;
+        object-fit: cover;
     }
 
     a {
-        color: #fff;
+        color: #1d4ed8; /* Azul escuro */
+        font-weight: bold;
     }
 
     @media (max-width: 850px) {
-        & + div {
-            margin-top: 16px;
-            margin-left: 0px;
-            display: flex;
-        }
+        flex: 1 1 calc(50% - 32px); /* Ajusta para 2 cards por linha em telas menores */
+        max-width: calc(50% - 32px);
+    }
+
+    @media (max-width: 500px) {
+        flex: 1 1 100%; /* Ajusta para 1 card por linha em telas muito pequenas */
+        max-width: 100%;
     }
 `;
 
@@ -113,10 +109,11 @@ export const CardContent = styled.div`
         width: 100%;
         font-size: 20px;
         font-weight: bold;
-        padding: 16px 16px;
+        padding: 16px;
+        color: #333; /* Título em cinza escuro */
     }
 
-    P {
+    p {
         display: flex;
         height: 190px;
         justify-content: center;
@@ -125,6 +122,7 @@ export const CardContent = styled.div`
         line-height: 25px;
         min-height: 80px;
         font-family: "Open Sans", sans-serif;
+        color: #555; /* Texto em cinza médio */
     }
 
     span {
@@ -134,7 +132,7 @@ export const CardContent = styled.div`
         font-size: 10px;
         font-weight: 500;
         width: 45%;
-        background-color: #c53030;
+        background-color: #f87171; /* Vermelho suave */
         color: #fff;
         padding: 3px;
         position: absolute;
@@ -163,36 +161,35 @@ export const Icon = styled.div`
 
 export const ButtonGroup = styled.div`
     display: flex;
+    justify-content: center; /* Centralizando os botões */
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 
     a {
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
         transition: 0.5s;
         border: 0;
         font-size: 14px;
+        color: #fff; /* Cor branca para texto dos botões */
+        text-align: center; /* Alinhamento centralizado */
     }
 
     .button-bloqued {
         flex: 1;
-        color: var(--white);
+        color: #fff;
         border: 1px solid #838383;
         box-sizing: border-box;
         cursor: pointer;
         padding: 16px 16px;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
         text-align: center;
         outline: none;
         border-radius: 5px;
-        text-decoration: none;
-        display: inline-block;
-        transition: opacity 0.3s;
-        background-color: #2274a5;
-        opacity: 0.6;
+        background-color: #1d4ed8; /* Azul escuro */
+        opacity: 1; /* Opacidade corrigida */
 
         &:disabled {
             cursor: not-allowed;
@@ -204,6 +201,7 @@ export const Tec = styled.div`
     width: 300px;
     min-height: 110px;
     margin-top: 10px;
+
     div {
         display: inline-block;
         font-size: 12px;
