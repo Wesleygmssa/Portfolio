@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PageDefault from "../../components/PageDefault";
 import { Container, Content } from "./styles";
 import imageGeoBahia from "../../assets/geobahia.png"; // Imagem do GeoBahia
+import latmeask from "../../assets/latmeask.png"; // Imagem do GeoBahia
 
 // Definindo a estrutura de um projeto, agora com imagem
 interface Project {
@@ -26,14 +27,13 @@ const About: React.FC = () => {
                 technologies: ["Mapas", "Geoespacial", "WebGIS"],
                 image: imageGeoBahia, // Usando a imagem importada do GeoBahia
             },
-            // {
-            //     title: "Concurso de Fotografia - Inema",
-            //     description:
-            //         "Concurso de fotografia para todos os técnicos do Inema para exposição de fotos que retratem a temática água (os desafios e as belezas encontradas em campo) pelos colaboradores. Além de uma apresentação cultural com um artista de rua (poesia, música, cordel) que aborde a temática água.",
-            //     link: "https://romantic-bell-a1abca.netlify.app/",
-            //     technologies: ["HTML", "CSS", "Netlify"],
-            //     image: "",
-            // },
+            {
+                title: "Crie salas de Q&A ao-vivo",
+                description: "Tire as dúvidas da sua audiência em tempo-real",
+                link: "https://relaxed-jones-75aff8.netlify.app/",
+                technologies: ["HTML", "CSS", "React", "Netlify"],
+                image: latmeask,
+            },
         ];
 
         setProjects(currentProjects);

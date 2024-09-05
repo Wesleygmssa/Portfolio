@@ -133,11 +133,11 @@ const About: React.FC = () => {
 
                     <Info>
                         <Content>
-                            <div className="painel-header">
+                            {/* <div className="painel-header">
                                 <div className="ball red"></div>
                                 <div className="ball yellow"></div>
                                 <div className="ball green"></div>
-                            </div>
+                            </div> */}
                             <Painel>
                                 <h2>English Version</h2>
                                 <p>
