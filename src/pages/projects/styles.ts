@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Content = styled.section`
     min-height: 100vh;
+    margin-top: -70px;
+    padding: 20px;
     background-color: #fff; /* Fundo branco */
 
     .content-loading {
