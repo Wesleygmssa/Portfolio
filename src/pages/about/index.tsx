@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import PageDefault from "../../components/PageDefault";
 import ImgPerfil from "../../assets/wesleyguerra.png";
-import { Container, Content, Info, Painel } from "./styles";
+import { Container, Content, Info, Painel as PainelOriginal } from "./styles";
 
 // Animation
 const appearFromCenter = keyframes`
@@ -16,14 +16,44 @@ const appearFromCenter = keyframes`
   }
 `;
 
+const Highlight = styled.span`
+    color: #ff6347; /* Escolha uma cor mais chamativa */
+    font-weight: bold;
+`;
+
 const AnimationContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 10px 20px;
-    animation: ${appearFromCenter} 1s; // Executing animation
+    animation: ${appearFromCenter} 1s;
 
     box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
+`;
+
+// Painel ajustado
+const Painel = styled(PainelOriginal)`
+    padding: 2rem 1.5rem; /* Aumenta o padding para mais espaçamento interno */
+
+    h2 {
+        margin-bottom: 1.5rem; /* Dá um respiro entre os headings */
+    }
+
+    p {
+        margin-bottom: 1.5rem; /* Dá espaço entre os parágrafos */
+        line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+    }
+
+    ul {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+            margin: 0.5rem 1rem; /* Espaçamento entre os itens da lista */
+        }
+    }
 `;
 
 const About: React.FC = () => {
@@ -52,7 +82,7 @@ const About: React.FC = () => {
                 <Content>
                     <div>
                         <img src={ImgPerfil} alt="Wesley Guerra" />
-                        <h1>Hello, My name is Wesley👋</h1>
+                        <h1>Hello, I'm Wesley👋</h1>
                     </div>
 
                     <Info>
@@ -63,17 +93,52 @@ const About: React.FC = () => {
                                 <div className="ball green"></div>
                             </div>
                             <Painel>
+                                <h2>English Version</h2>
                                 <p>
-                                    Graduated in Systems Analysis and
-                                    Development, acting as a Full Front-end
-                                    Developer. On a journey of learning and
-                                    continuous improvement, seeking to improve
-                                    myself every day in development practices
-                                    and studying the DevOps culture.
+                                    I hold a degree in Systems Analysis and
+                                    Development, currently working as a Senior
+                                    Front-end Developer. I believe that family
+                                    is the foundation of everything. Beyond my
+                                    professional focus, I enjoy practicing
+                                    various sports like running, swimming, and
+                                    football.
+                                </p>
+                                <p>
+                                    I also love reading books on different
+                                    subjects, and I have a passion for dancing,
+                                    especially forró. Traveling and making new
+                                    friends are always on my list of priorities
+                                    as I'm constantly seeking new challenges. I
+                                    believe that the only limits we have are in
+                                    our minds, and I follow the principle of
+                                    continuous improvement, striving to grow and
+                                    get better every day.
+                                </p>
+
+                                <h2>Versão em Português</h2>
+                                <p>
+                                    Sou graduado em Análise e Desenvolvimento de
+                                    Sistemas e atuo como Desenvolvedor Front-end
+                                    Sênior. Além do meu foco profissional,
+                                    acredito que a família é a base de tudo.
+                                    Gosto de praticar diversos esportes, como
+                                    corrida, natação e futebol.
+                                </p>
+                                <p>
+                                    Amo ler livros sobre variados temas e sou
+                                    apaixonado por dançar, especialmente forró.
+                                    Viajar e fazer novas amizades estão sempre
+                                    na minha lista de prioridades, pois estou
+                                    constantemente em busca de desafios.
+                                    Acredito que o que nos limita é a nossa
+                                    mente, e sigo o princípio de melhoria
+                                    contínua, buscando crescer e melhorar todos
+                                    os dias.
                                 </p>
                                 <h3>
-                                    🚀 Currently doing Reckeatseat Bootcamp
-                                    focusing on technologies:
+                                    🚀 Currently doing{" "}
+                                    <Highlight>MSI</Highlight> Bootcamp focusing
+                                    on technologies:
                                 </h3>
                                 <ul>
                                     <li>Nodejs</li>

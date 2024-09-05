@@ -43,10 +43,6 @@ const About: React.FC = () => {
         <PageDefault>
             <Container>
                 <Content>
-                    <h1>Hello, I'm Wesley</h1>
-                    <span>💻 Software developer</span>
-                    <div className="background-image"></div>
-
                     {/* Seção de Projetos Atuais */}
                     <section>
                         <h2>Projetos Atuais</h2>
