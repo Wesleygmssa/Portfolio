@@ -21,12 +21,17 @@ export const Content = styled.div`
         margin-bottom: 1rem;
         font-size: 24px;
         overflow: hidden;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         max-height: 60px;
-        word-wrap: break-word; /* Break text into multiple lines if it exceeds width */
+        word-wrap: break-word;
 
         @media (max-width: 500px) {
             font-size: 20px;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 28px;
         }
     }
 
@@ -36,44 +41,25 @@ export const Content = styled.div`
         padding: 16px 20px;
         margin-bottom: 1rem;
         opacity: 0.6;
+
+        @media (max-width: 500px) {
+            font-size: 20px;
+        }
     }
 
     img {
-        width: 500px; /* Aumentando o tamanho da imagem */
-        height: 500px; /* Aumentando o tamanho da imagem */
+        width: 100%;
+        max-width: 500px;
+        height: auto;
         object-fit: cover;
-        border-radius: 0%; /* Deixando a imagem quadrada */
+        border-radius: 0%;
         border: 4px solid #707070;
         padding: 5px;
         margin-bottom: 1rem;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 
         @media (max-width: 500px) {
-            width: 300px; /* Tamanho menor para telas pequenas */
-            height: 300px;
-        }
-    }
-
-    .typing-animation {
-        animation: linkCursor 500ms steps(40) infinite,
-            typing 4s steps(40) 1s both;
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-        to {
-            width: 9em;
-        }
-    }
-
-    @keyframes linkCursor {
-        from {
-            border-right-color: rgba(255, 255, 255, 0.75);
-        }
-        to {
-            border-right-color: transparent;
+            max-width: 300px;
         }
     }
 
@@ -84,11 +70,10 @@ export const Content = styled.div`
         padding: 0px 15px;
         position: relative;
         font-weight: 500;
-    }
 
-    span {
-        text-align: center;
-        padding: 0px 16px;
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
     }
 
     button {
@@ -96,6 +81,11 @@ export const Content = styled.div`
         font-size: 24px;
         text-align: center;
         background-color: transparent;
+
+        @media (max-width: 500px) {
+            font-size: 18px;
+            margin: 50px 20px;
+        }
     }
 
     .painel-header {
@@ -106,24 +96,6 @@ export const Content = styled.div`
         border-radius: 0.6rem 0.6rem 0rem 0rem;
         background-color: #222222;
         gap: 1rem;
-
-        .ball {
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-        }
-
-        .red {
-            background-color: #d14d4d;
-        }
-
-        .yellow {
-            background-color: #d1bc4d;
-        }
-
-        .green {
-            background-color: #87d14d;
-        }
     }
 `;
 
@@ -163,9 +135,8 @@ export const Painel = styled.div`
         font-size: 18px;
 
         @media (max-width: 500px) {
-            font-size: 20px;
+            font-size: 16px;
             text-align: center;
-            align-items: center;
         }
     }
 `;
@@ -180,6 +151,11 @@ export const BoxSkills = styled.div`
     width: 100%;
     position: relative;
     left: -60px;
+
+    @media (max-width: 768px) {
+        left: 0;
+        padding: 0 15px;
+    }
 `;
 
 const WidthSkill = keyframes`
@@ -209,6 +185,10 @@ export const Skills = styled.div`
         width: 60%;
         height: 20px;
         animation: ${WidthSkill} 4s;
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
     }
 
     strong {
