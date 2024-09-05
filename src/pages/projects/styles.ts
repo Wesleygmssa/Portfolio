@@ -166,7 +166,7 @@ export const Icon = styled.div`
 export const ButtonGroup = styled.div`
     display: flex;
     justify-content: center; /* Centralizando os botões */
-    width: 100%;
+    width: 70%;
     margin-top: 10px;
     margin-bottom: 10px;
 
