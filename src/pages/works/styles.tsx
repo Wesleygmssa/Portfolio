@@ -133,4 +133,71 @@ export const Content = styled.div`
         background-color: #40916c; /* Verde um pouco mais escuro no hover */
         transform: scale(1.05);
     }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        padding: 20px;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        span {
+            font-size: 1.3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        li {
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 300px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        span {
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        li {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 250px;
+        }
+    }
 `;

@@ -33,15 +33,17 @@ const AnimationContainer = styled.div`
 
 // Painel ajustado
 const Painel = styled(PainelOriginal)`
-    padding: 2rem 1.5rem; /* Aumenta o padding para mais espaçamento interno */
+    padding: 2rem 1.5rem;
 
     h2 {
-        margin-bottom: 1.5rem; /* Dá um respiro entre os headings */
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
     }
 
     p {
-        margin-bottom: 1.5rem; /* Dá espaço entre os parágrafos */
-        line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+        font-size: 1.2rem;
     }
 
     ul {
@@ -51,7 +53,45 @@ const Painel = styled(PainelOriginal)`
         flex-wrap: wrap;
 
         li {
-            margin: 0.5rem 1rem; /* Espaçamento entre os itens da lista */
+            margin: 0.5rem 1rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        padding: 1.5rem 1rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        ul {
+            li {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 1rem 0.5rem;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        ul {
+            li {
+                font-size: 0.9rem;
+            }
         }
     }
 `;
