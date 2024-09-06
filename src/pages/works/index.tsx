@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PageDefault from "../../components/PageDefault";
 import { Container, Content } from "./styles";
 import imageGeoBahia from "../../assets/geobahia.png"; // Imagem do GeoBahia
+import imageGeodados from "../../assets/geodados.png"; // Imagem do GeoBahia
 import latmeask from "../../assets/latmeask.png"; // Imagem do GeoBahia
 
 // Definindo a estrutura de um projeto, agora com imagem
@@ -11,6 +12,7 @@ interface Project {
     link: string;
     technologies: string[];
     image: string;
+    disabled?: boolean;
 }
 
 const About: React.FC = () => {
@@ -26,6 +28,15 @@ const About: React.FC = () => {
                 link: "http://mapa.geobahia.ba.gov.br/",
                 technologies: ["Mapas", "Geoespacial", "WebGIS"],
                 image: imageGeoBahia, // Usando a imagem importada do GeoBahia
+            },
+            {
+                title: "GeoDados",
+                description:
+                    "GeoDados é um projeto focado em geoprocessamento e análise de dados geoespaciais, oferecendo diversas funcionalidades para importar, visualizar, analisar e manipular informações geográficas. Criado com acesso restrito à internet, ele não é disponibilizado ao público externo, garantindo um ambiente seguro e controlado para suas operações.",
+                link: "",
+                technologies: ["HTML", "CSS", "Node.js", "Sequelize", "EJS"],
+                image: imageGeodados,
+                disabled: true,
             },
             {
                 title: "Crie salas de Q&A ao-vivo",
@@ -60,13 +71,15 @@ const About: React.FC = () => {
                                             <strong>Tecnologias:</strong>{" "}
                                             {project.technologies.join(", ")}
                                         </p>
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Acessar Projeto
-                                        </a>
+                                        {project.link ? (
+                                            <a
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Acessar Projeto
+                                            </a>
+                                        ) : null}
                                     </div>
                                 </li>
                             ))}
