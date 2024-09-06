@@ -1,18 +1,37 @@
 // src/pages/styles.ts
 import styled from "styled-components";
 
+export const EventsTitle = styled.h1`
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "Arial", sans-serif;
+`;
+
+export const EventsDescription = styled.p`
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+    font-family: "Arial", sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+`;
+
 export const EventsWrapper = styled.div`
     background-color: #fff;
     padding: 20px;
     min-height: 100vh;
 `;
 
-export const EventsTitle = styled.h1`
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
-`;
+// export const EventsTitle = styled.h1`
+//     font-size: 2rem;
+//     text-align: center;
+//     margin-bottom: 40px;
+//     color: #333;
+// `;
 
 export const EventsContainer = styled.div`
     display: grid;

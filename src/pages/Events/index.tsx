@@ -9,6 +9,7 @@ import {
     Modal,
     ModalImage,
     CloseButton,
+    EventsDescription,
 } from "./styles"; // Estilos customizados
 import PageDefault from "../../components/PageDefault";
 
@@ -44,7 +45,13 @@ const Events: React.FC = () => {
     return (
         <PageDefault>
             <EventsWrapper>
-                <EventsTitle>Meus Eventos</EventsTitle>
+                <EventsTitle>Eventos que Marcaram Minha Jornada</EventsTitle>
+                <EventsDescription>
+                    Ao longo da minha carreira, tive a oportunidade de
+                    participar de diversos eventos que contribuíram para o meu
+                    crescimento profissional e pessoal. Aqui estão alguns dos
+                    momentos mais marcantes.
+                </EventsDescription>
                 <EventsContainer>
                     {events.map((event, index) => (
                         <EventCard
