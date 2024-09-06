@@ -43,52 +43,41 @@ export const Content = styled.section`
         border-bottom: 1px solid #ddd;
     }
 `;
-
 export const Cards = styled.section`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 16px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards */
     max-width: 1180px;
     width: 100%;
     margin: 34px auto;
-    padding: 0px 20px;
-
-    @media (max-width: 1000px) {
-        justify-content: center;
-    }
+    padding: 0 20px;
 `;
 
 export const Card = styled.div`
-    flex: 1 1 calc(22% - 32px); /* Ajuste para 4 cards por linha */
-    max-width: calc(25% - 32px);
-    height: auto;
-    margin: 16px;
+    flex: 1 1 calc(50% - 16px); /* Ajuste para garantir 2 cards por linha */
+    max-width: calc(50% - 16px);
+    margin: 16px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 16px;
     border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
     background-color: #f9fafb;
     border: 1px solid #e0e0e0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
         transform: scale(1.03);
     }
 
-    .card-img {
-        max-width: 300px;
-        width: 100%;
-    }
-
     img {
-        max-width: 300px;
-        width: 100%;
-        max-height: 150px;
+        max-width: 100%;
+        height: auto;
         border-radius: 8px;
         object-fit: cover;
     }
@@ -99,15 +88,75 @@ export const Card = styled.div`
     }
 
     @media (max-width: 1000px) {
-        flex: 1 1 calc(45% - 32px);
-        max-width: calc(45% - 32px);
-    }
-
-    @media (max-width: 600px) {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Cards em linha única em telas menores */
         max-width: 100%;
     }
 `;
+
+// export const Cards = styled.section`
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     max-width: 1180px;
+//     width: 100%;
+//     margin: 34px auto;
+//     padding: 0px 20px;
+
+//     @media (max-width: 1000px) {
+//         justify-content: center;
+//     }
+// `;
+
+// export const Card = styled.div`
+//     flex: 1 1 calc(22% - 32px); /* Ajuste para 4 cards por linha */
+//     max-width: calc(25% - 32px);
+//     height: auto;
+//     margin: 16px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 16px;
+//     border-radius: 8px;
+//     cursor: pointer;
+//     transition: 0.3s;
+//     background-color: #f9fafb;
+//     border: 1px solid #e0e0e0;
+//     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+
+//     &:hover {
+//         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+//         transform: scale(1.03);
+//     }
+
+//     .card-img {
+//         max-width: 300px;
+//         width: 100%;
+//     }
+
+//     img {
+//         max-width: 300px;
+//         width: 100%;
+//         max-height: 150px;
+//         border-radius: 8px;
+//         object-fit: cover;
+//     }
+
+//     a {
+//         color: #1d4ed8;
+//         font-weight: bold;
+//     }
+
+//     @media (max-width: 1000px) {
+//         flex: 1 1 calc(45% - 32px);
+//         max-width: calc(45% - 32px);
+//     }
+
+//     @media (max-width: 600px) {
+//         flex: 1 1 100%;
+//         max-width: 100%;
+//     }
+// `;
 
 export const CardContent = styled.div`
     display: flex;
