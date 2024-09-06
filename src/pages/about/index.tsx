@@ -141,60 +141,73 @@ const About: React.FC = () => {
                             <Painel>
                                 <h2>English Version</h2>
                                 <p>
-                                    I hold a degree in Systems Analysis and
-                                    Development, and I work as a Senior
-                                    Front-end Developer. For me, family is the
-                                    foundation of everything, and it’s the
-                                    pillar that motivates me every day. Besides
-                                    my professional focus, I have a strong
-                                    connection with sports, regularly practicing
-                                    running, weight training, swimming, and
-                                    football. I’m passionate about reading
-                                    books, always exploring diverse topics that
-                                    provide new learning experiences. Dancing,
-                                    especially forró, is another one of my great
-                                    passions. Traveling and meeting new people
-                                    are experiences I greatly value, as I’m
-                                    always seeking new friendships and
-                                    challenges.
+                                    I am a Senior Front-end Developer with
+                                    extensive experience in technologies such as
+                                    React, Node.js, React Native, and Next.js. I
+                                    also work on back-end development, creating
+                                    complete solutions that efficiently
+                                    integrate front-end and back-end systems.
+                                    Currently, I focus on building interactive
+                                    maps and geospatial systems aimed at
+                                    visualizing geographic data from Bahia. My
+                                    career has been marked by the development of
+                                    web applications, mobile apps, and APIs that
+                                    make a difference in users' lives.
                                 </p>
                                 <p>
-                                    I believe that the only limits we have are
-                                    in our minds, and I follow the principle of
-                                    continuous improvement, striving to grow a
-                                    little more each day. Currently, I’m
-                                    studying English at a basic level, aiming to
-                                    expand my horizons and prepare for new
+                                    I hold a degree in Systems Analysis and
+                                    Development, and my foundation has always
+                                    been my family, which gives me the strength
+                                    and motivation to face everyday challenges.
+                                    In my free time, I am passionate about
+                                    sports, practicing running, weightlifting,
+                                    swimming, and football. Additionally, I have
+                                    a passion for books and dancing, especially
+                                    forró. Traveling and making new friends are
+                                    experiences that enrich and challenge me to
+                                    always improve. I firmly believe that limits
+                                    are self-imposed, which is why I follow the
+                                    principle of continuous improvement,
+                                    striving to evolve a little more every day.
+                                    Currently, I am improving my English skills,
+                                    aiming to expand my horizons and prepare for
                                     international opportunities.
                                 </p>
 
                                 <h2>Versão em Português</h2>
                                 <p>
-                                    Sou graduado em Análise e Desenvolvimento de
-                                    Sistemas e atuo como Desenvolvedor Front-end
-                                    Sênior. Para mim, a família é a base de
-                                    tudo, e esse é o alicerce que me motiva
-                                    diariamente. Além do meu foco profissional,
-                                    tenho uma forte conexão com o esporte,
-                                    praticando corrida, musculação, natação e
-                                    futebol regularmente. Tenho uma paixão por
-                                    livros, sempre explorando temas diversos que
-                                    me proporcionam novos aprendizados. Dançar,
-                                    especialmente forró, é outra das minhas
-                                    grandes paixões. Viajar e conhecer novas
-                                    pessoas são experiências que valorizo muito,
-                                    sempre em busca de novas amizades e
-                                    desafios.
+                                    Sou Desenvolvedor Front-end Sênior com vasta
+                                    experiência em tecnologias como React,
+                                    Node.js, React Native, Next.js, e também
+                                    atuo no desenvolvimento back-end, criando
+                                    soluções completas que integram front e
+                                    back-end de maneira eficiente. Hoje, foco na
+                                    criação de mapas interativos e sistemas
+                                    geoespaciais voltados para a visualização de
+                                    dados geográficos da Bahia. Minha carreira
+                                    tem sido marcada pelo desenvolvimento de
+                                    aplicações web, mobile e APIs que fazem a
+                                    diferença na vida dos usuários.
                                 </p>
                                 <p>
-                                    Acredito que os únicos limites que temos
-                                    estão na nossa mente, e por isso sigo o
-                                    princípio de melhoria contínua, me
-                                    esforçando para evoluir um pouco mais a cada
-                                    dia. Atualmente, estou estudando inglês,
-                                    ainda no nível básico, buscando expandir
-                                    meus horizontes e me preparar para novas
-                                    oportunidades internacionais.
+                                    Graduado em Análise e Desenvolvimento de
+                                    Sistemas, minha base sempre foi a família,
+                                    que me dá força e motivação para encarar os
+                                    desafios do dia a dia. No meu tempo livre,
+                                    sou apaixonado por esportes, praticando
+                                    corrida, musculação, natação e futebol. Além
+                                    disso, tenho uma paixão por livros e pela
+                                    dança, especialmente o forró. Viajar e fazer
+                                    novas amizades são experiências que me
+                                    enriquecem e me desafiam a ser sempre
+                                    melhor. Acredito firmemente que os limites
+                                    são impostos por nós mesmos, por isso adoto
+                                    o princípio da melhoria contínua, buscando
+                                    evoluir diariamente. Atualmente, estou
+                                    aprimorando minhas habilidades em inglês,
+                                    com o objetivo de expandir meus horizontes e
+                                    estar preparado para desafios
+                                    internacionais.
                                 </p>
                                 <h3>
                                     🚀 Currently doing{" "}
