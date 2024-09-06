@@ -1,8 +1,17 @@
 import styled from "styled-components";
 
+export const Title = styled.h1`
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin: 80px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+`;
+
 export const Content = styled.section`
     min-height: 100vh;
-    margin-top: -70px;
+    /* margin-top: -70px; */
     padding: 20px;
     background-color: #fff;
 
@@ -41,8 +50,8 @@ export const Cards = styled.section`
     justify-content: space-between;
     max-width: 1180px;
     width: 100%;
-    margin: 64px auto;
-    padding: 16px 20px;
+    margin: 34px auto;
+    padding: 0px 20px;
 
     @media (max-width: 1000px) {
         justify-content: center;

@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Content, Cards, CardContent, Card, GroupButton } from "./styles";
+import {
+    Content,
+    Cards,
+    CardContent,
+    Card,
+    GroupButton,
+    Title,
+} from "./styles";
 import PageDefault from "../../components/PageDefault";
 import ButtonLink from "../../components/LinkButton";
 import api from "../../services/api";
@@ -67,6 +74,9 @@ const Projects: React.FC = () => {
     return (
         <PageDefault>
             <Content>
+                {/* Título adicionado aqui */}
+                <Title>Projetos de Estudos</Title>
+
                 {repositories.length < 1 && (
                     <div className="content-loading">
                         <img

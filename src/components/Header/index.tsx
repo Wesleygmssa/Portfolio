@@ -6,36 +6,33 @@ import React, { useContext } from "react";
 
 const Header: React.FC = () => {
     const location = useLocation();
-    const { colors } = useContext(ThemeContext) || {};
+    const { colors, title } = useContext(ThemeContext) || {}; // Pegando a função de toggle do contexto
+
+    const links = [
+        { to: "/about", label: "SOBRE" },
+        { to: "/works", label: "TRABALHOS" },
+        { to: "/projects", label: "PROJETOS" },
+    ];
 
     return (
         <HeaderContainer>
             <div className="nav">
-                <NavLink
-                    to="/about"
-                    className={({ isActive }) => (isActive ? "menuActive" : "")}
-                >
-                    ABOUT
-                </NavLink>
-
-                <NavLink
-                    to="/works"
-                    className={({ isActive }) => (isActive ? "menuActive" : "")}
-                >
-                    WORKS
-                </NavLink>
-
-                <NavLink
-                    to="/projects"
-                    className={({ isActive }) => (isActive ? "menuActive" : "")}
-                >
-                    PROJECTS
-                </NavLink>
+                {links.map((link) => (
+                    <NavLink
+                        key={link.to}
+                        to={link.to}
+                        className={({ isActive }) =>
+                            isActive ? "menuActive" : ""
+                        }
+                    >
+                        {link.label}
+                    </NavLink>
+                ))}
             </div>
             {/* <div className="switch">
                 <Switch
-                    onChange={() => {}}
-                    checked={false}
+                    onChange={toggleTheme} // Agora alterna o tema
+                    checked={title === "dark"} // Verifica se o tema atual é escuro
                     checkedIcon={false}
                     uncheckedIcon={false}
                     height={10}
