@@ -79,11 +79,11 @@ const Projects: React.FC = () => {
                 <Cards>
                     {currentRepos.map((data) => (
                         <Card key={data.id}>
-                            <img
+                            {/* <img
                                 src={data.image_url}
                                 alt={data.name}
                                 className="card-img"
-                            />
+                            /> */}
                             <CardContent>
                                 <h3>{data.name}</h3>
                                 <p>
