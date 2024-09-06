@@ -4,7 +4,7 @@ export const Content = styled.section`
     min-height: 100vh;
     margin-top: -70px;
     padding: 20px;
-    background-color: #fff; /* Fundo branco */
+    background-color: #fff;
 
     .content-loading {
         position: fixed;
@@ -26,23 +26,23 @@ export const Content = styled.section`
     h4 {
         max-width: 31.25rem;
         width: 100%;
-        color: #444; /* Cinza escuro */
+        color: #444;
         padding: 16px 8px;
         margin: 16px auto;
         text-align: center;
         font-size: 20px;
-        border-bottom: 1px solid #ddd; /* Borda leve */
+        border-bottom: 1px solid #ddd;
     }
 `;
 
 export const Cards = styled.section`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribui os cards uniformemente */
+    justify-content: space-between;
     max-width: 1180px;
     width: 100%;
     margin: 64px auto;
-    padding: 16px 25px;
+    padding: 16px 20px;
 
     @media (max-width: 1000px) {
         justify-content: center;
@@ -50,8 +50,8 @@ export const Cards = styled.section`
 `;
 
 export const Card = styled.div`
-    flex: 1 1 calc(30% - 32px); /* Ajuste para 30% da largura */
-    max-width: calc(40% - 32px);
+    flex: 1 1 calc(22% - 32px); /* Ajuste para 4 cards por linha */
+    max-width: calc(25% - 32px);
     height: auto;
     margin: 16px;
     display: flex;
@@ -62,13 +62,13 @@ export const Card = styled.div`
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    background-color: #f9fafb; /* Fundo suave */
-    border: 1px solid #e0e0e0; /* Borda leve */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Sombra leve */
+    background-color: #f9fafb;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 
     &:hover {
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-        transform: scale(1.03); /* Efeito hover */
+        transform: scale(1.03);
     }
 
     .card-img {
@@ -85,17 +85,17 @@ export const Card = styled.div`
     }
 
     a {
-        color: #1d4ed8; /* Azul escuro */
+        color: #1d4ed8;
         font-weight: bold;
     }
 
-    @media (max-width: 850px) {
-        flex: 1 1 calc(45% - 32px); /* Ajuste para 45% da largura em telas menores */
+    @media (max-width: 1000px) {
+        flex: 1 1 calc(45% - 32px);
         max-width: calc(45% - 32px);
     }
 
-    @media (max-width: 500px) {
-        flex: 1 1 100%; /* Ajuste para 100% da largura em telas pequenas */
+    @media (max-width: 600px) {
+        flex: 1 1 100%;
         max-width: 100%;
     }
 `;
@@ -104,29 +104,32 @@ export const CardContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    height: 100%;
+    padding: 16px;
     position: relative;
 
     h3 {
         width: 100%;
         font-size: 20px;
         font-weight: bold;
-        padding: 16px;
-        color: #333; /* Título em cinza escuro */
+        padding: 8px 0;
+        color: #333;
+        text-align: center;
     }
 
     p {
-        display: flex;
-        height: 100px; /* Ajuste na altura para manter o padrão entre cards */
-        justify-content: center;
-        align-items: center;
+        display: block;
         font-size: 14px;
-        line-height: 25px;
-        min-height: 80px;
+        line-height: 1.5;
         font-family: "Open Sans", sans-serif;
-        color: #555; /* Texto em cinza médio */
-        width: 280px;
+        color: #555;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        text-align: justify;
+        min-height: 80px;
     }
 
     span {
@@ -136,7 +139,7 @@ export const CardContent = styled.div`
         font-size: 10px;
         font-weight: 500;
         width: 45%;
-        background-color: #f87171; /* Vermelho suave */
+        background-color: #f87171;
         color: #fff;
         padding: 3px;
         position: absolute;
@@ -150,74 +153,58 @@ export const CardContent = styled.div`
     }
 `;
 
-export const Icons = styled.div`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 16px;
-`;
-
-export const Icon = styled.div`
-    & + div {
-        margin-left: 16px;
+export const PaginationStyles = styled.div`
+    .pagination {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        list-style: none;
     }
-`;
 
-export const ButtonGroup = styled.div`
-    display: flex;
-    justify-content: center; /* Centralizando os botões */
-    width: 70%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    .page-item {
+        margin: 0 5px;
+    }
 
-    a {
-        flex: 1; /* Define que todos os botões ocupem a mesma quantidade de espaço */
-        font-size: 14px;
-        transition: 0.5s;
-        border: 0;
-        color: #fff; /* Cor branca para texto dos botões */
-        text-align: center; /* Alinhamento centralizado */
-        padding: 16px 0; /* Define uma altura fixa */
-        background-color: #1d4ed8; /* Azul escuro */
+    .page-link {
+        padding: 8px 16px;
+        background-color: #1d4ed8;
+        color: white;
         border-radius: 5px;
         text-decoration: none;
-
-        &:hover {
-            background-color: #1e3a8a; /* Azul mais escuro no hover */
-        }
+        cursor: pointer;
     }
 
-    .button-bloqued {
-        color: #fff;
-        border: 1px solid #838383;
-        cursor: pointer;
-        font-style: normal;
-        font-weight: bold;
-        text-align: center;
-        outline: none;
-        border-radius: 5px;
-        background-color: #1d4ed8; /* Azul escuro */
-        opacity: 1; /* Opacidade corrigida */
-
-        &:disabled {
-            cursor: not-allowed;
-        }
+    .page-link:hover {
+        background-color: #1e3a8a;
     }
 `;
 
-export const Tec = styled.div`
-    width: 300px;
-    min-height: 110px;
-    margin-top: 10px;
+export const GroupButton = styled.div`
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Margem superior para separar os botões de outros elementos */
 
-    div {
-        display: inline-block;
-        font-size: 12px;
-        padding: 5px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        font-weight: bold;
-        max-height: 200px;
+    a,
+    button {
+        padding: 10px 20px; /* Espaçamento interno dos botões */
+        background-color: #1d4ed8; /* Cor de fundo azul */
+        color: #fff; /* Cor do texto branco */
+        border: none; /* Remove a borda padrão */
+        border-radius: 5px; /* Arredonda as bordas dos botões */
+        text-decoration: none; /* Remove sublinhado de links */
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    a:hover,
+    button:hover {
+        background-color: #1e3a8a; /* Cor de fundo mais escura ao passar o mouse */
+    }
+
+    button:disabled {
+        background-color: #cbd5e1; /* Cor mais clara para botões desativados */
+        cursor: not-allowed; /* Cursor desativado */
     }
 `;

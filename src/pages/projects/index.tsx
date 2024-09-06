@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Content, Cards, CardContent, ButtonGroup, Card } from "./styles";
+import { Content, Cards, CardContent, Card, GroupButton } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import ButtonLink from "../../components/LinkButton";
 import api from "../../services/api";
+import Pagination from "../../components/Paginacao"; // Importa o componente de paginação
 
 interface IUser {
     avatar_url: string;
@@ -28,6 +29,8 @@ interface IRepository {
 
 const Projects: React.FC = () => {
     const [repositories, setRepositories] = useState<IRepository[]>([]);
+    const [currentPage, setCurrentPage] = useState(1); // Página atual
+    const [reposPerPage] = useState(8); // Quantidade de repositórios por página
 
     useEffect(() => {
         async function getRepo() {
@@ -53,6 +56,14 @@ const Projects: React.FC = () => {
         getRepo();
     }, []);
 
+    // Índices dos repositórios na página atual
+    const indexOfLastRepo = currentPage * reposPerPage;
+    const indexOfFirstRepo = indexOfLastRepo - reposPerPage;
+    const currentRepos = repositories.slice(indexOfFirstRepo, indexOfLastRepo);
+
+    // Função para mudar de página
+    const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
     return (
         <PageDefault>
             <Content>
@@ -66,7 +77,7 @@ const Projects: React.FC = () => {
                 )}
 
                 <Cards>
-                    {repositories.map((data) => (
+                    {currentRepos.map((data) => (
                         <Card key={data.id}>
                             <img
                                 src={data.image_url}
@@ -82,18 +93,24 @@ const Projects: React.FC = () => {
                                         <div>Without description</div>
                                     )}
                                 </p>
-
-                                <ButtonGroup>
+                                <GroupButton>
                                     <ButtonLink href={data.html_url}>
                                         Source code
                                     </ButtonLink>
-                                </ButtonGroup>
+                                </GroupButton>
                             </CardContent>
                         </Card>
                     ))}
                 </Cards>
+
+                <Pagination
+                    reposPerPage={reposPerPage}
+                    totalRepos={repositories.length}
+                    paginate={paginate}
+                />
             </Content>
         </PageDefault>
     );
 };
+
 export default Projects;
