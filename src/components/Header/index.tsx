@@ -12,6 +12,7 @@ const Header: React.FC = () => {
         { to: "/about", label: "SOBRE" },
         { to: "/works", label: "TRABALHOS" },
         { to: "/projects", label: "PROJETOS" },
+        { to: "/events", label: "EVENTOS" }, // Nova aba de Eventos
     ];
 
     return (
