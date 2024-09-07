@@ -7,6 +7,75 @@ export const Title = styled.h1`
     margin: 80px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    @media (max-width: 1200px) {
+        font-size: 1.8rem; /* Tamanho para telas grandes */
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem; /* Tamanho para tablets */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.2rem; /* Tamanho para dispositivos móveis */
+    }
+`;
+
+export const CardContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+    padding: 16px;
+    position: relative;
+
+    h3 {
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px 0;
+        color: #333;
+        text-align: center;
+
+        @media (max-width: 1200px) {
+            font-size: 18px; /* Ajuste para telas grandes */
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px; /* Ajuste para tablets */
+        }
+
+        @media (max-width: 480px) {
+            font-size: 14px; /* Ajuste para dispositivos móveis */
+        }
+    }
+
+    p {
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+        color: #555;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        text-align: justify;
+        min-height: 80px;
+
+        @media (max-width: 1200px) {
+            font-size: 13px; /* Ajuste para telas grandes */
+        }
+
+        @media (max-width: 768px) {
+            font-size: 12px; /* Ajuste para tablets */
+        }
+
+        @media (max-width: 480px) {
+            font-size: 11px; /* Ajuste para dispositivos móveis */
+        }
+    }
 `;
 
 export const Content = styled.section`
@@ -158,58 +227,58 @@ export const Card = styled.div`
 //     }
 // `;
 
-export const CardContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    height: 100%;
-    padding: 16px;
-    position: relative;
+// export const CardContent = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-between;
+//     text-align: center;
+//     height: 100%;
+//     padding: 16px;
+//     position: relative;
 
-    h3 {
-        width: 100%;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 8px 0;
-        color: #333;
-        text-align: center;
-    }
+//     h3 {
+//         width: 100%;
+//         font-size: 20px;
+//         font-weight: bold;
+//         padding: 8px 0;
+//         color: #333;
+//         text-align: center;
+//     }
 
-    p {
-        display: block;
-        font-size: 14px;
-        line-height: 1.5;
-        font-family: "Open Sans", sans-serif;
-        color: #555;
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-        text-align: justify;
-        min-height: 80px;
-    }
+//     p {
+//         display: block;
+//         font-size: 14px;
+//         line-height: 1.5;
+//         font-family: "Open Sans", sans-serif;
+//         color: #555;
+//         width: 100%;
+//         height: auto;
+//         margin: 10px 0;
+//         text-align: justify;
+//         min-height: 80px;
+//     }
 
-    span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 10px;
-        font-weight: 500;
-        width: 45%;
-        background-color: #f87171;
-        color: #fff;
-        padding: 3px;
-        position: absolute;
-        border-radius: 5px;
-        transform: rotate(-30deg);
-        top: 8px;
-        left: -45px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        font-size: 12px;
-    }
-`;
+//     span {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         font-size: 10px;
+//         font-weight: 500;
+//         width: 45%;
+//         background-color: #f87171;
+//         color: #fff;
+//         padding: 3px;
+//         position: absolute;
+//         border-radius: 5px;
+//         transform: rotate(-30deg);
+//         top: 8px;
+//         left: -45px;
+//         font-weight: bold;
+//         letter-spacing: 2px;
+//         font-size: 12px;
+//     }
+// `;
 
 export const PaginationStyles = styled.div`
     .pagination {
