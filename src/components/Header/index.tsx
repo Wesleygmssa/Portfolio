@@ -1,23 +1,31 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { HeaderContainer } from "./styles";
-import Switch from "react-switch";
-import { ThemeContext } from "styled-components";
-import React, { useContext } from "react";
+import { HeaderContainer, HamburgerButton, NavMenu } from "./styles";
+import React, { useState } from "react";
 
 const Header: React.FC = () => {
     const location = useLocation();
-    const { colors, title } = useContext(ThemeContext) || {}; // Pegando a função de toggle do contexto
+    const [isOpen, setIsOpen] = useState(false); // Estado para controlar o menu aberto/fechado
 
     const links = [
         { to: "/about", label: "SOBRE" },
         { to: "/works", label: "TRABALHOS" },
         { to: "/projects", label: "PROJETOS" },
-        { to: "/events", label: "EVENTOS" }, // Nova aba de Eventos
+        { to: "/events", label: "EVENTOS" },
     ];
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen); // Alterna o estado do menu
+    };
 
     return (
         <HeaderContainer>
-            <div className="nav">
+            <HamburgerButton onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </HamburgerButton>
+
+            <NavMenu isOpen={isOpen}>
                 {links.map((link) => (
                     <NavLink
                         key={link.to}
@@ -25,23 +33,12 @@ const Header: React.FC = () => {
                         className={({ isActive }) =>
                             isActive ? "menuActive" : ""
                         }
+                        onClick={() => setIsOpen(false)} // Fecha o menu ao clicar em um link
                     >
                         {link.label}
                     </NavLink>
                 ))}
-            </div>
-            {/* <div className="switch">
-                <Switch
-                    onChange={toggleTheme} // Agora alterna o tema
-                    checked={title === "dark"} // Verifica se o tema atual é escuro
-                    checkedIcon={false}
-                    uncheckedIcon={false}
-                    height={10}
-                    handleDiameter={20}
-                    offColor={colors?.secondary || "#888"}
-                    onColor={colors?.primary || "#000"}
-                />
-            </div> */}
+            </NavMenu>
         </HeaderContainer>
     );
 };
