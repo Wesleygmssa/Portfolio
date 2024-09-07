@@ -37,13 +37,18 @@ export const Content = styled.div`
         font-weight: bold;
         letter-spacing: 1px;
         text-transform: uppercase;
+        animation: ${fadeIn} 0.8s ease-out;
+
+        @media (max-width: 1200px) {
+            font-size: 2.5rem; /* Tamanho para telas grandes */
+        }
 
         @media (max-width: 768px) {
-            font-size: 2.5rem;
+            font-size: 2rem; /* Tamanho para tablets */
         }
 
         @media (max-width: 480px) {
-            font-size: 2rem;
+            font-size: 1.8rem; /* Tamanho para dispositivos móveis */
         }
     }
 
@@ -78,12 +83,16 @@ export const Content = styled.div`
         display: inline-block;
         padding-bottom: 10px;
 
+        @media (max-width: 1200px) {
+            font-size: 2.2rem;
+        }
+
         @media (max-width: 768px) {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         @media (max-width: 480px) {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 
