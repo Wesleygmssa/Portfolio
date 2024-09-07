@@ -110,8 +110,8 @@ export const Content = styled.section`
     .content-loading {
         position: fixed;
         width: 100vw;
-        height: 100vh;
-        top: 0;
+        height: 80vh;
+        top: 80px;
         left: 0;
         display: flex;
         justify-content: center;
