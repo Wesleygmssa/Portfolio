@@ -6,6 +6,7 @@ import {
     Card,
     GroupButton,
     Title,
+    Technologies,
 } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import ButtonLink from "../../components/LinkButton";
@@ -32,6 +33,7 @@ interface IRepository {
     owner: IUser;
     login: string;
     image_url?: string; // Campo adicionado para imagem do projeto
+    languages?: string; // Campo adicionado para armazenar linguagens
 }
 
 const Projects: React.FC = () => {
@@ -45,20 +47,34 @@ const Projects: React.FC = () => {
             const reposResponse = await api.get<IRepository[]>(
                 `/users/${login}/starred`
             );
+
             function isBigEnough(value: any) {
                 return value?.owner?.login === login;
             }
 
             const filtered = reposResponse.data.filter(isBigEnough);
 
-            const projectsWithImages = filtered.map((repo) => ({
-                ...repo,
-                image_url: repo.image_url
-                    ? repo.image_url
-                    : "https://via.placeholder.com/300x150?text=No+Image",
-            }));
+            // Para cada repositório, buscar as linguagens
+            const projectsWithLanguages = await Promise.all(
+                filtered.map(async (repo) => {
+                    const languagesResponse = await api.get<{
+                        [key: string]: number;
+                    }>(`/repos/${login}/${repo.name}/languages`);
+                    const languages = Object.keys(languagesResponse.data).join(
+                        ", "
+                    );
 
-            setRepositories(projectsWithImages);
+                    return {
+                        ...repo,
+                        image_url: repo.image_url
+                            ? repo.image_url
+                            : "https://via.placeholder.com/300x150?text=No+Image",
+                        languages,
+                    };
+                })
+            );
+
+            setRepositories(projectsWithLanguages);
         }
         getRepo();
     }, []);
@@ -89,11 +105,7 @@ const Projects: React.FC = () => {
                 <Cards>
                     {currentRepos.map((data) => (
                         <Card key={data.id}>
-                            {/* <img
-                                src={data.image_url}
-                                alt={data.name}
-                                className="card-img"
-                            /> */}
+                            {/* Imagem do projeto */}
                             <CardContent>
                                 <h3>{data.name}</h3>
                                 <p>
@@ -103,6 +115,17 @@ const Projects: React.FC = () => {
                                         <div>Without description</div>
                                     )}
                                 </p>
+                                {/* Exibe as linguagens com estilização */}
+                                <Technologies>
+                                    <strong>Tecnologias:</strong>{" "}
+                                    {data.languages
+                                        ? data.languages
+                                              .split(", ")
+                                              .map((tech) => (
+                                                  <span key={tech}>{tech}</span>
+                                              ))
+                                        : "Não especificado"}
+                                </Technologies>
                                 <GroupButton>
                                     <ButtonLink href={data.html_url}>
                                         Source code
