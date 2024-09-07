@@ -17,12 +17,24 @@ export const HamburgerButton = styled.div`
     height: 25px;
     cursor: pointer;
     z-index: 1001;
-
     span {
         width: 100%;
         height: 3px;
         background-color: #ffffff;
         transition: all 0.3s ease;
+    }
+
+    // Quando o menu estiver aberto, transformar o ícone em "X"
+    span:nth-child(1) {
+        transform: ${(props) =>
+            props.isOpen ? "rotate(45deg) translate(5px, 5px)" : "rotate(0)"};
+    }
+    span:nth-child(2) {
+        opacity: ${(props) => (props.isOpen ? "0" : "1")};
+    }
+    span:nth-child(3) {
+        transform: ${(props) =>
+            props.isOpen ? "rotate(-45deg) translate(5px, -5px)" : "rotate(0)"};
     }
 
     @media (min-width: 768px) {

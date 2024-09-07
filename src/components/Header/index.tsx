@@ -16,7 +16,7 @@ const Header: React.FC = () => {
 
     return (
         <HeaderContainer>
-            <HamburgerButton onClick={toggleMenu}>
+            <HamburgerButton onClick={toggleMenu} isOpen={isOpen}>
                 <span />
                 <span />
                 <span />
