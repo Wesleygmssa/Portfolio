@@ -102,6 +102,15 @@ const Painel = styled(PainelOriginal)`
     }
 `;
 
+// Status
+const Status = styled.p`
+    font-size: 1.2rem;
+    color: #ff4500; /* Cor chamativa para destacar o status */
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+`;
+
 const About: React.FC = () => {
     const [toggleConteudos, setToggleConteudos] = useState(false);
     const [valueInitialCss, setValueInitialCss] = useState(0);
@@ -130,6 +139,11 @@ const About: React.FC = () => {
                         <img src={ImgPerfil} alt="Wesley Guerra" />
                         <h1>Hello, I'm Wesley👋</h1>
                     </div>
+
+                    {/* Adicionando o Status abaixo do título */}
+                    <Status>
+                        Chasing dreams and breaking limits, full steam ahead! 💥
+                    </Status>
 
                     <Info>
                         <Content>
