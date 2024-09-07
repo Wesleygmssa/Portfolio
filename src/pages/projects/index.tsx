@@ -128,7 +128,7 @@ const Projects: React.FC = () => {
                                 </Technologies>
                                 <GroupButton>
                                     <ButtonLink href={data.html_url}>
-                                        Source code
+                                        Código fonte
                                     </ButtonLink>
                                 </GroupButton>
                             </CardContent>
