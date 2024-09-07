@@ -87,6 +87,11 @@ export const NavMenu = styled.nav`
         }
     }
 
+    @media (min-width: 768px) {
+        justify-content: center; /* Centraliza o menu no desktop */
+        flex-grow: 1; /* Para ocupar o máximo possível de espaço e centralizar */
+    }
+
     @media (max-width: 768px) {
         position: absolute;
         top: 60px;
