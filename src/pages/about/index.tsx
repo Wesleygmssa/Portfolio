@@ -139,7 +139,7 @@ const About: React.FC = () => {
                                 <div className="ball green"></div>
                             </div> */}
                             <Painel>
-                                <h2>English Version</h2>
+                                {/* <h2>English Version</h2>
                                 <p>
                                     I am a Senior Front-end Developer with
                                     extensive experience in technologies such as
@@ -172,42 +172,49 @@ const About: React.FC = () => {
                                     Currently, I am improving my English skills,
                                     aiming to expand my horizons and prepare for
                                     international opportunities.
-                                </p>
+                                </p> */}
 
                                 <h2>Versão em Português</h2>
                                 <p>
-                                    Sou Desenvolvedor Front-end Sênior com vasta
-                                    experiência em tecnologias como React,
-                                    Node.js, React Native, Next.js, e também
-                                    atuo no desenvolvimento back-end, criando
-                                    soluções completas que integram front e
-                                    back-end de maneira eficiente. Hoje, foco na
-                                    criação de mapas interativos e sistemas
-                                    geoespaciais voltados para a visualização de
-                                    dados geográficos da Bahia. Minha carreira
-                                    tem sido marcada pelo desenvolvimento de
-                                    aplicações web, mobile e APIs que fazem a
-                                    diferença na vida dos usuários.
+                                    Desenvolvedor Front-end Sênior, com ampla
+                                    expertise em tecnologias como React,
+                                    Node.js, React Native e Next.js, também atuo
+                                    no desenvolvimento de back-end, entregando
+                                    soluções completas que conectam front e
+                                    back-end de forma eficiente e fluida. Ao
+                                    longo da minha trajetória, passei por
+                                    diversas empresas que agregaram valor e
+                                    contribuíram significativamente para o meu
+                                    crescimento profissional, consolidando a
+                                    experiência que aplico no desenvolvimento de
+                                    soluções robustas e inovadoras. Atualmente,
+                                    estou focado na criação de mapas interativos
+                                    e sistemas geoespaciais que transformam a
+                                    visualização de dados geográficos da Bahia,
+                                    impactando positivamente a tomada de
+                                    decisões.
                                 </p>
                                 <p>
-                                    Graduado em Análise e Desenvolvimento de
-                                    Sistemas, minha base sempre foi a família,
-                                    que me dá força e motivação para encarar os
-                                    desafios do dia a dia. No meu tempo livre,
-                                    sou apaixonado por esportes, praticando
-                                    corrida, musculação, natação e futebol. Além
-                                    disso, tenho uma paixão por livros e pela
-                                    dança, especialmente o forró. Viajar e fazer
-                                    novas amizades são experiências que me
-                                    enriquecem e me desafiam a ser sempre
-                                    melhor. Acredito firmemente que os limites
-                                    são impostos por nós mesmos, por isso adoto
-                                    o princípio da melhoria contínua, buscando
-                                    evoluir diariamente. Atualmente, estou
-                                    aprimorando minhas habilidades em inglês,
-                                    com o objetivo de expandir meus horizontes e
-                                    estar preparado para desafios
-                                    internacionais.
+                                    Minha jornada profissional é sustentada por
+                                    uma sólida formação em Análise e
+                                    Desenvolvimento de Sistemas, sempre guiada
+                                    pela base familiar, que me fortalece e
+                                    motiva a enfrentar os desafios diários. Fora
+                                    do ambiente de trabalho, sou movido pela
+                                    paixão por esportes, praticando corrida,
+                                    musculação, natação e futebol. A leitura e a
+                                    dança, especialmente o forró, também são
+                                    grandes fontes de prazer e energia. Viajar e
+                                    conhecer novas culturas alimenta meu
+                                    espírito aventureiro, me inspirando a buscar
+                                    o novo e evoluir constantemente. Acredito
+                                    que nossos únicos limites são os que impomos
+                                    a nós mesmos. Por isso, sigo o princípio da
+                                    melhoria contínua, sempre buscando aprender
+                                    e evoluir. Atualmente, estou aprimorando
+                                    minhas habilidades em inglês, com o objetivo
+                                    de abrir portas para oportunidades globais e
+                                    novos desafios internacionais.
                                 </p>
                                 <h3>
                                     🚀 Currently doing{" "}
