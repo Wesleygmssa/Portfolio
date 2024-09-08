@@ -190,45 +190,43 @@ const About: React.FC = () => {
 
                                 <h2>Versão em Português</h2>
                                 <p>
-                                    Desenvolvedor Front-end Sênior, com ampla
-                                    expertise em tecnologias como React,
-                                    Node.js, React Native e Next.js, também atuo
+                                    Desenvolvedor Front-end Sênior, com sólida
+                                    experiência em tecnologias como React,
+                                    Node.js, React Native e Next.js. Também atuo
                                     no desenvolvimento de back-end, entregando
-                                    soluções completas que conectam front e
-                                    back-end de forma eficiente e fluida. Ao
-                                    longo da minha trajetória, passei por
-                                    diversas empresas que agregaram valor e
-                                    contribuíram significativamente para o meu
-                                    crescimento profissional, consolidando a
-                                    experiência que aplico no desenvolvimento de
-                                    soluções robustas e inovadoras. Atualmente,
-                                    estou focado na criação de mapas interativos
-                                    e sistemas geoespaciais que transformam a
-                                    visualização de dados geográficos da Bahia,
-                                    impactando positivamente a tomada de
-                                    decisões.
+                                    soluções completas que integram o front e o
+                                    back-end de maneira eficiente e harmoniosa.
+                                    Ao longo da minha trajetória, passei por
+                                    várias empresas que agregaram valor e
+                                    impulsionaram meu crescimento profissional,
+                                    consolidando o conhecimento que aplico na
+                                    criação de soluções inovadoras e robustas.
+                                    Atualmente, meu foco está no desenvolvimento
+                                    de mapas interativos e sistemas
+                                    geoespaciais, transformando a visualização
+                                    de dados geográficos da Bahia e contribuindo
+                                    para decisões estratégicas.
                                 </p>
                                 <p>
-                                    Minha jornada profissional é sustentada por
-                                    uma sólida formação em Análise e
-                                    Desenvolvimento de Sistemas, sempre guiada
-                                    pela base familiar, que me fortalece e
-                                    motiva a enfrentar os desafios diários. Fora
-                                    do ambiente de trabalho, sou movido pela
-                                    paixão por esportes, praticando corrida,
+                                    Minha trajetória é construída sobre uma base
+                                    sólida em Análise e Desenvolvimento de
+                                    Sistemas, e encontro motivação nos desafios
+                                    do dia a dia. Fora do ambiente profissional,
+                                    sou apaixonado por esportes como corrida,
                                     musculação, natação e futebol. A leitura e a
-                                    dança, especialmente o forró, também são
-                                    grandes fontes de prazer e energia. Viajar e
-                                    conhecer novas culturas alimenta meu
-                                    espírito aventureiro, me inspirando a buscar
-                                    o novo e evoluir constantemente. Acredito
-                                    que nossos únicos limites são os que impomos
-                                    a nós mesmos. Por isso, sigo o princípio da
+                                    dança, especialmente o forró, são grandes
+                                    fontes de energia e inspiração. Viajar,
+                                    conhecer novas culturas e compartilhar
+                                    momentos com a família alimentam meu
+                                    espírito aventureiro, impulsionando meu
+                                    crescimento pessoal e profissional. Acredito
+                                    que nossos limites são aqueles que impomos a
+                                    nós mesmos, e por isso, sigo o princípio da
                                     melhoria contínua, sempre buscando aprender
-                                    e evoluir. Atualmente, estou aprimorando
-                                    minhas habilidades em inglês, com o objetivo
-                                    de abrir portas para oportunidades globais e
-                                    novos desafios internacionais.
+                                    e evoluir. Atualmente, estou praticando
+                                    inglês com o objetivo de abraçar novas
+                                    oportunidades globais e desafios
+                                    internacionais.
                                 </p>
                                 <h3>
                                     🚀 Currently doing{" "}
