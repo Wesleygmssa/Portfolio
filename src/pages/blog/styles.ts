@@ -51,6 +51,10 @@ export const Content = styled.section`
     padding: 40px;
     background-color: #f1f1f1;
     min-height: 100vh;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
 `;
 
 export const Cards = styled.div`
@@ -60,6 +64,10 @@ export const Cards = styled.div`
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        gap: 20px;
+    }
 `;
 
 export const Card = styled.div`
@@ -103,12 +111,28 @@ export const CardContent = styled.div`
         font-family: "Roboto", sans-serif;
         margin-bottom: 10px;
         color: #333;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+        }
     }
 
     p {
         font-size: 1.1rem;
         color: #555;
         margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.9rem;
+        }
     }
 `;
 
@@ -121,6 +145,10 @@ export const HighlightSection = styled.section`
     background-size: cover;
     background-position: center;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
 `;
 
 export const Title = styled.h1`
@@ -135,6 +163,14 @@ export const Title = styled.h1`
     letter-spacing: 2px;
     text-transform: uppercase;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+    }
 `;
 
 export const BlogDescription = styled.p`
@@ -144,4 +180,12 @@ export const BlogDescription = styled.p`
     margin: 0 auto;
     line-height: 1.8;
     font-family: "Open Sans", sans-serif;
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1rem;
+    }
 `;

@@ -9,7 +9,7 @@ import {
     HighlightSection,
     SearchInputContainer,
     SearchInput,
-    StyledButton, // Novo componente de botão estilizado
+    StyledButton,
 } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import { Link } from "react-router-dom";
@@ -28,7 +28,7 @@ const Blog: React.FC = () => {
     const [posts, setPosts] = useState<IPost[]>([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(5);
-    const [searchTerm, setSearchTerm] = useState(""); // Estado para armazenar o valor de busca
+    const [searchTerm, setSearchTerm] = useState("");
 
     const fakePosts: IPost[] = [
         {
@@ -70,7 +70,6 @@ const Blog: React.FC = () => {
     return (
         <PageDefault>
             <Content>
-                {/* Seção de destaque */}
                 <HighlightSection>
                     <Title>Explore Conteúdos de Alta Qualidade em TI</Title>
                     <BlogDescription>
@@ -79,7 +78,6 @@ const Blog: React.FC = () => {
                         projetado para profissionais de TI que desejam se
                         destacar, oferecendo conteúdos que vão além da técnica.
                     </BlogDescription>
-                    {/* Campo de busca moderno */}
                     <SearchInputContainer>
                         <SearchInput
                             type="text"
