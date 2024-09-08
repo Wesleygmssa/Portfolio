@@ -1,56 +1,96 @@
 import styled from "styled-components";
 
-export const Content = styled.section`
-    min-height: 100vh;
-    padding: 20px;
-    background-color: #f8f9fa;
+export const StyledButton = styled.button`
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+        background: linear-gradient(45deg, #0056b3, #0094ff);
+    }
 `;
 
-export const Title = styled.h1`
-    font-size: 2.5rem;
+export const SearchInputContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+`;
+
+export const SearchInput = styled.input`
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #007bff;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
     color: #333;
-    text-align: center;
-    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+
+    &:focus {
+        border-color: #0056b3;
+        background-color: #fff;
+    }
+
+    &::placeholder {
+        color: #aaa;
+    }
 `;
 
-export const Cards = styled.section`
+export const Content = styled.section`
+    padding: 40px;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+`;
+
+export const Cards = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
     justify-content: center;
+    gap: 30px;
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
 `;
 
 export const Card = styled.div`
-    flex: 1 1 calc(33% - 24px);
-    max-width: calc(33% - 24px);
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    max-width: calc(33.33% - 30px);
+    width: 100%;
+    margin: 20px 0;
 
     &:hover {
-        transform: scale(1.03);
-    }
-
-    @media (max-width: 1000px) {
-        flex: 1 1 calc(50% - 24px);
-        max-width: calc(50% - 24px);
-    }
-
-    @media (max-width: 768px) {
-        flex: 1 1 100%;
-        max-width: 100%;
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     }
 
     img {
         width: 100%;
-        height: 150px;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        max-width: calc(50% - 20px);
+    }
+
+    @media (max-width: 480px) {
+        max-width: 100%;
     }
 `;
 
@@ -59,30 +99,49 @@ export const CardContent = styled.div`
     text-align: center;
 
     h3 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
+        font-size: 1.8rem;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 10px;
         color: #333;
     }
 
     p {
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 1.1rem;
         color: #555;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
+`;
 
-    button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        font-size: 1rem;
-    }
+export const HighlightSection = styled.section`
+    background-color: #007bff;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+`;
 
-    button:hover {
-        background-color: #0056b3;
-    }
+export const Title = styled.h1`
+    font-size: 3.5rem;
+    background: linear-gradient(135deg, #00d4ff, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+`;
+
+export const BlogDescription = styled.p`
+    font-size: 1.4rem;
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: "Open Sans", sans-serif;
 `;

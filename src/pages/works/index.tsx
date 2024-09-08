@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import PageDefault from "../../components/PageDefault";
-import { Container, Content } from "./styles";
-import imageGeoBahia from "../../assets/geobahia.png"; // Imagem do GeoBahia
-import imageGeodados from "../../assets/geodados.png"; // Imagem do GeoBahia
-import latmeask from "../../assets/latmeask.png"; // Imagem do GeoBahia
+import { Container, Content, SectionDescription } from "./styles";
+import imageGeoBahia from "../../assets/geobahia.png";
+import imageGeodados from "../../assets/geodados.png";
+import latmeask from "../../assets/latmeask.png";
 
-// Definindo a estrutura de um projeto, agora com imagem
 interface Project {
     title: string;
     description: string;
@@ -19,7 +18,6 @@ const About: React.FC = () => {
     const [projects, setProjects] = useState<Project[]>([]);
 
     useEffect(() => {
-        // Projetos carregados
         const currentProjects: Project[] = [
             {
                 title: "GeoBahia",
@@ -27,12 +25,12 @@ const About: React.FC = () => {
                     "Sistema de mapeamento geoespacial para visualização de dados geográficos da Bahia.",
                 link: "http://mapa.geobahia.ba.gov.br/",
                 technologies: ["Mapas", "Geoespacial", "WebGIS"],
-                image: imageGeoBahia, // Usando a imagem importada do GeoBahia
+                image: imageGeoBahia,
             },
             {
                 title: "GeoDados",
                 description:
-                    "GeoDados é um projeto focado em geoprocessamento e análise de dados geoespaciais, oferecendo diversas funcionalidades para importar, visualizar, analisar e manipular informações geográficas. Criado com acesso restrito à internet, ele não é disponibilizado ao público externo, garantindo um ambiente seguro e controlado para suas operações.",
+                    "Projeto focado em geoprocessamento e análise de dados geoespaciais, oferecendo ferramentas robustas para manipulação de informações geográficas.",
                 link: "",
                 technologies: ["HTML", "CSS", "Node.js", "Sequelize", "EJS"],
                 image: imageGeodados,
@@ -40,7 +38,7 @@ const About: React.FC = () => {
             },
             {
                 title: "Crie salas de Q&A ao-vivo",
-                description: "Tire as dúvidas da sua audiência em tempo-real",
+                description: "Tire as dúvidas da sua audiência em tempo-real.",
                 link: "https://relaxed-jones-75aff8.netlify.app/",
                 technologies: ["HTML", "CSS", "React", "Netlify"],
                 image: latmeask,
@@ -54,9 +52,17 @@ const About: React.FC = () => {
         <PageDefault>
             <Container>
                 <Content>
-                    {/* Seção de Projetos Atuais */}
+                    <h2>Trabalhos Recentes</h2>
+                    <SectionDescription>
+                        Aqui estão alguns dos trabalhos em que atuei
+                        recentemente, utilizando as tecnologias mais modernas do
+                        mercado, como React, Node.js, Next.js, Leaflet e outras.
+                        Esses projetos destacam minha experiência em
+                        desenvolvimento web e geoprocessamento, sempre buscando
+                        aplicar soluções inovadoras para atender às necessidades
+                        do cliente.
+                    </SectionDescription>
                     <section>
-                        <h2>Projetos Atuais</h2>
                         <ul>
                             {projects.map((project, index) => (
                                 <li key={index}>
@@ -71,7 +77,7 @@ const About: React.FC = () => {
                                             <strong>Tecnologias:</strong>{" "}
                                             {project.technologies.join(", ")}
                                         </p>
-                                        {project.link ? (
+                                        {project.link && (
                                             <a
                                                 href={project.link}
                                                 target="_blank"
@@ -79,7 +85,7 @@ const About: React.FC = () => {
                                             >
                                                 Acessar Projeto
                                             </a>
-                                        ) : null}
+                                        )}
                                     </div>
                                 </li>
                             ))}
