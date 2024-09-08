@@ -89,10 +89,7 @@ const Projects: React.FC = () => {
 
                 {repositories.length < 1 && (
                     <div className="content-loading">
-                        <img
-                            src="http://portal.ufvjm.edu.br/a-universidade/cursos/grade_curricular_ckan/loading.gif"
-                            alt="loading"
-                        />
+                        <div className="loading-spinner"></div>
                     </div>
                 )}
 

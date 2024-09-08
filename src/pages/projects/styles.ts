@@ -18,6 +18,37 @@ export const Content = styled.section`
     padding: 40px;
     background-color: #f9f9f9;
     min-height: 100vh;
+
+    .content-loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+
+    .loading-spinner {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #007bff, #00d4ff);
+        animation: pulse 1.2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
 `;
 
 export const Cards = styled.div`

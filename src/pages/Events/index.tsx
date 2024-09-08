@@ -10,11 +10,11 @@ import {
     ModalImage,
     CloseButton,
     EventsDescription,
-} from "./styles"; // Estilos customizados
+} from "./styles";
 import PageDefault from "../../components/PageDefault";
 
 const Events: React.FC = () => {
-    const [selectedImage, setSelectedImage] = useState<string | null>(null); // Controla a imagem no modal
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     const events = [
         {
@@ -25,17 +25,17 @@ const Events: React.FC = () => {
     ];
 
     const openModal = (image: string) => {
-        setSelectedImage(image); // Abre o modal com a imagem selecionada
+        setSelectedImage(image);
     };
 
     const closeModal = () => {
-        setSelectedImage(null); // Fecha o modal
+        setSelectedImage(null);
     };
 
     return (
         <PageDefault>
             <EventsWrapper>
-                <EventsTitle>Eventos que Marcaram Minha Jornada</EventsTitle>
+                <EventsTitle>Eventos Que Marcaram Minha Jornada</EventsTitle>
                 <EventsDescription>
                     Ao longo da minha carreira, participei de eventos que
                     tiveram um grande impacto no meu crescimento profissional e
