@@ -190,7 +190,7 @@ const About: React.FC = () => {
 
                                 <h2>Versão em Português</h2>
                                 <p>
-                                    Desenvolvedor Front-end Sênior, com sólida
+                                    Desenvolvedor Front-end, com sólida
                                     experiência em tecnologias como React,
                                     Node.js, React Native e Next.js. Também atuo
                                     no desenvolvimento de back-end, entregando
