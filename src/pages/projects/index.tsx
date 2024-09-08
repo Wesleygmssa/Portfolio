@@ -11,7 +11,7 @@ import {
 import PageDefault from "../../components/PageDefault";
 import ButtonLink from "../../components/LinkButton";
 import api from "../../services/api";
-import Pagination from "../../components/Paginacao"; // Importa o componente de paginação
+import Pagination from "../../components/Paginacao";
 
 interface IUser {
     avatar_url: string;
@@ -32,14 +32,14 @@ interface IRepository {
     description: string;
     owner: IUser;
     login: string;
-    image_url?: string; // Campo adicionado para imagem do projeto
-    languages?: string; // Campo adicionado para armazenar linguagens
+    image_url?: string;
+    languages?: string;
 }
 
 const Projects: React.FC = () => {
     const [repositories, setRepositories] = useState<IRepository[]>([]);
-    const [currentPage, setCurrentPage] = useState(1); // Página atual
-    const [reposPerPage] = useState(8); // Quantidade de repositórios por página
+    const [currentPage, setCurrentPage] = useState(1);
+    const [reposPerPage] = useState(8);
 
     useEffect(() => {
         async function getRepo() {
@@ -48,13 +48,10 @@ const Projects: React.FC = () => {
                 `/users/${login}/starred`
             );
 
-            function isBigEnough(value: any) {
-                return value?.owner?.login === login;
-            }
+            const filtered = reposResponse.data.filter(
+                (value) => value?.owner?.login === login
+            );
 
-            const filtered = reposResponse.data.filter(isBigEnough);
-
-            // Para cada repositório, buscar as linguagens
             const projectsWithLanguages = await Promise.all(
                 filtered.map(async (repo) => {
                     const languagesResponse = await api.get<{
@@ -79,18 +76,15 @@ const Projects: React.FC = () => {
         getRepo();
     }, []);
 
-    // Índices dos repositórios na página atual
     const indexOfLastRepo = currentPage * reposPerPage;
     const indexOfFirstRepo = indexOfLastRepo - reposPerPage;
     const currentRepos = repositories.slice(indexOfFirstRepo, indexOfLastRepo);
 
-    // Função para mudar de página
     const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
     return (
         <PageDefault>
             <Content>
-                {/* Título adicionado aqui */}
                 <Title>Projetos de Estudos</Title>
 
                 {repositories.length < 1 && (
@@ -105,7 +99,6 @@ const Projects: React.FC = () => {
                 <Cards>
                     {currentRepos.map((data) => (
                         <Card key={data.id}>
-                            {/* Imagem do projeto */}
                             <CardContent>
                                 <h3>{data.name}</h3>
                                 <p>
@@ -115,7 +108,6 @@ const Projects: React.FC = () => {
                                         <div>Without description</div>
                                     )}
                                 </p>
-                                {/* Exibe as linguagens com estilização */}
                                 <Technologies>
                                     <strong>Tecnologias:</strong>{" "}
                                     {data.languages
