@@ -137,7 +137,7 @@ const About: React.FC = () => {
                 <Content>
                     <div>
                         <img src={ImgPerfil} alt="Wesley Guerra" />
-                        <h1>Hello, I'm Wesley👋</h1>
+                        <h1>Hello, I'm Wesley Guerra👋</h1>
                     </div>
 
                     {/* Adicionando o Status abaixo do título */}
