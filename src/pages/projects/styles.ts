@@ -12,6 +12,29 @@ export const Title = styled.h1`
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 1024px) {
+        font-size: 3rem; /* Ajuste para telas de até 1024px */
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem; /* Ajuste para tablets */
+        margin-bottom: 30px;
+        letter-spacing: 1.5px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2rem; /* Ajuste para smartphones */
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    @media (max-width: 360px) {
+        font-size: 1.8rem; /* Ajuste adicional para telas muito pequenas */
+        margin-bottom: 15px;
+        letter-spacing: 0.8px;
+    }
 `;
 
 export const Content = styled.section`
@@ -49,6 +72,14 @@ export const Content = styled.section`
             opacity: 1;
         }
     }
+
+    @media (max-width: 768px) {
+        padding: 30px 20px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 20px 10px;
+    }
 `;
 
 export const Cards = styled.div`
@@ -58,6 +89,15 @@ export const Cards = styled.div`
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 15px;
+    }
 `;
 
 export const Card = styled.div`
@@ -83,12 +123,16 @@ export const Card = styled.div`
         object-fit: cover;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         max-width: calc(50% - 20px);
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         max-width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        margin: 0;
     }
 `;
 
@@ -101,12 +145,28 @@ export const CardContent = styled.div`
         font-family: "Roboto", sans-serif;
         margin-bottom: 10px;
         color: #333;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.3rem;
+        }
     }
 
     p {
         font-size: 1.1rem;
         color: #555;
         margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.9rem;
+        }
     }
 `;
 
@@ -122,6 +182,11 @@ export const Technologies = styled.div`
         border-radius: 4px;
         margin-right: 5px;
         display: inline-block;
+
+        @media (max-width: 480px) {
+            padding: 3px 8px;
+            font-size: 0.9rem;
+        }
     }
 `;
 
@@ -142,6 +207,16 @@ export const GroupButton = styled.div`
         &:hover {
             background-color: #0056b3;
             transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            padding: 8px 16px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.9rem;
+            padding: 6px 12px;
         }
     }
 `;
