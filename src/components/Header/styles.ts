@@ -5,8 +5,10 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #2b2b2b;
+    background-color: #1f1f1f;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    position: relative;
 `;
 
 export const HamburgerButton = styled.div`
@@ -17,6 +19,7 @@ export const HamburgerButton = styled.div`
     height: 25px;
     cursor: pointer;
     z-index: 1001;
+
     span {
         width: 100%;
         height: 3px;
@@ -24,14 +27,15 @@ export const HamburgerButton = styled.div`
         transition: all 0.3s ease;
     }
 
-    // Quando o menu estiver aberto, transformar o ícone em "X"
     span:nth-child(1) {
         transform: ${(props) =>
             props.isOpen ? "rotate(45deg) translate(5px, 5px)" : "rotate(0)"};
     }
+
     span:nth-child(2) {
         opacity: ${(props) => (props.isOpen ? "0" : "1")};
     }
+
     span:nth-child(3) {
         transform: ${(props) =>
             props.isOpen ? "rotate(-45deg) translate(5px, -5px)" : "rotate(0)"};
@@ -76,50 +80,11 @@ export const NavMenu = styled.nav`
         }
     }
 
-    .menu-item {
-        position: relative;
-
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-            padding: 1rem;
-            border-radius: 4px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-
-            a {
-                display: block;
-                padding: 0.5rem 1rem;
-                color: #ddd;
-
-                &:hover {
-                    color: #ffffff;
-                }
-            }
-        }
-
-        &:hover .dropdown {
-            display: block;
-        }
-    }
-
-    // Estilo para o item desabilitado
-    .disabled {
-        font-size: 1.2rem;
-        color: #666;
-        cursor: not-allowed;
-        opacity: 0.5;
-        text-decoration: none;
-    }
-
     @media (max-width: 768px) {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #2b2b2b;
+        background-color: #1f1f1f;
         width: 100%;
         height: ${(props) => (props.isOpen ? "100vh" : "0")};
         display: flex;

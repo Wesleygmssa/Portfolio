@@ -25,87 +25,38 @@ const Header: React.FC = () => {
                 <NavLink
                     to="/about"
                     onClick={handleLinkClick}
-                    activeClassName="menuActive"
+                    className={({ isActive }) => (isActive ? "menuActive" : "")}
                 >
                     Sobre Mim
                 </NavLink>
-                <div className="menu-item">
-                    <NavLink
-                        to="/works"
-                        onClick={handleLinkClick}
-                        activeClassName="menuActive"
-                    >
-                        Trabalhos
-                    </NavLink>
-
-                    {/* <div className="dropdown">
-                        <NavLink to="/works/frontend" onClick={handleLinkClick}>
-                            Frontend
-                        </NavLink>
-                        <NavLink to="/works/backend" onClick={handleLinkClick}>
-                            Backend
-                        </NavLink>
-                        <NavLink to="/works/mobile" onClick={handleLinkClick}>
-                            Mobile
-                        </NavLink>
-                    </div> */}
-                </div>
+                <NavLink
+                    to="/works"
+                    onClick={handleLinkClick}
+                    className={({ isActive }) => (isActive ? "menuActive" : "")}
+                >
+                    Trabalhos
+                </NavLink>
                 <NavLink
                     to="/projects"
                     onClick={handleLinkClick}
-                    activeClassName="menuActive"
+                    className={({ isActive }) => (isActive ? "menuActive" : "")}
                 >
                     Projetos
                 </NavLink>
                 <NavLink
                     to="/events"
                     onClick={handleLinkClick}
-                    activeClassName="menuActive"
+                    className={({ isActive }) => (isActive ? "menuActive" : "")}
                 >
                     Eventos
                 </NavLink>
-                {/* <div className="menu-item">
-                    <NavLink
-                        to="/portfolio"
-                        onClick={handleLinkClick}
-                        activeClassName="menuActive"
-                    >
-                        Portfólio
-                    </NavLink>
-                    <div className="dropdown">
-                        <NavLink to="/portfolio/all" onClick={handleLinkClick}>
-                            Todos os Projetos
-                        </NavLink>
-                        <NavLink
-                            to="/portfolio/recent"
-                            onClick={handleLinkClick}
-                        >
-                            Projetos Recentes
-                        </NavLink>
-                        <NavLink
-                            to="/portfolio/open-source"
-                            onClick={handleLinkClick}
-                        >
-                            Open Source
-                        </NavLink>
-                    </div>
-                </div> */}
-                {/* <NavLink
-                    to="/services"
-                    onClick={handleLinkClick}
-                    activeClassName="menuActive"
-                >
-                    Serviços
-                </NavLink> */}
                 <NavLink
                     to="/blog"
                     onClick={handleLinkClick}
-                    activeClassName="menuActive"
+                    className={({ isActive }) => (isActive ? "menuActive" : "")}
                 >
                     Blog
                 </NavLink>
-                {/* Blog Desabilitado */}
-                {/* <span className="disabled">Blog (Em breve)</span> */}
             </NavMenu>
         </HeaderContainer>
     );
