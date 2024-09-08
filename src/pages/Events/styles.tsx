@@ -34,11 +34,11 @@ export const EventsWrapper = styled.div`
 // `;
 
 export const EventsContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; // Centraliza os cards horizontalmente
     gap: 20px;
     padding: 20px;
-    justify-items: center;
 `;
 
 export const EventCard = styled.div`

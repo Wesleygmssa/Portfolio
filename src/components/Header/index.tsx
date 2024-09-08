@@ -57,6 +57,13 @@ const Header: React.FC = () => {
                 >
                     Projetos
                 </NavLink>
+                <NavLink
+                    to="/events"
+                    onClick={handleLinkClick}
+                    activeClassName="menuActive"
+                >
+                    Eventos
+                </NavLink>
                 {/* <div className="menu-item">
                     <NavLink
                         to="/portfolio"
