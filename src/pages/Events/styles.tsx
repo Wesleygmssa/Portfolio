@@ -1,19 +1,18 @@
-// src/pages/styles.ts
 import styled from "styled-components";
 
 export const EventsTitle = styled.h1`
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #333;
     font-family: "Arial", sans-serif;
 `;
 
 export const EventsDescription = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     margin-bottom: 40px;
-    color: #555;
+    color: #666;
     font-family: "Arial", sans-serif;
     max-width: 800px;
     margin-left: auto;
@@ -21,22 +20,15 @@ export const EventsDescription = styled.p`
 `;
 
 export const EventsWrapper = styled.div`
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 20px;
     min-height: 100vh;
 `;
 
-// export const EventsTitle = styled.h1`
-//     font-size: 2rem;
-//     text-align: center;
-//     margin-bottom: 40px;
-//     color: #333;
-// `;
-
 export const EventsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; // Centraliza os cards horizontalmente
+    justify-content: center;
     gap: 20px;
     padding: 20px;
 `;
@@ -49,12 +41,13 @@ export const EventCard = styled.div`
     max-width: 300px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
         transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     }
 `;
 
@@ -68,9 +61,10 @@ export const EventImage = styled.img`
 
 export const EventDescription = styled.p`
     padding: 15px;
-    font-size: 14px;
+    font-size: 1rem;
     color: #333;
     text-align: center;
+    line-height: 1.5;
 `;
 
 export const Modal = styled.div`
@@ -98,8 +92,13 @@ export const CloseButton = styled.button`
     right: 20px;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #fff;
     cursor: pointer;
     outline: none;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #ff4f4f;
+    }
 `;

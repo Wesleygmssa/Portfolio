@@ -18,19 +18,9 @@ const Events: React.FC = () => {
 
     const events = [
         {
-            image: "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg",
+            image: "https://media.licdn.com/dms/image/v2/D4D22AQGrF-FDwHQJ_A/feedshare-shrink_800/feedshare-shrink_800/0/1725540743048?e=1728518400&v=beta&t=MDb9s6sCcqNB4duYUB7uOskf84tSDIN9-JQcU0w7qUA",
             description:
-                "Este evento foi incrível e marcou o início de uma nova era.",
-        },
-        {
-            image: "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg",
-            description:
-                "Um evento memorável que nos ensinou muito sobre trabalho em equipe.",
-        },
-        {
-            image: "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg",
-            description:
-                "Aquele dia em que tudo deu certo e alcançamos grandes resultados.",
+                "Trilha intermediária de desenvolvimento Full-stack com foco em React e Node.js. Ideal para quem deseja se atualizar com as melhores práticas e ferramentas do mercado, além de impulsionar sua carreira com novas habilidades em programação.",
         },
     ];
 
@@ -47,10 +37,10 @@ const Events: React.FC = () => {
             <EventsWrapper>
                 <EventsTitle>Eventos que Marcaram Minha Jornada</EventsTitle>
                 <EventsDescription>
-                    Ao longo da minha carreira, tive a oportunidade de
-                    participar de diversos eventos que contribuíram para o meu
-                    crescimento profissional e pessoal. Aqui estão alguns dos
-                    momentos mais marcantes.
+                    Ao longo da minha carreira, participei de eventos que
+                    tiveram um grande impacto no meu crescimento profissional e
+                    pessoal. Aqui estão alguns dos momentos mais marcantes que
+                    fizeram parte dessa jornada.
                 </EventsDescription>
                 <EventsContainer>
                     {events.map((event, index) => (

@@ -97,15 +97,15 @@ const Header: React.FC = () => {
                 >
                     Serviços
                 </NavLink> */}
-                {/* <NavLink
-                    to="/contact"
+                <NavLink
+                    to="/blog"
                     onClick={handleLinkClick}
                     activeClassName="menuActive"
                 >
-                    Contato
-                </NavLink> */}
+                    Blog
+                </NavLink>
                 {/* Blog Desabilitado */}
-                <span className="disabled">Blog (Em breve)</span>
+                {/* <span className="disabled">Blog (Em breve)</span> */}
             </NavMenu>
         </HeaderContainer>
     );
