@@ -71,12 +71,19 @@ const Blog: React.FC = () => {
         <PageDefault>
             <Content>
                 <HighlightSection>
-                    <Title>Explore Conteúdos de Alta Qualidade em TI</Title>
+                    <Title>
+                        Inspire-se e Avance: Conteúdos para Profissionais de TI
+                    </Title>
                     <BlogDescription>
-                        Descubra artigos valiosos sobre tecnologia,
-                        desenvolvimento pessoal e dicas de inglês. Este blog é
-                        projetado para profissionais de TI que desejam se
-                        destacar, oferecendo conteúdos que vão além da técnica.
+                        Essa área foi criada para organizar meus estudos e
+                        pesquisas, facilitando futuras consultas. Além disso,
+                        decidi deixá-la aberta para que outras pessoas também
+                        possam aproveitar. O objetivo é organizar conhecimentos
+                        e estudos específicos. Aqui, você encontrará artigos
+                        valiosos sobre tecnologia, desenvolvimento pessoal e
+                        dicas de inglês. Este blog é voltado para profissionais
+                        de TI que buscam se destacar, oferecendo conteúdos que
+                        vão além do aspecto técnico.
                     </BlogDescription>
                     <SearchInputContainer>
                         <SearchInput
