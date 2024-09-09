@@ -246,7 +246,9 @@ const About: React.FC = () => {
                                 {/* Botão de download centralizado */}
                                 <DownloadButton
                                     href="/wesley_guerra.pdf"
-                                    download="curriculo-wesley-guerra"
+                                    // download="curriculo-wesley-guerra"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     Baixar Currículo
                                 </DownloadButton>
