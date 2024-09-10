@@ -7,6 +7,7 @@ import {
     GroupButton,
     Title,
     Technologies,
+    Description,
 } from "./styles";
 import PageDefault from "../../components/PageDefault";
 import ButtonLink from "../../components/LinkButton";
@@ -86,6 +87,22 @@ const Projects: React.FC = () => {
         <PageDefault>
             <Content>
                 <Title>Projetos de Estudos</Title>
+                <Description>
+                    Estes projetos foram desenvolvidos utilizando um conjunto de
+                    tecnologias modernas e eficientes para o desenvolvimento web
+                    e mobile. No front-end, utilizamos <strong>React</strong> e{" "}
+                    <strong>React Native</strong> para criar interfaces
+                    dinâmicas e responsivas tanto para web quanto para
+                    dispositivos móveis. A base da lógica e interatividade dos
+                    sistemas foi construída com <strong>JavaScript</strong>. No
+                    back-end, contamos com <strong>Node.js</strong>,{" "}
+                    <strong>SpringBoot</strong>, <strong>Java</strong> e{" "}
+                    <strong>Python</strong>, oferecendo alta performance e
+                    segurança. Além disso, utilizamos{" "}
+                    <strong>bancos de dados relacionais</strong> e
+                    não-relacionais para armazenamento e gerenciamento das
+                    informações, garantindo flexibilidade e escalabilidade.
+                </Description>
 
                 {repositories.length < 1 && (
                     <div className="content-loading">

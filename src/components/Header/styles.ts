@@ -78,6 +78,12 @@ export const NavMenu = styled.nav`
                 transition: width 0.3s ease-in-out;
             }
         }
+
+        &.menuDisabled {
+            color: #888; /* Cor mais clara para indicar desabilitado */
+            pointer-events: none; /* Remove a interatividade */
+            cursor: not-allowed; /* Mostra o cursor de "não permitido" */
+        }
     }
 
     @media (max-width: 768px) {

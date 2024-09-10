@@ -4,30 +4,91 @@ import PageDefault from "../../components/PageDefault";
 import ImgPerfil from "../../assets/wesleyguerra.png";
 import { Container, Content, Info, Painel as PainelOriginal } from "./styles";
 
-// Animation
+// Animação de gradiente no título
+const gradientAnimation = keyframes`
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+`;
+
+// Animação de entrada do conteúdo
 const appearFromCenter = keyframes`
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0);
   }
 `;
 
-const Highlight = styled.span`
-    color: #ff6347;
-    font-weight: bold;
+// Efeito de pulso no botão
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 `;
 
-const AnimationContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px 20px;
-    animation: ${appearFromCenter} 1s;
-    box-shadow: -1px 6px 15px 2px rgba(0, 0, 0, 0.75);
+// Estilo para o nome e status
+const Name = styled.h1`
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(45deg, #ff6347, #1e90ff, #32cd32);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: ${gradientAnimation} 5s ease infinite;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+`;
+
+const Status = styled.p`
+    font-size: 1.5rem;
+    color: #ff4500;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+    animation: ${pulse} 1.5s infinite; /* Status com efeito de pulso */
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+`;
+
+// Imagem de perfil com borda e efeito de hover
+const PerfilImage = styled.img`
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ff6347;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+        width: 150px;
+        height: 150px;
+    }
 `;
 
 const DownloadButton = styled.a`
@@ -41,6 +102,7 @@ const DownloadButton = styled.a`
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
+    animation: ${pulse} 2s infinite;
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -50,6 +112,7 @@ const DownloadButton = styled.a`
 
 const Painel = styled(PainelOriginal)`
     padding: 2rem 1.5rem;
+    animation: ${appearFromCenter} 1s ease;
     h2 {
         margin-bottom: 1.5rem;
         font-size: 1.8rem;
@@ -67,13 +130,13 @@ const Painel = styled(PainelOriginal)`
         li {
             margin: 0.5rem 1rem;
             font-size: 1.2rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+            &:hover {
+                color: #ff6347;
+                transform: translateY(-5px);
+            }
         }
     }
-
-    /* Centralizando o botão */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     @media (max-width: 768px) {
         padding: 1.5rem 1rem;
@@ -102,15 +165,6 @@ const Painel = styled(PainelOriginal)`
     }
 `;
 
-// Status
-const Status = styled.p`
-    font-size: 1.2rem;
-    color: #ff4500; /* Cor chamativa para destacar o status */
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-`;
-
 const About: React.FC = () => {
     const [toggleConteudos, setToggleConteudos] = useState(false);
     const [valueInitialCss, setValueInitialCss] = useState(0);
@@ -127,67 +181,19 @@ const About: React.FC = () => {
         }
     }, []);
 
-    const handleToggle = () => {
-        setToggleConteudos(!toggleConteudos);
-    };
-
     return (
         <PageDefault>
             <Container>
                 <Content>
-                    <div>
-                        <img src={ImgPerfil} alt="Wesley Guerra" />
-                        <h1>Hello, I'm Wesley Guerra👋</h1>
-                    </div>
-
-                    {/* Adicionando o Status abaixo do título */}
+                    <PerfilImage src={ImgPerfil} alt="Wesley Guerra" />
+                    <Name>Hello, I'm Wesley Guerra👋</Name>
                     <Status>
                         Chasing dreams and breaking limits, full steam ahead! 💥
                     </Status>
 
                     <Info>
                         <Content>
-                            {/* <div className="painel-header">
-                                <div className="ball red"></div>
-                                <div className="ball yellow"></div>
-                                <div className="ball green"></div>
-                            </div> */}
                             <Painel>
-                                {/* <h2>English Version</h2>
-                                <p>
-                                    I am a Senior Front-end Developer with
-                                    extensive experience in technologies such as
-                                    React, Node.js, React Native, and Next.js. I
-                                    also work on back-end development, creating
-                                    complete solutions that efficiently
-                                    integrate front-end and back-end systems.
-                                    Currently, I focus on building interactive
-                                    maps and geospatial systems aimed at
-                                    visualizing geographic data from Bahia. My
-                                    career has been marked by the development of
-                                    web applications, mobile apps, and APIs that
-                                    make a difference in users' lives.
-                                </p>
-                                <p>
-                                    I hold a degree in Systems Analysis and
-                                    Development, and my foundation has always
-                                    been my family, which gives me the strength
-                                    and motivation to face everyday challenges.
-                                    In my free time, I am passionate about
-                                    sports, practicing running, weightlifting,
-                                    swimming, and football. Additionally, I have
-                                    a passion for books and dancing, especially
-                                    forró. Traveling and making new friends are
-                                    experiences that enrich and challenge me to
-                                    always improve. I firmly believe that limits
-                                    are self-imposed, which is why I follow the
-                                    principle of continuous improvement,
-                                    striving to evolve a little more every day.
-                                    Currently, I am improving my English skills,
-                                    aiming to expand my horizons and prepare for
-                                    international opportunities.
-                                </p> */}
-
                                 <h2>Versão em Português</h2>
                                 <p>
                                     Desenvolvedor Front-end, com sólida
@@ -229,9 +235,8 @@ const About: React.FC = () => {
                                     internacionais.
                                 </p>
                                 <h3>
-                                    🚀 Currently doing{" "}
-                                    <Highlight>MSI</Highlight> Bootcamp focusing
-                                    on technologies:
+                                    🚀 Atualmente no Bootcamp{" "}
+                                    {/* <Highlight>MSI</Highlight> focado em: */}
                                 </h3>
                                 <ul>
                                     <li>Nodejs</li>
@@ -243,10 +248,8 @@ const About: React.FC = () => {
                                     <li>PostgreSQL</li>
                                 </ul>
 
-                                {/* Botão de download centralizado */}
                                 <DownloadButton
                                     href="/wesley_guerra.pdf"
-                                    // download="curriculo-wesley-guerra"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

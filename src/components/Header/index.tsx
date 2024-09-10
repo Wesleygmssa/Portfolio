@@ -43,12 +43,14 @@ const Header: React.FC = () => {
                 >
                     Projetos
                 </NavLink>
+                {/* Menu de Eventos desabilitado */}
                 <NavLink
-                    to="/events"
-                    onClick={handleLinkClick}
-                    className={({ isActive }) => (isActive ? "menuActive" : "")}
+                    to="#"
+                    onClick={(e) => e.preventDefault()} // Impede a navegação
+                    className="menuDisabled"
+                    style={{ cursor: "not-allowed" }}
                 >
-                    Eventos
+                    Eventos (Desabilitado)
                 </NavLink>
                 <NavLink
                     to="/blog"

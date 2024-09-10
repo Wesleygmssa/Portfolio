@@ -9,7 +9,7 @@ import {
     Modal,
     ModalImage,
     CloseButton,
-    EventsDescription,
+    EventOverlay,
 } from "./styles";
 import PageDefault from "../../components/PageDefault";
 
@@ -20,8 +20,17 @@ const Events: React.FC = () => {
         {
             image: "https://media.licdn.com/dms/image/v2/D4D22AQGrF-FDwHQJ_A/feedshare-shrink_800/feedshare-shrink_800/0/1725540743048?e=1728518400&v=beta&t=MDb9s6sCcqNB4duYUB7uOskf84tSDIN9-JQcU0w7qUA",
             description:
-                "Trilha intermediária de desenvolvimento Full-stack com foco em React e Node.js. Ideal para quem deseja se atualizar com as melhores práticas e ferramentas do mercado, além de impulsionar sua carreira com novas habilidades em programação.",
+                "Trilha intermediária de desenvolvimento Full-stack com foco em React e Node.js. Ideal para quem deseja se atualizar com as melhores práticas e ferramentas do mercado.",
         },
+        // {
+        //     image: "https://image-url2.com",
+        //     description: "Outro evento impactante na minha carreira.",
+        // },
+        // {
+        //     image: "https://image-url3.com",
+        //     description:
+        //         "Mais um evento marcante que ajudou no meu crescimento.",
+        // },
     ];
 
     const openModal = (image: string) => {
@@ -35,13 +44,7 @@ const Events: React.FC = () => {
     return (
         <PageDefault>
             <EventsWrapper>
-                <EventsTitle>Eventos Que Marcaram Minha Jornada</EventsTitle>
-                <EventsDescription>
-                    Ao longo da minha carreira, participei de eventos que
-                    tiveram um grande impacto no meu crescimento profissional e
-                    pessoal. Aqui estão alguns dos momentos mais marcantes que
-                    fizeram parte dessa jornada.
-                </EventsDescription>
+                <EventsTitle>Eventos Importantes</EventsTitle>
                 <EventsContainer>
                     {events.map((event, index) => (
                         <EventCard
@@ -52,9 +55,11 @@ const Events: React.FC = () => {
                                 src={event.image}
                                 alt={`Evento ${index + 1}`}
                             />
-                            <EventDescription>
-                                {event.description}
-                            </EventDescription>
+                            <EventOverlay>
+                                <EventDescription>
+                                    {event.description}
+                                </EventDescription>
+                            </EventOverlay>
                         </EventCard>
                     ))}
                 </EventsContainer>
