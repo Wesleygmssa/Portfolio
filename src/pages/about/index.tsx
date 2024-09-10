@@ -229,10 +229,7 @@ const About: React.FC = () => {
                                     que nossos limites são aqueles que impomos a
                                     nós mesmos, e por isso, sigo o princípio da
                                     melhoria contínua, sempre buscando aprender
-                                    e evoluir. Atualmente, estou praticando
-                                    inglês com o objetivo de abraçar novas
-                                    oportunidades globais e desafios
-                                    internacionais.
+                                    e evoluir.
                                 </p>
                                 <h3>
                                     🚀 Atualmente no Bootcamp{" "}
